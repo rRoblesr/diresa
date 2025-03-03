@@ -1,0 +1,2323 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es-pe">
+
+<head>
+    <meta charset="utf-8" />
+
+    <!--====== Title ======-->
+    <title>Dirección Regional de Salud de Ucayali</title>
+
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/webp" />
+
+    <!-- CSS
+    ============================================ -->
+
+    <!--===== Vendor CSS (Bootstrap & Icon Font) =====-->
+    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/plugins/fontawesome.min.css" />
+    <link rel="stylesheet" href="assets/css/plugins/default.css" />
+
+    <!--===== Plugins CSS (All Plugins Files) =====-->
+    <link rel="stylesheet" href="assets/css/plugins/animate.min.css" />
+    <link rel="stylesheet" href="assets/css/plugins/slick.css" />
+    <link rel="stylesheet" href="assets/css/plugins/magnific-popup.css" />
+
+    <!--====== Main Style CSS ======-->
+    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+    <link rel="stylesheet" href="assets/css/style.min.css" />
+    <style>
+        /* Estilos para la ventana modal */
+        .modal {
+            display: none;
+            /* Ocultar por defecto */
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.5);
+            /* Fondo semitransparente */
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 600px;
+        }
+
+        .modal-content img {
+            width: 100%;
+            height: auto;
+        }
+
+        .close-btn {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close-btn:hover,
+        .close-btn:focus {
+            color: black;
+            text-decoration: none;
+        }
+
+        /*  */
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-toggle {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            z-index: 1;
+        }
+
+        .dropdown-item {
+            padding: 10px 15px;
+            color: #333;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-item:hover {
+            background-color: #f0f0f0;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+    </style>
+
+    <style>
+        /* .card {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+      }
+
+      .card-body {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .btn-ver-mas {
+        margin-top: auto;
+      }
+
+      .offcanvas {
+        position: fixed;
+        top: 0;
+        right: -350px;
+        width: 350px;
+        height: 100%;
+        background-color: white;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+        overflow-y: auto;
+        transition: right 0.3s ease-in-out;
+        z-index: 1050;
+        padding: 20px;
+      }
+
+      .offcanvas.show {
+        right: 0;
+      }
+
+      .offcanvas-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 10px;
+      }
+
+      .offcanvas-body {
+        padding-top: 10px;
+      }
+
+      .offcanvas a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: #333;
+        border-bottom: 1px solid #eee;
+      }
+
+      .offcanvas a:hover {
+        background-color: #f8f9fa;
+      }
+
+      .close-btn {
+        background: none;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+      } */
+    </style>
+</head>
+
+<body>
+    <!--====== Header Start ======-->
+
+    <header class="header-area border">
+        <!-- <div class="header-top">
+        <div class="container">
+            <div class="header-top-wrapper d-flex flex-wrap justify-content-sm-between">
+            <div class="header-top-left mt-10">
+                <ul class="header-meta">
+                <li>
+                    <a href="mailto://tramite@diresau.gob.pe">tramite@diresau.gob.pe</a>
+                </li>
+                </ul>
+            </div>
+            <div class="header-top-right mt-10">
+                <div class="header-link">
+                <a class="suport" href="http://172.16.253.20/visitas/php">Intranet</a>
+                <a class="login" href="http://diresa-ucayali.com.pe/">Iniciar Sesión</a>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div> -->
+ 
+        <div id="navigation" class="navigation navigation-landscape">
+            <div class="container position-relative">
+                <div class="row align-items-center">
+                    <div class="col-lg-3">
+                        <div class="header-logo">
+                            <a href="#"><img src="assets/images/logo-diresa.png" width="80" height="80"
+                                    alt="Logo" /></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 position-static">
+                        <div class="nav-toggle"></div>
+                        <nav class="nav-menus-wrapper">
+                            <ul class="nav-menu">
+                                <li>
+                                    <a class="active" href="index.html">Inicio</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">Institucional</a>
+                                    <ul class="nav-dropdown nav-submenu">
+                                        <li>
+                                            <a href="#vision">¿Qué hacemos?</a>
+                                        </li>
+                                        <li>
+                                            <a href="#organigrama">Organigrama</a>
+                                        </li>
+                                        <li>
+                                            <a href="#mof">MOF</a>
+                                        </li>
+                                        <li>
+                                            <!-- Enlace de Población con la alerta de actualización -->
+                                            <a href="#poblacion" data-toggle="tooltip" data-placement="bottom"
+                                                title="Datos actualizados con los últimos informes del INEI">Población
+                                                Estimada 2025</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!-- <li>
+                    <a href="#">Convocatorias</a>
+                  </li> -->
+                                <li>
+                                    <a href="#">Comunicaciones</a>
+                                </li>
+                                <li>
+                                    <a href="#servicios">Servicios</a>
+                                </li>
+                                <li>
+                                    <a href="http://diresa-ucayali.com.pe/">Iniciar Sesión</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <!--====== Header Ends ======-->
+    <!--====== Slider Start ======-->
+    <section class="slider-area slider-03 slider-active" style="padding-top: 110px;">
+        <div class="single-slider d-flex align-items-center bg_cover" style="
+          background-image: url(assets/images/slider-diresau-01-principal.png);
+        ">
+            <div class="container">
+                <div class="slider-content slider-content-3 text-center">
+                    <h2 class="title" data-animation="fadeInUp" data-delay="0.2s">
+                        Dirección Regional de Salud de Ucayali
+                    </h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="single-slider d-flex align-items-center bg_cover"
+            style="background-image: url(assets/images/slider-diresau-01.png)">
+            <div class="container">
+                <div class="slider-content slider-content-3 text-center">
+                    <h2 class="title" data-animation="fadeInUp" data-delay="0.2s"></h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="single-slider d-flex align-items-center bg_cover" style="
+          background-image: url(assets/images/slider-diresau-semsaramp-01.png);
+        ">
+            <div class="container">
+                <div class="slider-content slider-content-3 text-center">
+                    <h2 class="title" data-animation="fadeInUp" data-delay="0.2s"></h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="single-slider d-flex align-items-center bg_cover"
+            style="background-image: url(assets/images/SARAMPIÓN-SELVA.jpg)">
+            <div class="container">
+                <div class="slider-content slider-content-3 text-center">
+                    <h2 class="title" data-animation="fadeInUp" data-delay="0.2s"></h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="slider-area slider-03 slider-active">
+      <div
+        class="single-slider d-flex align-items-center bg_cover"
+        style="
+          background-image: url(assets/images/slider-diresau-01-principal.png);
+        "
+      >
+        <div class="container">
+          <div class="slider-content slider-content-3 text-center">
+            <h2 class="title" data-animation="fadeInUp" data-delay="0.2s">
+              Dirección Regional de Salud de Ucayali
+            </h2>
+            <p data-animation="fadeInUp" data-delay="0.4s">
+              Comprometidos con la salud y el bienestar de la región.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="single-slider d-flex align-items-center bg_cover"
+        style="
+          background-image: url(assets/images/slider-diresau-02-secundaria.png);
+        "
+      >
+        <div class="container">
+          <div class="slider-content slider-content-3 text-center">
+            <h2 class="title" data-animation="fadeInUp" data-delay="0.2s">
+              Innovación en el Sistema de Salud
+            </h2>
+            <p data-animation="fadeInUp" data-delay="0.4s">
+              Implementando tecnología y estrategias para una mejor atención.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!--====== Slider Ends ======-->
+    <!--====== About Start ======-->
+
+    <section class="about-area">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <div class="about-content mt-40" text-align="justify">
+                        <h2 class="about-title">DIRESA <span>Ucayali</span></h2>
+                        <span class="line"></span>
+                        <p style="text-align: justify">
+                            Somos un órgano desconcentrado del Gobierno Regional de Ucayali,
+                            reconocidos como la única autoridad de salud en la Región
+                            Ucayali. Dependemos del Minsa de forma técnica y normativa,
+                            contamos con cuatro Redes de Salud y dos hospitales en nuestra
+                            jurisdicción, asegurando las políticas y acciones
+                            intersectoriales sobre los determinantes sociales; en beneficio
+                            de la salud y el bienestar de la población.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="about-image mt-50" style="transform: rotate(-45deg); transform-origin: center">
+                        <div class="single-image image-1">
+                            <img src="assets/images/about/about-1.png" width="290" height="290" alt="about" />
+                        </div>
+                        <div class="single-image image-2">
+                            <img src="assets/images/about/about-2.png" width="225" height="225" alt="about" />
+                        </div>
+                        <div class="single-image image-3">
+                            <img src="assets/images/about/about-3.png" width="190" height="190" alt="about" />
+                        </div>
+                        <div class="single-image image-4">
+                            <img src="assets/images/about/about-4.png" width="140" height="140" alt="about" />
+                        </div>
+
+                        <div class="about-icon icon-1">
+                            <img src="assets/images/about/icon/icon-1.png" width="46" height="46" alt="icon" />
+                        </div>
+                        <div class="about-icon icon-2">
+                            <img src="assets/images/about/icon/icon-2.png" width="46" height="46" alt="icon" />
+                        </div>
+                        <div class="about-icon icon-3">
+                            <img src="assets/images/about/icon/icon-3.png" width="46" height="46" alt="icon" />
+                        </div>
+                        <div class="about-icon icon-4">
+                            <img src="assets/images/about/icon/icon-4.png" width="46" height="46" alt="icon" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--====== About Ends ======-->
+    <!--====== Top Courses Start ======-->
+
+    <section class="about-area bg-light" id="vision">
+        <div class="container my-5">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">¿Qué hacemos?</h2>
+                <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
+            </div>
+            <main class="container my-5">
+                <section class="mb-5">
+                    <!-- <h2 class="text-primary">Misión</h2> -->
+                    <p>
+                        Somos un órgano desconcentrado del Gobierno Regional de Ucayali,
+                        reconocidos como la única autoridad de salud en la Región Ucayali,
+                        dependemos del Minsa, contamos con Redes Integradas de Salud,
+                        hospitales asegurando las políticas y acciones intersectoriales
+                        determinantes en beneficio de la salud y el bienestar de la
+                        población.
+                    </p>
+                </section>
+                <section>
+                    <h2 class="section-heading text-uppercase text-center">Visión</h2>
+                    <p>
+                        Promover la salud preventiva, a través del empoderamiento
+                        comunitario, de nuevos estilos de vida y cambios de comportamiento
+                        cultural e identidad; proponiendo y conduciendo lineamientos de
+                        políticas sanitarías con enfoque intercultural de interés
+                        regional, en concertación con los diversos niveles del gobierno,
+                        respecto a la evolución natural de la vida y derechos que asisten
+                        al ciudadano. Una Región donde podamos gozar de mejores
+                        condiciones de salud física, mental y social, y en casos de
+                        enfermedad y/o invalidez, garantizando un acceso pleno a una
+                        adecuada atención y tratamiento, enfatizando la inclusión social,
+                        el desarrollo humano, a lo largo del ciclo de vida.
+                    </p>
+                </section>
+            </main>
+        </div>
+    </section>
+
+    <!-- <section class="about-area" id="mision-vision" style="display: none">
+      <div class="container">
+        <div class="text-center mb-4">
+          <h2 class="section-heading text-uppercase">Misión y Visión</h2>
+          <h3 class="section-subheading text-muted">Conoce nuestros principios y objetivos.</h3>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <h3 class="text-primary">Misión</h3>
+            <p>
+              Nuestra misión es garantizar la salud de la población mediante la
+              promoción de estilos de vida saludables, la prevención de
+              enfermedades, y el acceso a servicios de calidad con enfoque
+              inclusivo y equitativo.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <h3 class="text-primary">Visión</h3>
+            <p>
+              Ser una institución líder en el sector salud, reconocida por su
+              excelencia, innovación y compromiso con el bienestar integral de
+              la comunidad, promoviendo un desarrollo sostenible y saludable
+              para todos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!--====== About Ends ======-->
+    <!--====== Top Courses Start ======-->
+
+    <section class="about-area" id="organigrama">
+        <div class="container my-2">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Organigrama</h2>
+                <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
+            </div>
+            <main class="container my-5">
+                <section class="mb-5 text-center">
+                    <img src="assets/images/organigrama.jpg" alt="Organigrama DIRESA" />
+                </section>
+            </main>
+        </div>
+    </section>
+
+    <!--====== About Ends ======-->
+    <!--====== Top Courses Start ======-->
+
+    <section class="about-area bg-light d-none" id="mof">
+        <div class="container my-5">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">
+                    Manual de Organización y Funciones(MOF)
+                </h2>
+                <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
+            </div>
+            <!-- <main class="container my-5">
+          <section class="mb-5">
+            <img
+              src="assets/images/organigrama/ORGANIGRAMA-DIRESA-1024x1024.png"
+              alt="Organigrama DIRESA"
+            />
+          </section>
+        </main> -->
+        </div>
+    </section>
+
+
+
+    <section class="about-area bg-light" id="poblacion">
+        <div class="container my-5">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase font-weight-bold ">
+                    POBLACIÓN ESTIMADA POR EDADES SIMPLES Y GRUPOS DE EDAD, SEGÚN DEPARTAMENTO, PROVINCIA, DISTRITO Y
+                    ESTABLECIMIENTOS DE SALUD. 2025
+                </h2>
+            </div>
+            <main class="container my-5">
+                <section class="mb-5">
+                    <!-- Nota -->
+                    <p class="lead text-muted">
+                        <strong>NOTA:</strong> LA POBLACIÓN ESTIMADA DE EDADES SIMPLES Y GRUPOS DE EDAD DE DISTRITOS,
+                        CORRESPONDEN A
+                        CIFRAS REFERENCIALES HASTA OBTENER LAS CIFRAS DE LAS PROYECCIONES DEL INEI.
+                    </p>
+
+                    <!-- Fuentes -->
+                    <div class="alert alert-info">
+                        <h5 class="font-weight-bold">FUENTE:</h5>
+                        <ul class="list-unstyled">
+                            <li>- CENSO NACIONAL XI DE POBLACIÓN Y VI DE VIVIENDA 2017 / BOLETÍN DEMOGRÁFICO Nº 24, 37,
+                                39 / RENIEC /
+                                Padrón Nominal / CNV</li>
+                            <li>- La población de 0-5 años corresponde al reporte de la población del Padrón Nominal con
+                                corte al
+                                31/12/2024, con ajuste en la Edad "0"</li>
+                            <li>- OFICINA DE GESTIÓN DE LA INFORMACIÓN - MINISTERIO DE SALUD</li>
+                            <li>- Dirección de Estadística, Informática y Telecomunicaciones – DIRESA UCAYALI</li>
+                        </ul>
+                    </div>
+                    <!-- Actualización -->
+                    <p class="text-success font-weight-bold text-center mt-4">Actualizado con datos INEI</p>
+
+                    <div class="d-flex justify-content-end mt-4">
+                        <a href="https://www.dropbox.com/scl/fi/enj5lsou64pjzftrfghsy/Poblacion-Ucayali-2025-actualizado_Oficial.xlsx?rlkey=w59x7529p38azjq3nnwbi7xao&st=zkui0qhs&dl=0"
+                            class="btn btn-success" target="_blank">
+                            <i class="fas fa-file-excel mr-2"></i> Descargar
+                        </a>
+                    </div>
+
+                </section>
+            </main>
+        </div>
+    </section>
+
+    <!--====== About Ends ======-->
+    <!--====== Top Courses Start ======-->
+
+    <section class="about-area page-section d-none" id="convocatoria">
+        <div class="container my-5">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Convocatoria</h2>
+                <!-- <h3 class="section-subheading text-muted">
+            Lorem ipsum dolor sit amet consectetur.
+          </h3> -->
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 mb-4"></div>
+            </div>
+        </div>
+    </section>
+    <!--====== About Ends ======-->
+    <!--====== Top Courses Start ======-->
+
+    <section class="about-area page-section bg-light d-none" id="comunicaciones">
+        <div class="container my-5">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">comunicaciones</h2>
+                <!-- <h3 class="section-subheading text-muted">
+            Lorem ipsum dolor sit amet consectetur.
+          </h3> -->
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 mb-4"></div>
+            </div>
+        </div>
+    </section>
+    <!--====== About Ends ======-->
+    <!--====== Top Courses Start ======-->
+
+    <section class="top-courses-area" id="servicios">
+        <div class="container my-5">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Servicios</h2>
+                <!-- <h3 class="section-subheading text-muted">
+            Lorem ipsum dolor sit amet consectetur.
+          </h3> -->
+            </div>
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="section-title mt-40">
+                        <h2 class="title">Estadística en <br />Salud</h2>
+                        <p>
+                            El sistema de información propuesto para la población de
+                            Ucayali.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="courses-wrapper wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.3s">
+                <div class="row">
+                    <!-- elimnar tarjetas -->
+                    <div class="col-lg-3 col-sm-6 courses-col">
+                        <div class="single-courses mt-30">
+                            <div class="courses-image">
+                                <a>
+                                    <img src="assets/images/courses/salud-1.png" width="270" height="170"
+                                        alt="courses" />
+                                </a>
+                            </div>
+                            <div class="courses-content">
+                                <a class="category">#Niño</a>
+                                <h4 class="courses-title">
+                                    <a>
+                                        Productos específicos para el desarrollo infantil
+                                        temprano.
+                                    </a>
+                                </h4>
+
+                                <div class="text-center">
+                                    <div class="dropdown">
+                                        <button class="dropdown-toggle">Más Opciones</button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item"
+                                                href="https://app.powerbi.com/view?r=eyJrIjoiOTgzMTdkY2QtOWZkZi00ZDZlLTg4NTgtMTcwZWVjZDA2ZTJiIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ReportSection"
+                                                target="_blank">Etapa Vida Niño</a>
+                                            <a class="dropdown-item"
+                                                href="https://app.powerbi.com/view?r=eyJrIjoiZmY0YjU4NzUtYmFhMy00ODc1LWI5YWYtMjk4YmNmMTkyZWJiIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ReportSectionc306eb4184a54069d893"
+                                                target="_blank">Monitoreo</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="col-lg-3 col-sm-6 courses-col">
+              <div class="single-courses mt-30">
+                <div class="courses-image">
+                  <a
+                    ><img
+                      src="assets/images/courses/salud-1.png"
+                      width="270"
+                      height="170"
+                      alt="courses"
+                  /></a>
+                </div>
+                <div class="courses-content">
+                  <a class="category">#Niño</a>
+                  <h4 class="courses-title">
+                    <a
+                      >Productos específicos para el desarrollo infantil
+                      temprano.</a
+                    >
+                  </h4>
+
+                  <div class="courses-link">
+                    <a class="apply">Etapa Vida Niño</a>
+                    <a
+                      class="more"
+                      href="https://app.powerbi.com/view?r=eyJrIjoiOTgzMTdkY2QtOWZkZi00ZDZlLTg4NTgtMTcwZWVjZDA2ZTJiIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ReportSection"
+                      target="_blank"
+                      >Click aquí<i class="fas fa-chevron-right"></i
+                    ></a>
+                  </div>
+
+                  <div class="courses-link">
+                    <a class="apply">Monitoreo</a>
+                    <a
+                      class="more"
+                      href="https://app.powerbi.com/view?r=eyJrIjoiZmY0YjU4NzUtYmFhMy00ODc1LWI5YWYtMjk4YmNmMTkyZWJiIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ReportSectionc306eb4184a54069d893"
+                      target="_blank"
+                      >Click aquí<i class="fas fa-chevron-right"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+                    <div class="col-lg-3 col-sm-6 courses-col">
+                        <div class="single-courses mt-30">
+                            <div class="courses-image">
+                                <a><img src="assets/images/courses/salud-1.png" width="270" height="170"
+                                        alt="courses" /></a>
+                            </div>
+                            <div class="courses-content">
+                                <a class="category">#Nutrición</a>
+                                <h4 class="courses-title">
+                                    <a>Productos específicos para el desarrollo infantil
+                                        temprano.</a>
+                                </h4>
+
+                                <div class="text-center">
+                                    <div class="dropdown">
+                                        <button class="dropdown-toggle">Más Opciones</button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item"
+                                                href="https://app.powerbi.com/view?r=eyJrIjoiNjE1MGQ4MmMtYWYyOC00MDE3LWI5ODQtZDBmNTkyN2ZlMTdiIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ReportSection"
+                                                target="_blank">Etapa Vida Niño</a>
+                                            <a class="dropdown-item"
+                                                href="https://app.powerbi.com/view?r=eyJrIjoiYjEwYTE5ZDEtNmI1NS00OTZhLWEyOGEtNjgxMjY2ZjBlZTlkIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ReportSectionc306eb4184a54069d893"
+                                                target="_blank">Monitoreo</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- <div class="courses-link">
+                    <a class="apply">Nutrición</a>
+                    <a
+                      class="more"
+                      href="https://app.powerbi.com/view?r=eyJrIjoiNjE1MGQ4MmMtYWYyOC00MDE3LWI5ODQtZDBmNTkyN2ZlMTdiIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ReportSection"
+                      target="_blank"
+                      >Click aquí<i class="fas fa-chevron-right"></i
+                    ></a>
+                  </div>
+                  <div class="courses-link">
+                    <a class="apply">Monitoreo</a>
+                    <a
+                      class="more"
+                      href="https://app.powerbi.com/view?r=eyJrIjoiYjEwYTE5ZDEtNmI1NS00OTZhLWEyOGEtNjgxMjY2ZjBlZTlkIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ReportSectionc306eb4184a54069d893"
+                      target="_blank"
+                      >Click aquí<i class="fas fa-chevron-right"></i
+                    ></a>
+                  </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 courses-col">
+                        <div class="single-courses mt-30">
+                            <div class="courses-image">
+                                <a><img src="assets/images/courses/salud-1.png" width="270" height="170"
+                                        alt="courses" /></a>
+                            </div>
+                            <div class="courses-content">
+                                <a class="category">#Inmunizaciones</a>
+                                <h4 class="courses-title">
+                                    <a>Productos específicos para el desarrollo infantil
+                                        temprano.</a>
+                                </h4>
+
+                                <div class="text-center">
+                                    <div class="dropdown">
+                                        <button class="dropdown-toggle">Más Opciones</button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item"
+                                                href="https://app.powerbi.com/view?r=eyJrIjoiYWU4ZmJhZTEtNWU3Yi00ODM0LWE4M2MtM2U4OTU5ODU5MzlhIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9"
+                                                target="_blank">Monitoreo Vacunas Trazadoras
+                                            </a>
+                                            <a class="dropdown-item"
+                                                href="https://app.powerbi.com/view?r=eyJrIjoiYzFiNWUxY2QtMTM1NC00MjMyLTg0YjctZDZmNzY1YjRlOTgyIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9"
+                                                target="_blank">Monitoreo Barrido SPR
+                                            </a>
+                                            <a class="dropdown-item"
+                                                href="https://app.powerbi.com/view?r=eyJrIjoiOTRlYjViODMtZWE3Ny00ZDlmLTgyZGYtMWQzMzFlNDI1YzhhIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9"
+                                                target="_blank">Historial de Vacunación
+                                            </a>
+                                            <a class="dropdown-item"
+                                                href="https://app.powerbi.com/view?r=eyJrIjoiYTg5ODc1OGQtZTBiZi00ODdkLTljYmItNmIzMWM3ZWI2YzgyIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9"
+                                                target="_blank">Producción de Fiebre Amarilla</a>
+                                            <a class="dropdown-item"
+                                                href="https://app.powerbi.com/view?r=eyJrIjoiNmJjZTU5OWMtYjBkYS00ZGY3LTg4MjQtODIyZjkxNjk2MzQ3IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9"
+                                                target="_blank">Vacunación Dengue
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--   
+                                <div class="courses-link">
+                                    <a class="apply">Inmunizaciones</a>
+                                    <a class="more" href="https://app.powerbi.com/view?r=eyJrIjoiODM2NmQwZjUtYzQ5ZS00NTQ5LWFkNWEtZDk0MDQ3NjJiNzY0IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9" target="_blank">Click aquí<i class="fas fa-chevron-right"></i></a>
+                                </div>
+                            
+                                <div class="courses-link">
+                                    <a class="apply">Producción VPH</a>
+                                    <a class="more" href="https://app.powerbi.com/view?r=eyJrIjoiNWJmODNjOTgtNmExZC00YjJkLTg3ODMtNTZkODA0N2QyYzFiIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ReportSection" target="_blank">Click aquí<i class="fas fa-chevron-right"></i></a>
+                                </div>
+                                <div class="courses-link">
+                                    <a class="apply">Producción <br />Cierre de Brecha</a>
+                                    <a class="more" href="https://app.powerbi.com/view?r=eyJrIjoiODc1YjNjZWEtZjQ5Ny00ZTlmLTk3ZjItZjQ1MmE5MzA4MjEzIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ReportSection" target="_blank">Click aquí<i class="fas fa-chevron-right"></i></a>
+                                </div>
+                            -->
+                                <!-- <div class="courses-link">
+                    <a class="apply">Monitoreo<br />Vacunas Trazadoras</a>
+                    <a
+                      class="more"
+                      href="https://app.powerbi.com/view?r=eyJrIjoiYWU4ZmJhZTEtNWU3Yi00ODM0LWE4M2MtM2U4OTU5ODU5MzlhIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9"
+                      target="_blank"
+                      >Click aquí<i class="fas fa-chevron-right"></i
+                    ></a>
+                  </div>
+                  <div class="courses-link">
+                    <a class="apply">Monitoreo<br />Barrido SPR</a>
+                    <a
+                      class="more"
+                      href="https://app.powerbi.com/view?r=eyJrIjoiYzFiNWUxY2QtMTM1NC00MjMyLTg0YjctZDZmNzY1YjRlOTgyIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9"
+                      target="_blank"
+                      >Click aquí<i class="fas fa-chevron-right"></i
+                    ></a>
+                  </div>
+                  <div class="courses-link">
+                    <a class="apply">Historial de<br />Vacunación</a>
+                    <a
+                      class="more"
+                      href="https://app.powerbi.com/view?r=eyJrIjoiOTRlYjViODMtZWE3Ny00ZDlmLTgyZGYtMWQzMzFlNDI1YzhhIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9"
+                      target="_blank"
+                      >Click aquí<i class="fas fa-chevron-right"></i
+                    ></a>
+                  </div>
+                  <div class="courses-link">
+                    <a class="apply">Producción de <br />Fiebre Amarilla</a>
+                    <a
+                      class="more"
+                      href="https://app.powerbi.com/view?r=eyJrIjoiYTg5ODc1OGQtZTBiZi00ODdkLTljYmItNmIzMWM3ZWI2YzgyIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9"
+                      target="_blank"
+                      >Click aquí<i class="fas fa-chevron-right"></i
+                    ></a>
+                  </div>
+                  <div class="courses-link">
+                    <a class="apply">Vacunación<br />Dengue</a>
+                    <a
+                      class="more"
+                      href="https://app.powerbi.com/view?r=eyJrIjoiNmJjZTU5OWMtYjBkYS00ZGY3LTg4MjQtODIyZjkxNjk2MzQ3IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9"
+                      target="_blank"
+                      >Click aquí<i class="fas fa-chevron-right"></i
+                    ></a>
+                  </div> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6 courses-col">
+                        <div class="single-courses mt-30">
+                            <div class="courses-image">
+                                <a><img src="assets/images/courses/salud-1.png" width="270" height="170"
+                                        alt="courses" /></a>
+                            </div>
+                            <div class="courses-content">
+                                <a class="category">#SaludMental</a>
+                                <h4 class="courses-title">
+                                    <a>Control y prevención en salud mental. <br /><br /></a>
+                                </h4>
+                                <div class="text-center">
+                                    <div class="dropdown">
+                                        <button class="dropdown-toggle">Más Opciones</button>
+                                        <div class="dropdown-menu">
+                                            <!-- <a
+                        class="dropdown-item"
+                        href="https://app.powerbi.com/view?r=eyJrIjoiNjE1MGQ4MmMtYWYyOC00MDE3LWI5ODQtZDBmNTkyN2ZlMTdiIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ReportSection"
+                        target="_blank"
+                        >Etapa Vida Niño
+                      </a> -->
+                                            <a class="dropdown-item"
+                                                href="https://app.powerbi.com/view?r=eyJrIjoiZTQzM2Y0YjgtOTgwYi00ZDA5LTg1N2EtMDg1ODQ4M2I0NWUxIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ReportSectiond757b470baf58266725d"
+                                                target="_blank">Indicadores
+                                            </a>
+                                            <a class="dropdown-item"
+                                                href="https://app.powerbi.com/view?r=eyJrIjoiZTQzM2Y0YjgtOTgwYi00ZDA5LTg1N2EtMDg1ODQ4M2I0NWUxIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ReportSection"
+                                                target="_blank">Morbilidad
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- <div class="courses-link">
+                    <a class="apply">Indicadores</a>
+                    <a
+                      class="more"
+                      href="https://app.powerbi.com/view?r=eyJrIjoiZTQzM2Y0YjgtOTgwYi00ZDA5LTg1N2EtMDg1ODQ4M2I0NWUxIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ReportSectiond757b470baf58266725d"
+                      target="_blank"
+                      >Click aquí<i class="fas fa-chevron-right"></i
+                    ></a>
+                  </div>
+                  <div class="courses-link">
+                    <a class="apply">Morbilidad</a>
+                    <a
+                      class="more"
+                      href="https://app.powerbi.com/view?r=eyJrIjoiZTQzM2Y0YjgtOTgwYi00ZDA5LTg1N2EtMDg1ODQ4M2I0NWUxIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ReportSection"
+                      target="_blank"
+                      >Click aquí<i class="fas fa-chevron-right"></i
+                    ></a>
+                  </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 courses-col">
+                        <div class="single-courses mt-30">
+                            <div class="courses-image">
+                                <a><img src="assets/images/courses/salud-1.png" width="270" height="170"
+                                        alt="courses" /></a>
+                            </div>
+                            <div class="courses-content">
+                                <a class="category">#TBC_VIH_SIDA</a>
+                                <h4 class="courses-title">
+                                    <a>TBC <br />
+                                        VIH/SIDA<br /><br /></a>
+                                </h4>
+                                <div class="text-center">
+                                    <div class="dropdown">
+                                        <button class="dropdown-toggle">Más Opciones</button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item"
+                                                href="https://app.powerbi.com/view?r=eyJrIjoiMjdhMmFiZDMtZGEzYi00MWU5LWJiZTItOGQ2YTFlOTU2ZTYxIiwidCI6IjhkNDVhZGIxLTMzNzYtNDljYi05MjU2LThlMDVlNmVhMDZiMCJ9"
+                                                target="_blank">VIH-SIDA
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- <div class="courses-link">
+                    <a class="apply" href="#">VIH-SIDA</a>
+                    <a
+                      class="more"
+                      href="https://app.powerbi.com/view?r=eyJrIjoiMjdhMmFiZDMtZGEzYi00MWU5LWJiZTItOGQ2YTFlOTU2ZTYxIiwidCI6IjhkNDVhZGIxLTMzNzYtNDljYi05MjU2LThlMDVlNmVhMDZiMCJ9"
+                      target="_blank"
+                      >Click aquí <i class="fas fa-chevron-right"></i
+                    ></a>
+                  </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 courses-col">
+                        <div class="single-courses mt-30">
+                            <div class="courses-image">
+                                <a><img src="assets/images/courses/salud-1.png" width="270" height="170"
+                                        alt="courses" /></a>
+                            </div>
+                            <div class="courses-content">
+                                <a class="category">#MetaxénicasZoonosis</a>
+                                <h4 class="courses-title">
+                                    <a>Enfermedades metaxénicas y zoonosis.</a>
+                                </h4>
+
+                                <div class="text-center">
+                                    <div class="dropdown">
+                                        <button class="dropdown-toggle">Más Opciones</button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item"
+                                                href="https://lookerstudio.google.com/reporting/e0788e2c-65b1-4afa-8696-4778b2857189"
+                                                target="_blank">Dengue
+                                            </a>
+                                            <a class="dropdown-item"
+                                                href="https://app.powerbi.com/view?r=eyJrIjoiZTQzM2Y0YjgtOTgwYi00ZDA5LTg1N2EtMDg1ODQ4M2I0NWUxIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=e645399d4061c869b715"
+                                                target="_blank">Zoonosis
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- <div class="courses-link">
+                    <a class="apply" href="#">Dengue</a>
+                    <a
+                      class="more"
+                      href="https://lookerstudio.google.com/reporting/e0788e2c-65b1-4afa-8696-4778b2857189"
+                      target="_blank"
+                      >Click aquí <i class="fas fa-chevron-right"></i
+                    ></a>
+                  </div>
+                  <div class="courses-link">
+                    <a class="apply" href="#">Zoonosis</a>
+                    <a
+                      class="more"
+                      href="https://app.powerbi.com/view?r=eyJrIjoiZTQzM2Y0YjgtOTgwYi00ZDA5LTg1N2EtMDg1ODQ4M2I0NWUxIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=e645399d4061c869b715"
+                      target="_blank"
+                      >Click aquí <i class="fas fa-chevron-right"></i
+                    ></a>
+                  </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 courses-col">
+                        <div class="single-courses mt-30">
+                            <div class="courses-image">
+                                <a><img src="assets/images/courses/salud-1.png" width="270" height="170"
+                                        alt="courses" /></a>
+                            </div>
+                            <div class="courses-content">
+                                <a class="category">#Cancer</a>
+                                <h4 class="courses-title">
+                                    <a>Prevención y control del cancer. <br /><br /></a>
+                                </h4>
+
+                                <div class="text-center">
+                                    <div class="dropdown">
+                                        <button class="dropdown-toggle">Más Opciones</button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item"
+                                                href="https://app.powerbi.com/view?r=eyJrIjoiNjdjOWUwY2QtMTBhMS00YjQ3LWI4ZGEtOWY1YzdkYjk1NDgwIiwidCI6IjhkNDVhZGIxLTMzNzYtNDljYi05MjU2LThlMDVlNmVhMDZiMCJ9"
+                                                target="_blank">Cancer
+                                            </a>
+                                            <a class="dropdown-item"
+                                                href="https://app.powerbi.com/view?r=eyJrIjoiMDVjMjZmNjctZjFiMy00NjU4LWE2OTYtNzY4NzI3YTM2NWJmIiwidCI6IjhkNDVhZGIxLTMzNzYtNDljYi05MjU2LThlMDVlNmVhMDZiMCJ9"
+                                                target="_blank">Monitoreo Rapido
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- <div class="courses-link">
+                    <a class="apply" href="#">Cancer</a>
+                    <a
+                      class="more"
+                      href="https://app.powerbi.com/view?r=eyJrIjoiNjdjOWUwY2QtMTBhMS00YjQ3LWI4ZGEtOWY1YzdkYjk1NDgwIiwidCI6IjhkNDVhZGIxLTMzNzYtNDljYi05MjU2LThlMDVlNmVhMDZiMCJ9"
+                      target="_blank"
+                      >Click aquí <i class="fas fa-chevron-right"></i
+                    ></a>
+                  </div>
+                  <div class="courses-link">
+                    <a class="apply" href="#">Monitoreo Rapido</a>
+                    <a
+                      class="more"
+                      href="https://app.powerbi.com/view?r=eyJrIjoiMDVjMjZmNjctZjFiMy00NjU4LWE2OTYtNzY4NzI3YTM2NWJmIiwidCI6IjhkNDVhZGIxLTMzNzYtNDljYi05MjU2LThlMDVlNmVhMDZiMCJ9"
+                      target="_blank"
+                      >Click aquí <i class="fas fa-chevron-right"></i
+                    ></a>
+                  </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 courses-col">
+                        <div class="single-courses mt-30">
+                            <div class="courses-image">
+                                <a><img src="assets/images/courses/salud-1.png" width="270" height="170"
+                                        alt="courses" /></a>
+                            </div>
+                            <div class="courses-content">
+                                <a class="category">#NoTransmisible</a>
+                                <h4 class="courses-title">
+                                    <a>Enfermedades no transmisibles. <br /><br /></a>
+                                </h4>
+
+                                <div class="text-center">
+                                    <div class="dropdown">
+                                        <button class="dropdown-toggle">Más Opciones</button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item"
+                                                href="https://app.powerbi.com/view?r=eyJrIjoiZDVmMzQ1NzktODBiNy00YTRkLWE2YTMtNjM3NjY2YzY1ZjVmIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9"
+                                                target="_blank">Daños no transmisibles
+                                            </a>
+                                            <a class="dropdown-item"
+                                                href="https://app.powerbi.com/view?r=eyJrIjoiZTQzM2Y0YjgtOTgwYi00ZDA5LTg1N2EtMDg1ODQ4M2I0NWUxIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=31a692f867e9937ca81c"
+                                                target="_blank">Morbilidad en Salud bucal
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- <div class="courses-link">
+                    <a class="apply" href="#"
+                      >Daños <br />
+                      no transmisibles</a
+                    >
+                    <a
+                      class="more"
+                      href="https://app.powerbi.com/view?r=eyJrIjoiZDVmMzQ1NzktODBiNy00YTRkLWE2YTMtNjM3NjY2YzY1ZjVmIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9"
+                      target="_blank"
+                      >Click aquí <i class="fas fa-chevron-right"></i
+                    ></a>
+                  </div>
+                  <div class="courses-link">
+                    <a class="apply" href="#"
+                      >Morbilidad <br />en Salud bucal</a
+                    >
+                    <a
+                      class="more"
+                      href="https://app.powerbi.com/view?r=eyJrIjoiZTQzM2Y0YjgtOTgwYi00ZDA5LTg1N2EtMDg1ODQ4M2I0NWUxIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=31a692f867e9937ca81c"
+                      target="_blank"
+                      >Click aquí <i class="fas fa-chevron-right"></i
+                    ></a>
+                  </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 courses-col">
+                        <div class="single-courses mt-30">
+                            <div class="courses-image">
+                                <a><img src="assets/images/courses/salud-1.png" width="270" height="170"
+                                        alt="courses" /></a>
+                            </div>
+                            <div class="courses-content">
+                                <a class="category">#Discapacidad</a>
+                                <h4 class="courses-title">
+                                    <a>Prevención y manejo de condiciones secundarias de salud
+                                        en personas con discapacidad.</a>
+                                </h4>
+
+                                <div class="text-center">
+                                    <div class="dropdown">
+                                        <button class="dropdown-toggle">Más Opciones</button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item"
+                                                href="https://app.powerbi.com/view?r=eyJrIjoiZTQzM2Y0YjgtOTgwYi00ZDA5LTg1N2EtMDg1ODQ4M2I0NWUxIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=09544113ecac35e11000"
+                                                target="_blank">Discapacidad
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- <div class="courses-link">
+                    <a class="apply" href="#">Discapacidad</a>
+                    <a
+                      class="more"
+                      href="https://app.powerbi.com/view?r=eyJrIjoiZTQzM2Y0YjgtOTgwYi00ZDA5LTg1N2EtMDg1ODQ4M2I0NWUxIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=09544113ecac35e11000"
+                      target="_blank"
+                      >Click aquí <i class="fas fa-chevron-right"></i
+                    ></a>
+                  </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 courses-col">
+                        <div class="single-courses mt-30">
+                            <div class="courses-image">
+                                <a><img src="assets/images/courses/salud-1.png" width="270" height="170"
+                                        alt="courses" /></a>
+                            </div>
+                            <div class="courses-content">
+                                <a class="category">#SaludMaterno</a>
+                                <h4 class="courses-title">
+                                    <a>Salud Materno Neonatal. <br /><br /><br /><br /></a>
+                                </h4>
+
+                                <div class="text-center">
+                                    <div class="dropdown">
+                                        <button class="dropdown-toggle">Más Opciones</button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item"
+                                                href="https://app.powerbi.com/view?r=eyJrIjoiN2E0ZTRjNTgtZGMxNS00OGY3LTgxMmYtZmE0NWFlY2Y2Y2VlIiwidCI6IjhkNDVhZGIxLTMzNzYtNDljYi05MjU2LThlMDVlNmVhMDZiMCJ9"
+                                                target="_blank">Materno
+                                            </a>
+                                            <a class="dropdown-item"
+                                                href="https://app.powerbi.com/view?r=eyJrIjoiODMxMzZjMDgtZDk2NC00MTVmLWE2YjItMWRjOTMzZTA3ZmRjIiwidCI6IjhkNDVhZGIxLTMzNzYtNDljYi05MjU2LThlMDVlNmVhMDZiMCJ9"
+                                                target="_blank">Adolescente
+                                            </a>
+                                            <a class="dropdown-item"
+                                                href="https://app.powerbi.com/view?r=eyJrIjoiOGUwZWZiYTUtZmQxOS00MzAxLTlkYjAtZjY3NGY3ZTI3MGYwIiwidCI6IjhkNDVhZGIxLTMzNzYtNDljYi05MjU2LThlMDVlNmVhMDZiMCJ9"
+                                                target="_blank">Monitoreo Materno
+                                            </a>
+                                            <a class="dropdown-item"
+                                                href="https://app.powerbi.com/view?r=eyJrIjoiNzJlM2EwNmEtNjU4Ni00M2RlLTk5ODktYTI5NjFjZjBkMzYxIiwidCI6IjhkNDVhZGIxLTMzNzYtNDljYi05MjU2LThlMDVlNmVhMDZiMCJ9"
+                                                target="_blank">Monitoreo Adolescente
+                                            </a>
+                                            <a class="dropdown-item"
+                                                href="https://app.powerbi.com/view?r=eyJrIjoiOGIyMGU3ZjgtMmYyZS00N2NlLWFlYWItYjZkNzdhNThlMzFlIiwidCI6IjhkNDVhZGIxLTMzNzYtNDljYi05MjU2LThlMDVlNmVhMDZiMCJ9&pageName=ReportSectionbd2849dd5063754019b8"
+                                                target="_blank">SEGUIMEINTO AL ADOLESCENTES CON DOSAJE Y
+                                                SUPLEMENTACION
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- <div class="courses-link">
+                    <a class="apply" href="#">Materno</a>
+                    <a
+                      class="more"
+                      href="https://app.powerbi.com/view?r=eyJrIjoiN2E0ZTRjNTgtZGMxNS00OGY3LTgxMmYtZmE0NWFlY2Y2Y2VlIiwidCI6IjhkNDVhZGIxLTMzNzYtNDljYi05MjU2LThlMDVlNmVhMDZiMCJ9"
+                      target="_blank"
+                      >Click aquí <i class="fas fa-chevron-right"></i
+                    ></a>
+                  </div>
+                  <div class="courses-link">
+                    <a class="apply" href="#">Adolescente</a>
+                    <a
+                      class="more"
+                      href="https://app.powerbi.com/view?r=eyJrIjoiODMxMzZjMDgtZDk2NC00MTVmLWE2YjItMWRjOTMzZTA3ZmRjIiwidCI6IjhkNDVhZGIxLTMzNzYtNDljYi05MjU2LThlMDVlNmVhMDZiMCJ9"
+                      target="_blank"
+                      >Click aquí <i class="fas fa-chevron-right"></i
+                    ></a>
+                  </div>
+                  <div class="courses-link">
+                    <a class="apply" href="#"
+                      >Monitoreo <br />
+                      Materno</a
+                    >
+                    <a
+                      class="more"
+                      href="https://app.powerbi.com/view?r=eyJrIjoiOGUwZWZiYTUtZmQxOS00MzAxLTlkYjAtZjY3NGY3ZTI3MGYwIiwidCI6IjhkNDVhZGIxLTMzNzYtNDljYi05MjU2LThlMDVlNmVhMDZiMCJ9"
+                      target="_blank"
+                      >Click aquí <i class="fas fa-chevron-right"></i
+                    ></a>
+                  </div>
+                  <div class="courses-link">
+                    <a class="apply" href="#"
+                      >Monitoreo <br />
+                      Adolescente</a
+                    >
+                    <a
+                      class="more"
+                      href="https://app.powerbi.com/view?r=eyJrIjoiNzJlM2EwNmEtNjU4Ni00M2RlLTk5ODktYTI5NjFjZjBkMzYxIiwidCI6IjhkNDVhZGIxLTMzNzYtNDljYi05MjU2LThlMDVlNmVhMDZiMCJ9"
+                      target="_blank"
+                      >Click aquí <i class="fas fa-chevron-right"></i
+                    ></a>
+                  </div>
+                  <div class="courses-link">
+                    <a class="apply" href="#"
+                      >SEGUIMEINTO AL ADOLESCENTES <br />
+                      CON DOSAJE Y SUPLEMENTACION
+                    </a>
+                    <a
+                      class="more"
+                      href="https://app.powerbi.com/view?r=eyJrIjoiOGIyMGU3ZjgtMmYyZS00N2NlLWFlYWItYjZkNzdhNThlMzFlIiwidCI6IjhkNDVhZGIxLTMzNzYtNDljYi05MjU2LThlMDVlNmVhMDZiMCJ9&pageName=ReportSectionbd2849dd5063754019b8"
+                      target="_blank"
+                      >Click aquí <i class="fas fa-chevron-right"></i
+                    ></a>
+                  </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 courses-col">
+                        <div class="single-courses mt-30">
+                            <div class="courses-image">
+                                <a><img src="assets/images/courses/salud-1.png" width="270" height="170"
+                                        alt="courses" /></a>
+                            </div>
+                            <div class="courses-content">
+                                <a class="category">#ResportesMonitoreo</a>
+                                <h4 class="courses-title">
+                                    <a>Tablero de Control <br /><br /><br /><br /><br /></a>
+                                </h4>
+
+                                <div class="text-center">
+                                    <div class="dropdown">
+                                        <button class="dropdown-toggle">Más Opciones</button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item"
+                                                href="https://app.powerbi.com/view?r=eyJrIjoiZThhODY3MjMtMThhOC00OWE2LWI5YmEtZTk0OWRkMDc0NDcyIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ReportSectionc306eb4184a54069d893"
+                                                target="_blank">Monitoreo
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- <div class="courses-link">
+                    <a class="apply" href="#">Monitoreo</a>
+                    <a
+                      class="more"
+                      href="https://app.powerbi.com/view?r=eyJrIjoiZThhODY3MjMtMThhOC00OWE2LWI5YmEtZTk0OWRkMDc0NDcyIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ReportSectionc306eb4184a54069d893"
+                      target="_blank"
+                      >Click aquí <i class="fas fa-chevron-right"></i
+                    ></a>
+                  </div> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6 courses-col">
+                        <div class="single-courses mt-30">
+                            <div class="courses-image">
+                                <a><img src="assets/images/courses/salud-1.png" width="270" height="170"
+                                        alt="courses" /></a>
+                            </div>
+                            <div class="courses-content">
+                                <a class="category">#AdultoMayor</a>
+                                <h4 class="courses-title">
+                                    <a>Etapa de vida de Adulto Mayor <br /><br /><br /><br /></a>
+                                </h4>
+
+                                <div class="text-center">
+                                    <div class="dropdown">
+                                        <button class="dropdown-toggle">Más Opciones</button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item"
+                                                href="https://app.powerbi.com/view?r=eyJrIjoiMjU1NDFhMjUtYzc4ZC00NmMyLWI5MjQtZjNkZjg1MzY3ZDNmIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=24b8f3efe6cd63d92a61"
+                                                target="_blank">Monitoreo
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- <div class="courses-link">
+                    <a class="apply" href="#">Monitoreo</a>
+                    <a
+                      class="more"
+                      href="https://app.powerbi.com/view?r=eyJrIjoiMjU1NDFhMjUtYzc4ZC00NmMyLWI5MjQtZjNkZjg1MzY3ZDNmIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=24b8f3efe6cd63d92a61"
+                      target="_blank"
+                      >Click aquí <i class="fas fa-chevron-right"></i
+                    ></a>
+                  </div> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6 courses-col">
+                        <div class="single-courses mt-30">
+                            <div class="courses-image">
+                                <a><img src="assets/images/courses/salud-1.png" width="270" height="170"
+                                        alt="courses" /></a>
+                            </div>
+                            <div class="courses-content">
+                                <a class="category">#ResportesFED</a>
+                                <h4 class="courses-title">
+                                    <a>Fondo de Estímulo al Desempeño y Logro de Resultados
+                                        Sociales
+                                    </a>
+                                </h4>
+
+                                <div class="text-center">
+                                    <div class="dropdown">
+                                        <button class="dropdown-toggle">Más Opciones</button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item"
+                                                href="https://app.powerbi.com/view?r=eyJrIjoiZTM1OWU5NjQtYjgwMi00NThhLTkzMjMtYmU4MzQzMzI2ZGU3IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ReportSection561bd2efd012e146e789"
+                                                target="_blank">FED
+                                            </a>
+                                            <a class="dropdown-item"
+                                                href="https://app.powerbi.com/view?r=eyJrIjoiOWJhNzIyZDAtODhiYy00YzQ3LTlkYTYtZDBmNWM4NWUyMTY4IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=44a6e0484b700892c7ab"
+                                                target="_blank">SI_01_01
+                                            </a>
+                                            <a class="dropdown-item"
+                                                href="https://app.powerbi.com/view?r=eyJrIjoiOWJhNzIyZDAtODhiYy00YzQ3LTlkYTYtZDBmNWM4NWUyMTY4IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ReportSection1ff844b458540b076ed3"
+                                                target="_blank">SI_02_01
+                                            </a>
+                                            <a class="dropdown-item"
+                                                href="https://app.powerbi.com/view?r=eyJrIjoiOWJhNzIyZDAtODhiYy00YzQ3LTlkYTYtZDBmNWM4NWUyMTY4IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=0fb0b35309224e5021e0"
+                                                target="_blank">SI_02_02
+                                            </a>
+                                            <a class="dropdown-item"
+                                                href="https://app.powerbi.com/view?r=eyJrIjoiOWJhNzIyZDAtODhiYy00YzQ3LTlkYTYtZDBmNWM4NWUyMTY4IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=b49ff02788accdb10814"
+                                                target="_blank">SI_02_03
+                                            </a>
+                                            <a class="dropdown-item"
+                                                href="https://app.powerbi.com/view?r=eyJrIjoiOWJhNzIyZDAtODhiYy00YzQ3LTlkYTYtZDBmNWM4NWUyMTY4IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=f2d468d6d099148b39c0"
+                                                target="_blank">SI_03_01
+                                            </a>
+                                            <a class="dropdown-item"
+                                                href="https://app.powerbi.com/view?r=eyJrIjoiOWJhNzIyZDAtODhiYy00YzQ3LTlkYTYtZDBmNWM4NWUyMTY4IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=f3b543f9c02dcd4858ae"
+                                                target="_blank">SI_04_01
+                                            </a>
+                                            <a class="dropdown-item"
+                                                href="https://app.powerbi.com/view?r=eyJrIjoiOWJhNzIyZDAtODhiYy00YzQ3LTlkYTYtZDBmNWM4NWUyMTY4IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=00d52cc970bda9eee75c"
+                                                target="_blank">MC_01
+                                            </a>
+                                            <a class="dropdown-item"
+                                                href="https://app.powerbi.com/view?r=eyJrIjoiOWJhNzIyZDAtODhiYy00YzQ3LTlkYTYtZDBmNWM4NWUyMTY4IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=49f40ef851cde0837e7c"
+                                                target="_blank">MC_02
+                                            </a>
+                                            <a class="dropdown-item"
+                                                href="https://app.powerbi.com/view?r=eyJrIjoiOWJhNzIyZDAtODhiYy00YzQ3LTlkYTYtZDBmNWM4NWUyMTY4IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=448d7dd010d400c03d05"
+                                                target="_blank">MC_03</a>
+                                            <a class="dropdown-item"
+                                                href="https://app.powerbi.com/view?r=eyJrIjoiOWJhNzIyZDAtODhiYy00YzQ3LTlkYTYtZDBmNWM4NWUyMTY4IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=6665333474e9ae9ca763"
+                                                target="_blank">VI_01_01
+                                            </a>
+                                            <a class="dropdown-item"
+                                                href="https://app.powerbi.com/view?r=eyJrIjoiOWJhNzIyZDAtODhiYy00YzQ3LTlkYTYtZDBmNWM4NWUyMTY4IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ae4b0d1989aa605c1b05"
+                                                target="_blank">VI_01_02
+                                            </a>
+                                            <a class="dropdown-item"
+                                                href="https://app.powerbi.com/view?r=eyJrIjoiOWJhNzIyZDAtODhiYy00YzQ3LTlkYTYtZDBmNWM4NWUyMTY4IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=760f780eb7c40e403785"
+                                                target="_blank">VII_01
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 
+                  <div class="courses-link">
+                    <a class="apply" href="#">FED</a>
+                    <a
+                      class="more"
+                      href="https://app.powerbi.com/view?r=eyJrIjoiZTM1OWU5NjQtYjgwMi00NThhLTkzMjMtYmU4MzQzMzI2ZGU3IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ReportSection561bd2efd012e146e789"
+                      target="_blank"
+                      >Click aquí <i class="fas fa-chevron-right"></i
+                    ></a>
+                  </div>
+                  <div class="courses-link">
+                    <a class="apply" href="#">SI_01_01</a>
+                    <a
+                      class="more"
+                      href="https://app.powerbi.com/view?r=eyJrIjoiOWJhNzIyZDAtODhiYy00YzQ3LTlkYTYtZDBmNWM4NWUyMTY4IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=44a6e0484b700892c7ab"
+                      target="_blank"
+                      >Click aquí <i class="fas fa-chevron-right"></i
+                    ></a>
+                  </div>
+                  <div class="courses-link">
+                    <a class="apply" href="#">SI_02_01</a>
+                    <a
+                      class="more"
+                      href="https://app.powerbi.com/view?r=eyJrIjoiOWJhNzIyZDAtODhiYy00YzQ3LTlkYTYtZDBmNWM4NWUyMTY4IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ReportSection1ff844b458540b076ed3"
+                      target="_blank"
+                      >Click aquí <i class="fas fa-chevron-right"></i
+                    ></a>
+                  </div>
+                  <div class="courses-link">
+                    <a class="apply" href="#">SI_02_02</a>
+                    <a
+                      class="more"
+                      href="https://app.powerbi.com/view?r=eyJrIjoiOWJhNzIyZDAtODhiYy00YzQ3LTlkYTYtZDBmNWM4NWUyMTY4IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=0fb0b35309224e5021e0"
+                      target="_blank"
+                      >Click aquí <i class="fas fa-chevron-right"></i
+                    ></a>
+                  </div>
+                  <div class="courses-link">
+                    <a class="apply" href="#">SI_02_03</a>
+                    <a
+                      class="more"
+                      href="https://app.powerbi.com/view?r=eyJrIjoiOWJhNzIyZDAtODhiYy00YzQ3LTlkYTYtZDBmNWM4NWUyMTY4IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=b49ff02788accdb10814"
+                      target="_blank"
+                      >Click aquí <i class="fas fa-chevron-right"></i
+                    ></a>
+                  </div>
+                  <div class="courses-link">
+                    <a class="apply" href="#">SI_03_01</a>
+                    <a
+                      class="more"
+                      href="https://app.powerbi.com/view?r=eyJrIjoiOWJhNzIyZDAtODhiYy00YzQ3LTlkYTYtZDBmNWM4NWUyMTY4IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=f2d468d6d099148b39c0"
+                      target="_blank"
+                      >Click aquí <i class="fas fa-chevron-right"></i
+                    ></a>
+                  </div>
+                  <div class="courses-link">
+                    <a class="apply" href="#">SI_04_01</a>
+                    <a
+                      class="more"
+                      href="https://app.powerbi.com/view?r=eyJrIjoiOWJhNzIyZDAtODhiYy00YzQ3LTlkYTYtZDBmNWM4NWUyMTY4IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=f3b543f9c02dcd4858ae"
+                      target="_blank"
+                      >Click aquí <i class="fas fa-chevron-right"></i
+                    ></a>
+                  </div>
+                  <div class="courses-link">
+                    <a class="apply" href="#">MC_01</a>
+                    <a
+                      class="more"
+                      href="https://app.powerbi.com/view?r=eyJrIjoiOWJhNzIyZDAtODhiYy00YzQ3LTlkYTYtZDBmNWM4NWUyMTY4IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=00d52cc970bda9eee75c"
+                      target="_blank"
+                      >Click aquí <i class="fas fa-chevron-right"></i
+                    ></a>
+                  </div>
+                  <div class="courses-link">
+                    <a class="apply" href="#">MC_02</a>
+                    <a
+                      class="more"
+                      href="https://app.powerbi.com/view?r=eyJrIjoiOWJhNzIyZDAtODhiYy00YzQ3LTlkYTYtZDBmNWM4NWUyMTY4IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=49f40ef851cde0837e7c"
+                      target="_blank"
+                      >Click aquí <i class="fas fa-chevron-right"></i
+                    ></a>
+                  </div>
+                  <div class="courses-link">
+                    <a class="apply" href="#">MC_03</a>
+                    <a
+                      class="more"
+                      href="https://app.powerbi.com/view?r=eyJrIjoiOWJhNzIyZDAtODhiYy00YzQ3LTlkYTYtZDBmNWM4NWUyMTY4IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=448d7dd010d400c03d05"
+                      target="_blank"
+                      >Click aquí <i class="fas fa-chevron-right"></i
+                    ></a>
+                  </div>
+                  <div class="courses-link">
+                    <a class="apply" href="#">VI_01_01</a>
+                    <a
+                      class="more"
+                      href="https://app.powerbi.com/view?r=eyJrIjoiOWJhNzIyZDAtODhiYy00YzQ3LTlkYTYtZDBmNWM4NWUyMTY4IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=6665333474e9ae9ca763"
+                      target="_blank"
+                      >Click aquí <i class="fas fa-chevron-right"></i
+                    ></a>
+                  </div>
+                  <div class="courses-link">
+                    <a class="apply" href="#">VI_01_02</a>
+                    <a
+                      class="more"
+                      href="https://app.powerbi.com/view?r=eyJrIjoiOWJhNzIyZDAtODhiYy00YzQ3LTlkYTYtZDBmNWM4NWUyMTY4IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ae4b0d1989aa605c1b05"
+                      target="_blank"
+                      >Click aquí <i class="fas fa-chevron-right"></i
+                    ></a>
+                  </div>
+                  <div class="courses-link">
+                    <a class="apply" href="#">VII_01</a>
+                    <a
+                      class="more"
+                      href="https://app.powerbi.com/view?r=eyJrIjoiOWJhNzIyZDAtODhiYy00YzQ3LTlkYTYtZDBmNWM4NWUyMTY4IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=760f780eb7c40e403785"
+                      target="_blank"
+                      >Click aquí <i class="fas fa-chevron-right"></i
+                    ></a>
+                  </div> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6 courses-col">
+                        <div class="single-courses mt-30">
+                            <div class="courses-image">
+                                <a><img src="assets/images/courses/salud-1.png" width="270" height="170"
+                                        alt="courses" /></a>
+                            </div>
+                            <div class="courses-content">
+                                <a class="category">#Sismore</a>
+                                <h4 class="courses-title">
+                                    <a>Sistema de Monitoreo Regional <br /><br /><br /></a>
+                                </h4>
+
+                                <div class="text-center">
+                                    <div class="dropdown">
+                                        <button class="dropdown-toggle">Más Opciones</button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item"
+                                                href="https://sismore.regionucayali.gob.pe/sismore/login"
+                                                target="_blank">Sismore Salud
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- <div class="courses-link">
+                    <a class="apply" href="#">Sismore Salud</a>
+                    <a
+                      class="more"
+                      href="https://sismore.regionucayali.gob.pe/sismore/login"
+                      target="_blank"
+                      >Click aquí <i class="fas fa-chevron-right"></i
+                    ></a>
+                  </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 courses-col">
+                        <div class="single-courses mt-30">
+                            <div class="courses-image">
+                                <a><img src="assets/images/courses/salud-1.png" width="270" height="170"
+                                        alt="courses" /></a>
+                            </div>
+                            <div class="courses-content">
+                                <a class="category">#Presupuesto</a>
+                                <h4 class="courses-title">
+                                    <a>Presupuesto <br /><br /><br /><br /></a>
+                                </h4>
+
+                                <div class="text-center">
+                                    <div class="dropdown">
+                                        <button class="dropdown-toggle">Más Opciones</button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item"
+                                                href="https://lookerstudio.google.com/reporting/eee2b6eb-6727-410c-a214-6f7a2e8ac9c1"
+                                                target="_blank">Ejecución Presupuestal
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- <div class="courses-link">
+                    <a class="apply" href="#">Ejecución <br />Presupuestal</a>
+                    <a
+                      class="more"
+                      href="https://lookerstudio.google.com/reporting/6538b0e7-508f-46e2-9895-89fc65593e76/page/p_528me1ys3c"
+                      target="_blank"
+                      >Click aquí <i class="fas fa-chevron-right"></i
+                    ></a>
+                  </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 courses-col">
+                        <div class="single-courses mt-30">
+                            <div class="courses-image">
+                                <a><img src="assets/images/courses/salud-1.png" width="270" height="170"
+                                        alt="courses" /></a>
+                            </div>
+                            <div class="courses-content">
+                                <a class="category">#Diremid</a>
+                                <h4 class="courses-title">
+                                    <a>Dirección Ejecutiva de Medicamentos e Insumos y Drogas
+                                        <br /><br /></a>
+                                </h4>
+
+                                <div class="text-center">
+                                    <div class="dropdown">
+                                        <button class="dropdown-toggle">Más Opciones</button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="https://diremid-ucayali.com"
+                                                target="_blank">Web Site
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- <div class="courses-link">
+                    <a class="apply" href="#">Web <br />Site</a>
+                    <a
+                      class="more"
+                      href="https://diremid-ucayali.com"
+                      target="_blank"
+                      >Click aquí <i class="fas fa-chevron-right"></i
+                    ></a>
+                  </div> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6 courses-col">
+                        <div class="single-courses mt-30">
+                            <div class="courses-image">
+                                <a><img src="assets/images/courses/salud-1.png" width="270" height="170"
+                                        alt="courses" /></a>
+                            </div>
+                            <div class="courses-content">
+                                <a class="category">#PueblosIndígenas</a>
+                                <h4 class="courses-title">
+                                    <a>Estrategia Sanitaria de salud de Pueblos Indígenas</a>
+                                </h4>
+
+                                <div class="text-center">
+                                    <div class="dropdown">
+                                        <button class="dropdown-toggle">Más Opciones</button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item"
+                                                href="https://app.powerbi.com/view?r=eyJrIjoiZjAyYzRlY2UtOGEwZi00YTdmLWFkNzYtNjEzODFkYmRlMTQ2IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=bac55dfa01458d531ae3"
+                                                target="_blank">Pueblos Indígenas
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- <div class="courses-link">
+                    <a class="apply" href="#"
+                      >Pueblos <br />
+                      Indígenas</a
+                    >
+                    <a
+                      class="more"
+                      href="https://app.powerbi.com/view?r=eyJrIjoiZjAyYzRlY2UtOGEwZi00YTdmLWFkNzYtNjEzODFkYmRlMTQ2IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=bac55dfa01458d531ae3"
+                      target="_blank"
+                      >Click aquí <i class="fas fa-chevron-right"></i
+                    ></a>
+                  </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-4 d-none">
+            <div class="row">
+                <!-- Tarjeta 1 -->
+                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <div class="card w-100">
+                        <img src="assets/images/servicios/all.png" class="card-img-top" alt="Imagen 1" />
+                        <div class="card-body text-center">
+                            <p class="text-muted">
+                                <span class="badge bg-primary">#Niño</span>
+                                <!-- <span class="badge badge-secondary">#Prevención</span> -->
+                            </p>
+                            <h5 class="card-title">
+                                Productos específicos para el desarrollo infantil temprano.
+                            </h5>
+                            <a href="javascript:void(0)" class="btn btn-primary btn-block btn-ver-mas"
+                                onclick="openPanel('01')">Ver
+                                más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2 -->
+                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <div class="card w-100">
+                        <img src="assets/images/servicios/all.png" class="card-img-top" alt="Imagen 2" />
+                        <div class="card-body text-center">
+                            <p class="text-muted">
+                                <span class="badge bg-primary">#Nutrición</span>
+                                <!-- <span class="badge badge-warning">#Neonatal</span>] -->
+                            </p>
+                            <h5 class="card-title">
+                                Productos específicos para el desarrollo infantil temprano.
+                            </h5>
+                            <a href="javascript:void(0)" class="btn btn-primary btn-block btn-ver-mas"
+                                onclick="openPanel('02')">Ver
+                                más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 3 -->
+                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <div class="card w-100">
+                        <img src="assets/images/servicios/all.png" class="card-img-top" alt="Imagen 3" />
+                        <div class="card-body text-center">
+                            <p class="text-muted">
+                                <span class="badge bg-primary">#Inmunizaciones</span>
+                                <!-- <pan class="badge badge-danger">#Control</span> -->
+                            </p>
+                            <h5 class="card-title">
+                                Productos específicos para el desarrollo infantil temprano.
+                            </h5>
+                            <a href="javascript:void(0)" class="btn btn-primary btn-block btn-ver-mas"
+                                onclick="openPanel('03')">Ver
+                                más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 4 -->
+                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <div class="card w-100">
+                        <img src="assets/images/servicios/all.png" class="card-img-top" alt="Imagen 4" />
+                        <div class="card-body text-center">
+                            <p class="text-muted">
+                                <span class="badge bg-primary">#SaludMental</span>
+                                <!-- <span class="badge badge-light">#Salud</span> -->
+                            </p>
+                            <h5 class="card-title">
+                                Control y prevención en salud mental.
+                            </h5>
+                            <br />
+                            <a href="javascript:void(0)" class="btn btn-primary btn-block btn-ver-mas"
+                                onclick="openPanel('04')">Ver
+                                más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Tarjeta 1 -->
+                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <div class="card w-100">
+                        <img src="assets/images/servicios/all.png" class="card-img-top" alt="Imagen 1" />
+                        <div class="card-body text-center">
+                            <p class="text-muted">
+                                <span class="badge bg-primary">#TBC_VIH_SIDA</span>
+                                <!-- <span class="badge badge-secondary">#Prevención</span> -->
+                            </p>
+                            <h5 class="card-title">
+                                TBC <br />
+                                VIH/SIDA
+                            </h5>
+                            <a href="#" class="btn btn-primary btn-block btn-ver-mas">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2 -->
+                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <div class="card w-100">
+                        <img src="assets/images/servicios/all.png" class="card-img-top" alt="Imagen 2" />
+                        <div class="card-body text-center">
+                            <p class="text-muted">
+                                <span class="badge bg-primary">#MetaxénicasZoonosis</span>
+                                <!-- <span class="badge badge-warning">#Neonatal</span>] -->
+                            </p>
+                            <h5 class="card-title">Enfermedades metaxénicas y zoonosis.</h5>
+                            <a href="#" class="btn btn-primary btn-block btn-ver-mas">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 3 -->
+                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <div class="card w-100">
+                        <img src="assets/images/servicios/all.png" class="card-img-top" alt="Imagen 3" />
+                        <div class="card-body text-center">
+                            <p class="text-muted">
+                                <span class="badge bg-primary">#Cancer</span>
+                                <!-- <pan class="badge badge-danger">#Control</span> -->
+                            </p>
+                            <h5 class="card-title">Prevención y control del cancer.</h5>
+                            <a href="#" class="btn btn-primary btn-block btn-ver-mas">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 4 -->
+                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <div class="card w-100">
+                        <img src="assets/images/servicios/all.png" class="card-img-top" alt="Imagen 4" />
+                        <div class="card-body text-center">
+                            <p class="text-muted">
+                                <span class="badge bg-primary">#NoTransmisible</span>
+                                <!-- <span class="badge badge-light">#Salud</span> -->
+                            </p>
+                            <h5 class="card-title">Enfermedades no transmisibles.</h5>
+                            <br />
+                            <a href="#" class="btn btn-primary btn-block btn-ver-mas" onclick="openPanel()">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Tarjeta 1 -->
+                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <div class="card w-100">
+                        <img src="assets/images/servicios/all.png" class="card-img-top" alt="Imagen 1" />
+                        <div class="card-body text-center">
+                            <p class="text-muted">
+                                <span class="badge bg-primary">#Discapacidad</span>
+                                <!-- <span class="badge badge-secondary">#Prevención</span> -->
+                            </p>
+                            <h5 class="card-title">
+                                Prevención y manejo de condiciones secundarias de salud en
+                                personas con discapacidad.
+                            </h5>
+                            <a href="#" class="btn btn-primary btn-block btn-ver-mas">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2 -->
+                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <div class="card w-100">
+                        <img src="assets/images/servicios/all.png" class="card-img-top" alt="Imagen 2" />
+                        <div class="card-body text-center">
+                            <p class="text-muted">
+                                <span class="badge bg-primary">#SaludMaterno</span>
+                                <!-- <span class="badge badge-warning">#Neonatal</span>] -->
+                            </p>
+                            <h5 class="card-title">Salud Materno Neonatal.</h5>
+                            <a href="#" class="btn btn-primary btn-block btn-ver-mas">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 3 -->
+                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <div class="card w-100">
+                        <img src="assets/images/servicios/all.png" class="card-img-top" alt="Imagen 3" />
+                        <div class="card-body text-center">
+                            <p class="text-muted">
+                                <span class="badge bg-primary">#ResportesMonitoreo</span>
+                                <!-- <pan class="badge badge-danger">#Control</span> -->
+                            </p>
+                            <h5 class="card-title">Tablero de Control</h5>
+                            <a href="#" class="btn btn-primary btn-block btn-ver-mas">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 4 -->
+                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <div class="card w-100">
+                        <img src="assets/images/servicios/all.png" class="card-img-top" alt="Imagen 4" />
+                        <div class="card-body text-center">
+                            <p class="text-muted">
+                                <span class="badge bg-primary">#AdultoMayor</span>
+                                <!-- <span class="badge badge-light">#Salud</span> -->
+                            </p>
+                            <h5 class="card-title">Etapa de vida de Adulto Mayor</h5>
+                            <br />
+                            <a href="#" class="btn btn-primary btn-block btn-ver-mas" onclick="openPanel()">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Tarjeta 1 -->
+                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <div class="card w-100">
+                        <img src="assets/images/servicios/all.png" class="card-img-top" alt="Imagen 1" />
+                        <div class="card-body text-center">
+                            <p class="text-muted">
+                                <span class="badge bg-primary">#ResportesFED</span>
+                                <!-- <span class="badge badge-secondary">#Prevención</span> -->
+                            </p>
+                            <h5 class="card-title">
+                                Fondo de Estímulo al Desempeño y Logro de Resultados Sociales
+                            </h5>
+                            <a href="#" class="btn btn-primary btn-block btn-ver-mas">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2 -->
+                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <div class="card w-100">
+                        <img src="assets/images/servicios/all.png" class="card-img-top" alt="Imagen 2" />
+                        <div class="card-body text-center">
+                            <p class="text-muted">
+                                <span class="badge bg-primary">#Sismore</span>
+                                <!-- <span class="badge badge-warning">#Neonatal</span>] -->
+                            </p>
+                            <h5 class="card-title">Sistema de Monitoreo Regional</h5>
+                            <a href="#" class="btn btn-primary btn-block btn-ver-mas">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 3 -->
+                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <div class="card w-100">
+                        <img src="assets/images/servicios/all.png" class="card-img-top" alt="Imagen 3" />
+                        <div class="card-body text-center">
+                            <p class="text-muted">
+                                <span class="badge bg-primary">#Presupuesto</span>
+                                <!-- <pan class="badge badge-danger">#Control</span> -->
+                            </p>
+                            <h5 class="card-title">Presupuesto</h5>
+                            <a href="#" class="btn btn-primary btn-block btn-ver-mas">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 4 -->
+                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <div class="card w-100">
+                        <img src="assets/images/servicios/all.png" class="card-img-top" alt="Imagen 4" />
+                        <div class="card-body text-center">
+                            <p class="text-muted">
+                                <span class="badge bg-primary">#Diremid</span>
+                                <!-- <span class="badge badge-light">#Salud</span> -->
+                            </p>
+                            <h5 class="card-title">
+                                Dirección Ejecutiva de Medicamentos e Insumos y Drogas
+                            </h5>
+                            <br />
+                            <a href="#" class="btn btn-primary btn-block btn-ver-mas" onclick="openPanel()">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Tarjeta 1 -->
+                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <div class="card w-100">
+                        <img src="assets/images/servicios/all.png" class="card-img-top" alt="Imagen 1" />
+                        <div class="card-body text-center">
+                            <p class="text-muted">
+                                <span class="badge bg-primary">#PueblosIndígenas</span>
+                                <!-- <span class="badge badge-secondary">#Prevención</span> -->
+                            </p>
+                            <h5 class="card-title">
+                                Estrategia Sanitaria de salud de Pueblos Indígenas
+                            </h5>
+                            <a href="#" class="btn btn-primary btn-block btn-ver-mas">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-4 d-none">
+            <div class="row">
+                <!-- Tarjeta 1 -->
+                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <div class="card w-100">
+                        <img src="assets/images/servicios/all.png" class="card-img-top" alt="Imagen 1" />
+                        <div class="card-body text-center">
+                            <p class="text-muted">
+                                <span class="badge badge-primary">#Salud</span>
+                                <span class="badge badge-secondary">#Prevención</span>
+                            </p>
+                            <h5 class="card-title">
+                                Prevención y manejo de condiciones secundarias de salud en
+                                personas con discapacidad.
+                            </h5>
+                            <a href="#" class="btn btn-primary btn-block btn-ver-mas">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2 -->
+                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <div class="card w-100">
+                        <img src="assets/images/servicios/all.png" class="card-img-top" alt="Imagen 2" />
+                        <div class="card-body text-center">
+                            <p class="text-muted">
+                                <span class="badge badge-success">#Materno</span>
+                                <span class="badge badge-warning">#Neonatal</span>
+                            </p>
+                            <h5 class="card-title">Salud Materno Neonatal.</h5>
+                            <a href="#" class="btn btn-primary btn-block btn-ver-mas">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 3 -->
+                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <div class="card w-100">
+                        <img src="assets/images/servicios/all.png" class="card-img-top" alt="Imagen 3" />
+                        <div class="card-body text-center">
+                            <p class="text-muted">
+                                <span class="badge badge-info">#Gestión</span>
+                                <span class="badge badge-danger">#Control</span>
+                            </p>
+                            <h5 class="card-title">Tablero de Control</h5>
+                            <a href="#" class="btn btn-primary btn-block btn-ver-mas">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 4 -->
+                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <div class="card w-100">
+                        <img src="assets/images/servicios/all.png" class="card-img-top" alt="Imagen 4" />
+                        <div class="card-body text-center">
+                            <p class="text-muted">
+                                <span class="badge badge-dark">#AdultoMayor</span>
+                                <span class="badge badge-light">#Salud</span>
+                            </p>
+                            <h5 class="card-title">Etapa de vida de Adulto Mayor</h5>
+                            <a href="#" class="btn btn-primary btn-block btn-ver-mas" onclick="openPanel()">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br />
+        <br />
+
+        <div class="offcanvas" id="offcanvasPanel01">
+            <div class="offcanvas-header">
+                <h5>Reportes Power By</h5>
+                <button class="close-btn" onclick="closePanel('01')">&times;</button>
+            </div>
+            <div class="offcanvas-body">
+                <a href="#">Monitoreo Vacunas Trazadoras</a>
+                <a href="#">Seguimiento de Indicadores</a>
+                <a href="#">Evaluación de Programas de Salud</a>
+                <a href="#">Control y Vigilancia Epidemiológica</a>
+                <a href="#">Gestión de Riesgos en Salud Pública</a>
+                <a href="#">Estrategias para la Promoción de la Salud</a>
+                <a href="#">Atención Primaria en Comunidades Rurales</a>
+                <a href="#">Desarrollo de Políticas Sanitarias</a>
+                <a href="#">Iniciativas para el Bienestar Infantil</a>
+                <a href="#">Capacitaciones en Salud Preventiva</a>
+                <a href="#">Optimización de Recursos en Hospitales</a>
+                <a href="#">Monitoreo de Enfermedades Transmisibles</a>
+                <a href="#">Planificación Familiar y Salud Reproductiva</a>
+                <a href="#">Atención Integral al Paciente Crónico</a>
+                <a href="#">Salud Ocupacional y Prevención de Riesgos</a>
+                <a href="#">Investigación en Salud Pública</a>
+                <a href="#">Desarrollo de Programas de Nutrición</a>
+                <a href="#">Seguridad del Paciente en Centros de Salud</a>
+                <a href="#">Optimización del Sistema de Referencias Médicas</a>
+                <a href="#">Prevención y Manejo de Enfermedades No Transmisibles</a>
+                <a href="#">Fortalecimiento de Redes de Salud</a>
+            </div>
+        </div>
+
+        <div class="offcanvas" id="offcanvasPanel02">
+            <div class="offcanvas-header">
+                <h5>Reportes Power By</h5>
+                <button class="close-btn" onclick="closePanel('02')">&times;</button>
+            </div>
+            <div class="offcanvas-body">
+                <a href="#">Monitoreo Vacunas Trazadoras</a>
+                <a href="#">Seguimiento de Indicadores</a>
+                <a href="#">Evaluación de Programas de Salud</a>
+                <a href="#">Control y Vigilancia Epidemiológica</a>
+                <a href="#">Gestión de Riesgos en Salud Pública</a>
+                <a href="#">Estrategias para la Promoción de la Salud</a>
+                <a href="#">Atención Primaria en Comunidades Rurales</a>
+                <a href="#">Desarrollo de Políticas Sanitarias</a>
+                <a href="#">Iniciativas para el Bienestar Infantil</a>
+                <a href="#">Capacitaciones en Salud Preventiva</a>
+                <a href="#">Optimización de Recursos en Hospitales</a>
+                <a href="#">Monitoreo de Enfermedades Transmisibles</a>
+                <a href="#">Planificación Familiar y Salud Reproductiva</a>
+                <a href="#">Atención Integral al Paciente Crónico</a>
+                <a href="#">Salud Ocupacional y Prevención de Riesgos</a>
+                <a href="#">Investigación en Salud Pública</a>
+                <a href="#">Desarrollo de Programas de Nutrición</a>
+                <a href="#">Seguridad del Paciente en Centros de Salud</a>
+                <a href="#">Optimización del Sistema de Referencias Médicas</a>
+                <a href="#">Prevención y Manejo de Enfermedades No Transmisibles</a>
+                <a href="#">Fortalecimiento de Redes de Salud</a>
+            </div>
+        </div>
+
+        <div class="offcanvas" id="offcanvasPanel03">
+            <div class="offcanvas-header">
+                <h5>Reportes Power By</h5>
+                <button class="close-btn" onclick="closePanel('03')">&times;</button>
+            </div>
+            <div class="offcanvas-body">
+                <a href="#">Monitoreo Vacunas Trazadoras</a>
+                <a href="#">Seguimiento de Indicadores</a>
+                <a href="#">Evaluación de Programas de Salud</a>
+                <a href="#">Control y Vigilancia Epidemiológica</a>
+                <a href="#">Gestión de Riesgos en Salud Pública</a>
+                <a href="#">Estrategias para la Promoción de la Salud</a>
+                <a href="#">Atención Primaria en Comunidades Rurales</a>
+                <a href="#">Desarrollo de Políticas Sanitarias</a>
+                <a href="#">Iniciativas para el Bienestar Infantil</a>
+                <a href="#">Capacitaciones en Salud Preventiva</a>
+                <a href="#">Optimización de Recursos en Hospitales</a>
+                <a href="#">Monitoreo de Enfermedades Transmisibles</a>
+                <a href="#">Planificación Familiar y Salud Reproductiva</a>
+                <a href="#">Atención Integral al Paciente Crónico</a>
+                <a href="#">Salud Ocupacional y Prevención de Riesgos</a>
+                <a href="#">Investigación en Salud Pública</a>
+                <a href="#">Desarrollo de Programas de Nutrición</a>
+                <a href="#">Seguridad del Paciente en Centros de Salud</a>
+                <a href="#">Optimización del Sistema de Referencias Médicas</a>
+                <a href="#">Prevención y Manejo de Enfermedades No Transmisibles</a>
+                <a href="#">Fortalecimiento de Redes de Salud</a>
+            </div>
+        </div>
+
+        <div class="offcanvas" id="offcanvasPanel04">
+            <div class="offcanvas-header">
+                <h5>Reportes Power By</h5>
+                <button class="close-btn" onclick="closePanel('04')">&times;</button>
+            </div>
+            <div class="offcanvas-body">
+                <a href="#">Monitoreo Vacunas Trazadoras</a>
+                <a href="#">Seguimiento de Indicadores</a>
+                <a href="#">Evaluación de Programas de Salud</a>
+                <a href="#">Control y Vigilancia Epidemiológica</a>
+                <a href="#">Gestión de Riesgos en Salud Pública</a>
+                <a href="#">Estrategias para la Promoción de la Salud</a>
+                <a href="#">Atención Primaria en Comunidades Rurales</a>
+                <a href="#">Desarrollo de Políticas Sanitarias</a>
+                <a href="#">Iniciativas para el Bienestar Infantil</a>
+                <a href="#">Capacitaciones en Salud Preventiva</a>
+                <a href="#">Optimización de Recursos en Hospitales</a>
+                <a href="#">Monitoreo de Enfermedades Transmisibles</a>
+                <a href="#">Planificación Familiar y Salud Reproductiva</a>
+                <a href="#">Atención Integral al Paciente Crónico</a>
+                <a href="#">Salud Ocupacional y Prevención de Riesgos</a>
+                <a href="#">Investigación en Salud Pública</a>
+                <a href="#">Desarrollo de Programas de Nutrición</a>
+                <a href="#">Seguridad del Paciente en Centros de Salud</a>
+                <a href="#">Optimización del Sistema de Referencias Médicas</a>
+                <a href="#">Prevención y Manejo de Enfermedades No Transmisibles</a>
+                <a href="#">Fortalecimiento de Redes de Salud</a>
+            </div>
+        </div>
+    </section>
+
+    <!--====== Top Courses Ends ======-->
+    <!--====== Footer Start ======-->
+
+    <section class="footer-area footer-02 bg_cover" style="background-image: url(assets/images/counter-bg.png)">
+        <div class="footer-widget">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="footer-link mt-45">
+                            <h4 class="footer-title">Dirección</h4>
+                            <ul class="link-list">
+                                <li>
+                                    <p>
+                                        Jr. Carmen Cabrejos N° 547-549 - Ucayali - Coronel
+                                        Portillo - Calleria - Perú - 25000
+                                    </p>
+                                </li>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d126312.65723548406!2d-74.61119872558439!3d-8.375027361487998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d-8.375238!2d-74.528865!5e0!3m2!1ses!2spe!4v1716571192595!5m2!1ses!2spe"
+                                    width="270" height="170" style="border: 0" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                                <li>
+                                    <p><a href="tel:+5161787927">+51 61 787927</a></p>
+                                    <p><a href="tel:+5161787933">+51 61 787933</a></p>
+                                    <p><a href="tel:+5161788053">+51 61 788053</a></p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <a href="mailto://tramite@diresau.gob.pe">tramite@diresau.gob.pe</a>
+                                    </p>
+                                    <p></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="footer-link mt-45">
+                            <h4 class="footer-title">Horario de atención</h4>
+                            <ul class="link-list">
+                                <li>
+                                    <p>De lunes a viernes de 8:00 a. m. a 4:00 p. m.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="footer-link mt-45">
+                            <h4 class="footer-title"></h4>
+                            <ul class="link-list">
+                                <iframe
+                                    src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FDiresaUcayali2024%2F&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=true&appId"
+                                    width="400" height="500" style="border: none; overflow: hidden" scrolling="no"
+                                    frameborder="0" allowfullscreen="true"
+                                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-widget-wrapper">
+                    <div class="footer-social">
+                        <ul class="social">
+                            <li>
+                                <a href="https://www.facebook.com/profile.php?id=61561147230924" target="_blank"><i
+                                        class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-menu"></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="copyright text-center">
+                    <p>
+                        &copy; 2024 <span> Dirección Regional de Salud de Ucayali </span>
+                        <i class="fa fa-heart"></i> ||
+                        <a href="#">Dirección de Estadística e Informatica y Telecomunicaciones</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--====== Footer Ends ======-->
+    <!--====== BACK TOP TOP PART START ======-->
+
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+    <!--====== BACK TOP TOP PART ENDS ======-->
+    <!--====== Start ======-->
+    <!--
+        <section class="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    -->
+    <!--====== Ends ======-->
+
+    <!--====== Jquery js ======-->
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/modernizr-3.7.1.min.js"></script>
+
+    <!--====== All Plugins js ======-->
+    <script src="assets/js/plugins/popper.min.js"></script>
+    <script src="assets/js/plugins/bootstrap.min.js"></script>
+    <script src="assets/js/plugins/slick.min.js"></script>
+    <script src="assets/js/plugins/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/plugins/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/plugins/isotope.pkgd.min.js"></script>
+    <script src="assets/js/plugins/wow.min.js"></script>
+    <script src="assets/js/plugins/ajax-contact.js"></script>
+
+    <!--====== Main Activation  js ======-->
+    <script src="assets/js/main.js"></script>
+    <!-- Ventana Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <!-- Botón de cerrar con una "X" -->
+            <span class="close-btn">&times;</span>
+            <img src="pub_face_dengue_02.jpeg" alt="Imagen Modal" />
+        </div>
+    </div>
+
+    <script>
+
+        // Inicializa los tooltips de Bootstrap
+        $(document).ready(function () {
+            // Activa los tooltips en los elementos que tienen el atributo data-toggle="tooltip"
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+        document.addEventListener("DOMContentLoaded", function () {
+            var modal = document.getElementById("modal");
+            var closeBtn = document.querySelector(".close-btn");
+
+            // Mostrar la ventana modal
+            // modal.style.display = "block";
+
+            // Ocultar la ventana modal después de 20 segundos
+            // setTimeout(function () {
+            //   modal.style.display = "none";
+            // }, 20000); // 20000 ms = 20 segundos
+
+            // Cerrar la ventana modal al hacer clic en el botón de cerrar (X)
+            // closeBtn.onclick = function () {
+            //   modal.style.display = "none";
+            // };
+
+            // Cerrar la ventana modal al hacer clic fuera del contenido
+            // window.onclick = function (event) {
+            //   if (event.target === modal) {
+            //     modal.style.display = "none";
+            //   }
+            // };
+        });
+
+        document.querySelectorAll("img").forEach((img) => {
+            let src = img.getAttribute("src");
+            if (src) {
+                img.setAttribute("src", src + "?v=" + Date.now());
+            }
+        });
+
+        function openPanel(vv) {
+            document.getElementById("offcanvasPanel" + vv).classList.add("show");
+        }
+
+        function closePanel(vv) {
+            document.getElementById("offcanvasPanel" + vv).classList.remove("show");
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,807 @@
+<!doctype html>
+<html class="no-js" lang="es-pe">
+
+<head>
+    <meta charset="utf-8">
+    
+    <!--====== Title ======-->
+    <title>Dirección Regional de Salud de Ucayali </title>
+    
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/webp">
+    
+        
+    <!-- CSS
+    ============================================ -->
+
+    <!--===== Vendor CSS (Bootstrap & Icon Font) =====-->
+    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/default.css">
+
+
+    <!--===== Plugins CSS (All Plugins Files) =====-->
+    <link rel="stylesheet" href="assets/css/plugins/animate.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/slick.css">
+    <link rel="stylesheet" href="assets/css/plugins/magnific-popup.css">
+
+    <!--====== Main Style CSS ======-->
+    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <style>
+        /* Estilos para la ventana modal */
+        .modal {
+            display: none; /* Ocultar por defecto */
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 600px;
+        }
+
+        .modal-content img {
+            width: 100%;
+            height: auto;
+        }
+
+        .close-btn {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close-btn:hover,
+        .close-btn:focus {
+            color: black;
+            text-decoration: none;
+        }
+    </style>
+    
+</head>
+
+<body>
+
+    <!--====== Header Start ======-->
+
+    <header class="header-area">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-wrapper d-flex flex-wrap justify-content-sm-between">
+                    <div class="header-top-left mt-10">
+                        <ul class="header-meta">
+                            <li><a href="mailto://tramite@diresau.gob.pe">tramite@diresau.gob.pe</a></li>
+                        </ul>
+                    </div>
+                    <div class="header-top-right mt-10">
+                        <div class="header-link">
+                            <a class="suport" href="http://172.16.253.20/visitas/php">Intranet</a>
+                            <a class="login" href="http://diresa-ucayali.com.pe/">Iniciar Sesión</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="navigation" class="navigation navigation-landscape">
+            <div class="container position-relative">
+                <div class="row align-items-center">
+                    <div class="col-lg-3">
+                        <div class="header-logo">
+                            <a href="#"><img src="assets/images/logo-diresa.png" width="80" height="80" alt="Logo"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 position-static">
+                        <div class="nav-toggle"></div>
+                        <nav class="nav-menus-wrapper">
+                            <ul class="nav-menu">
+                                <li>
+                                    <a class="active" href="index.html">Inicio</a>
+
+                                </li>
+                                <li>
+                                    <a href="#">Institucional</a>
+                                    <ul class="nav-dropdown nav-submenu">
+                                        <li>
+                                            <a href="#">Misión y Visión</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Organigrama</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Instrumento de Gestión</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">U.Orgánicas</a>
+
+                                </li>
+                                <li>
+                                    <a href="#">Convocatorias</a>
+                                </li>
+                                <li>
+                                    <a href="#">Servicios</a>
+
+                                </li>
+                                <li>
+                                    <a href="#">Comunicaciones</a>
+
+                                </li>
+
+                            </ul>
+                        </nav>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--====== Header Ends ======-->
+    <!--====== Slider Start ======-->
+    <section class="slider-area slider-03 slider-active">
+        <div class="single-slider d-flex align-items-center bg_cover" style="background-image: url(assets/images/slider-diresau-01-principal.png);">
+            <div class="container">
+                <div class="slider-content slider-content-3 text-center">
+                    <h2 class="title" data-animation="fadeInUp" data-delay="0.2s">Dirección Regional de Salud de Ucayali</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="single-slider d-flex align-items-center bg_cover" style="background-image: url(assets/images/slider-diresau-01-principal.png);">
+            <div class="container">
+                <div class="slider-content slider-content-3 text-center">
+                    <h2 class="title" data-animation="fadeInUp" data-delay="0.2s">Dirección Regional de Salud de Ucayali</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--====== Slider Ends ======-->
+    <!--====== About Start ======-->
+
+    <section class="about-area">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <div class="about-content mt-40" text-align="justify">
+                        <h2 class="about-title">DIRESA <span>Ucayali</span></h2>
+                        <span class="line"></span>
+                        <p style="text-align: justify;">Somos un órgano desconcentrado del Gobierno Regional de Ucayali, reconocidos como la única autoridad de salud en la Región Ucayali. Dependemos del Minsa de forma técnica y normativa, contamos con cuatro Redes de Salud y dos hospitales en nuestra jurisdicción, asegurando las políticas y acciones intersectoriales sobre los determinantes sociales; en beneficio de la salud y el bienestar de la población.</p>
+
+                     </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="about-image mt-50">
+                        <div class="single-image image-1">
+                            <img src="assets/images/about/about-1.png" width="290" height="290" alt="about">
+                        </div>
+                        <div class="single-image image-2">
+                            <img src="assets/images/about/about-2.png" width="225" height="225" alt="about">
+                        </div>
+                        <div class="single-image image-3">
+                            <img src="assets/images/about/about-3.png" width="190" height="190" alt="about">
+                        </div>
+                        <div class="single-image image-4">
+                            <img src="assets/images/about/about-4.png" width="140" height="140" alt="about">
+                        </div>
+
+                        <div class="about-icon icon-1">
+                            <img src="assets/images/about/icon/icon-1.png" width="46" height="46" alt="icon">
+                        </div>
+                        <div class="about-icon icon-2">
+                            <img src="assets/images/about/icon/icon-2.png" width="46" height="46" alt="icon">
+                        </div>
+                        <div class="about-icon icon-3">
+                            <img src="assets/images/about/icon/icon-3.png" width="46" height="46" alt="icon">
+                        </div>
+                        <div class="about-icon icon-4">
+                            <img src="assets/images/about/icon/icon-4.png" width="46" height="46" alt="icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--====== About Ends ======-->
+    <!--====== Top Courses Start ======-->
+
+    <section class="top-courses-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="section-title mt-40">
+                        <h2 class="title">Estadística en <br>Salud</h2>
+                        <p>El sistema de información propuesto para la población de Ucayali.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="courses-wrapper wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.3s">
+                <div class="row">
+                    
+                    <div class="col-lg-3 col-sm-6 courses-col">
+                        <div class="single-courses mt-30">
+                            <div class="courses-image">
+                                <a><img src="assets/images/courses/salud-1.png" width="270" height="170" alt="courses"></a>
+                            </div>
+                            <div class="courses-content">
+                                <a class="category">#Niño</a>
+                                <h4 class="courses-title"><a>Productos específicos para el desarrollo infantil temprano.</a></h4>
+
+                                <div class="courses-link">
+                                    <a class="apply">Etapa Vida Niño</a>
+                                    <a class="more" href="https://app.powerbi.com/view?r=eyJrIjoiOTgzMTdkY2QtOWZkZi00ZDZlLTg4NTgtMTcwZWVjZDA2ZTJiIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ReportSection" target="_blank">Click aquí<i class="fas fa-chevron-right"></i></a>
+                                </div>
+
+                                <div class="courses-link">
+                                    <a class="apply">Monitoreo</a>
+                                    <a class="more" href="https://app.powerbi.com/view?r=eyJrIjoiZmY0YjU4NzUtYmFhMy00ODc1LWI5YWYtMjk4YmNmMTkyZWJiIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ReportSectionc306eb4184a54069d893" target="_blank">Click aquí<i class="fas fa-chevron-right"></i></a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 courses-col">
+                        <div class="single-courses mt-30">
+                            <div class="courses-image">
+                                <a><img src="assets/images/courses/salud-1.png" width="270" height="170" alt="courses"></a>
+                            </div>
+                            <div class="courses-content">
+                                <a class="category">#Nutrición</a>
+                                <h4 class="courses-title"><a>Productos específicos para el desarrollo infantil temprano.</a></h4>
+
+                                <div class="courses-link">
+                                    <a class="apply">Nutrición</a>
+                                    <a class="more" href="https://app.powerbi.com/view?r=eyJrIjoiNjE1MGQ4MmMtYWYyOC00MDE3LWI5ODQtZDBmNTkyN2ZlMTdiIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ReportSection" target="_blank">Click aquí<i class="fas fa-chevron-right"></i></a>
+                                </div>
+                                <div class="courses-link">
+                                    <a class="apply">Monitoreo</a>
+                                    <a class="more" href="https://app.powerbi.com/view?r=eyJrIjoiYjEwYTE5ZDEtNmI1NS00OTZhLWEyOGEtNjgxMjY2ZjBlZTlkIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ReportSectionc306eb4184a54069d893" target="_blank">Click aquí<i class="fas fa-chevron-right"></i></a>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 courses-col">
+                        <div class="single-courses mt-30">
+                            <div class="courses-image">
+                                <a><img src="assets/images/courses/salud-1.png" width="270" height="170" alt="courses"></a>
+                            </div>
+                            <div class="courses-content">
+                                <a class="category">#Inmunizaciones</a>
+                                <h4 class="courses-title"><a>Productos específicos para el desarrollo infantil temprano.</a></h4>
+
+                             <!--   
+                                <div class="courses-link">
+                                    <a class="apply">Inmunizaciones</a>
+                                    <a class="more" href="https://app.powerbi.com/view?r=eyJrIjoiODM2NmQwZjUtYzQ5ZS00NTQ5LWFkNWEtZDk0MDQ3NjJiNzY0IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9" target="_blank">Click aquí<i class="fas fa-chevron-right"></i></a>
+                                </div>
+                            
+                                <div class="courses-link">
+                                    <a class="apply">Producción VPH</a>
+                                    <a class="more" href="https://app.powerbi.com/view?r=eyJrIjoiNWJmODNjOTgtNmExZC00YjJkLTg3ODMtNTZkODA0N2QyYzFiIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ReportSection" target="_blank">Click aquí<i class="fas fa-chevron-right"></i></a>
+                                </div>
+                                <div class="courses-link">
+                                    <a class="apply">Producción <br />Cierre de Brecha</a>
+                                    <a class="more" href="https://app.powerbi.com/view?r=eyJrIjoiODc1YjNjZWEtZjQ5Ny00ZTlmLTk3ZjItZjQ1MmE5MzA4MjEzIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ReportSection" target="_blank">Click aquí<i class="fas fa-chevron-right"></i></a>
+                                </div>
+                            -->
+                                <div class="courses-link">
+                                    <a class="apply">Monitoreo<br />Vacunas Trazadoras</a>
+                                    <a class="more" href="https://app.powerbi.com/view?r=eyJrIjoiYWU4ZmJhZTEtNWU3Yi00ODM0LWE4M2MtM2U4OTU5ODU5MzlhIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9" target="_blank">Click aquí<i class="fas fa-chevron-right"></i></a>
+                                </div>
+                                <div class="courses-link">
+                                    <a class="apply">Monitoreo<br />Barrido SPR</a>
+                                    <a class="more" href="https://app.powerbi.com/view?r=eyJrIjoiYzFiNWUxY2QtMTM1NC00MjMyLTg0YjctZDZmNzY1YjRlOTgyIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9" target="_blank">Click aquí<i class="fas fa-chevron-right"></i></a>
+                                </div>
+                                <div class="courses-link">
+                                    <a class="apply">Historial de<br />Vacunación</a>
+                                    <a class="more" href="https://app.powerbi.com/view?r=eyJrIjoiOTRlYjViODMtZWE3Ny00ZDlmLTgyZGYtMWQzMzFlNDI1YzhhIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9" target="_blank">Click aquí<i class="fas fa-chevron-right"></i></a>
+                                </div>
+                                <div class="courses-link">
+                                    <a class="apply">Producción de <br />Fiebre Amarilla</a>
+                                    <a class="more" href="https://app.powerbi.com/view?r=eyJrIjoiYTg5ODc1OGQtZTBiZi00ODdkLTljYmItNmIzMWM3ZWI2YzgyIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9" target="_blank">Click aquí<i class="fas fa-chevron-right"></i></a>
+                                </div>
+                                <div class="courses-link">
+                                    <a class="apply">Vacunación<br />Dengue</a>
+                                    <a class="more" href="https://app.powerbi.com/view?r=eyJrIjoiNmJjZTU5OWMtYjBkYS00ZGY3LTg4MjQtODIyZjkxNjk2MzQ3IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9" target="_blank">Click aquí<i class="fas fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6 courses-col">
+                        <div class="single-courses mt-30">
+                            <div class="courses-image">
+                                <a><img src="assets/images/courses/salud-1.png" width="270" height="170" alt="courses"></a>
+                            </div>
+                            <div class="courses-content">
+                                <a class="category">#SaludMental</a>
+                                <h4 class="courses-title"><a>Control y prevención en salud mental.</a></h4>
+
+
+                                <div class="courses-link">
+                                    <a class="apply">Indicadores</a>
+                                    <a class="more" href="https://app.powerbi.com/view?r=eyJrIjoiZTQzM2Y0YjgtOTgwYi00ZDA5LTg1N2EtMDg1ODQ4M2I0NWUxIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ReportSectiond757b470baf58266725d" target="_blank">Click aquí<i class="fas fa-chevron-right"></i></a>
+                                </div>
+                                <div class="courses-link">
+                                    <a class="apply">Morbilidad</a>
+                                    <a class="more" href="https://app.powerbi.com/view?r=eyJrIjoiZTQzM2Y0YjgtOTgwYi00ZDA5LTg1N2EtMDg1ODQ4M2I0NWUxIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ReportSection" target="_blank">Click aquí<i class="fas fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 courses-col">
+                        <div class="single-courses mt-30">
+                            <div class="courses-image">
+                                <a><img src="assets/images/courses/salud-1.png" width="270" height="170" alt="courses"></a>
+                            </div>
+                            <div class="courses-content">
+                                <a class="category">#TBC_VIH_SIDA</a>
+                                <h4 class="courses-title"><a>TBC <br> VIH/SIDA</a></h4>
+
+                                <div class="courses-link">
+                                    <a class="apply" href="#">VIH-SIDA</a>
+                                    <a class="more" href="https://app.powerbi.com/view?r=eyJrIjoiMjdhMmFiZDMtZGEzYi00MWU5LWJiZTItOGQ2YTFlOTU2ZTYxIiwidCI6IjhkNDVhZGIxLTMzNzYtNDljYi05MjU2LThlMDVlNmVhMDZiMCJ9" target="_blank">Click aquí <i class="fas fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 courses-col">
+                        <div class="single-courses mt-30">
+                            <div class="courses-image">
+                                <a><img src="assets/images/courses/salud-1.png" width="270" height="170" alt="courses"></a>
+                            </div>
+                            <div class="courses-content">
+                                <a class="category">#MetaxénicasZoonosis</a>
+                                <h4 class="courses-title"><a>Enfermedades metaxénicas y zoonosis.</a></h4>
+
+                                <div class="courses-link">
+                                    <a class="apply" href="#">Dengue</a>
+                                    <a class="more" href="https://lookerstudio.google.com/reporting/e0788e2c-65b1-4afa-8696-4778b2857189" target="_blank">Click aquí <i class="fas fa-chevron-right"></i></a>
+                                </div>
+                                <div class="courses-link">
+                                    <a class="apply" href="#">Zoonosis</a>
+                                    <a class="more" href="https://app.powerbi.com/view?r=eyJrIjoiZTQzM2Y0YjgtOTgwYi00ZDA5LTg1N2EtMDg1ODQ4M2I0NWUxIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=e645399d4061c869b715" target="_blank">Click aquí <i class="fas fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 courses-col">
+                        <div class="single-courses mt-30">
+                            <div class="courses-image">
+                                <a><img src="assets/images/courses/salud-1.png" width="270" height="170" alt="courses"></a>
+                            </div>
+                            <div class="courses-content">
+                                <a class="category">#Cancer</a>
+                                <h4 class="courses-title"><a>Prevención y control del cancer.</a></h4>
+
+                                <div class="courses-link">
+                                    <a class="apply" href="#">Cancer</a>
+                                    <a class="more" href="https://app.powerbi.com/view?r=eyJrIjoiNjdjOWUwY2QtMTBhMS00YjQ3LWI4ZGEtOWY1YzdkYjk1NDgwIiwidCI6IjhkNDVhZGIxLTMzNzYtNDljYi05MjU2LThlMDVlNmVhMDZiMCJ9" target="_blank">Click aquí <i class="fas fa-chevron-right"></i></a>
+                                </div>
+                                <div class="courses-link">
+                                    <a class="apply" href="#">Monitoreo Rapido</a>
+                                    <a class="more" href="https://app.powerbi.com/view?r=eyJrIjoiMDVjMjZmNjctZjFiMy00NjU4LWE2OTYtNzY4NzI3YTM2NWJmIiwidCI6IjhkNDVhZGIxLTMzNzYtNDljYi05MjU2LThlMDVlNmVhMDZiMCJ9" target="_blank">Click aquí <i class="fas fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 courses-col">
+                        <div class="single-courses mt-30">
+                            <div class="courses-image">
+                                <a><img src="assets/images/courses/salud-1.png" width="270" height="170" alt="courses"></a>
+                            </div>
+                            <div class="courses-content">
+                                <a class="category">#NoTransmisible</a>
+                                <h4 class="courses-title"><a>Enfermedades no transmisibles.</a></h4>
+
+                                <div class="courses-link">
+                                    <a class="apply" href="#">Daños <br> no transmisibles</a>
+                                    <a class="more" href="https://app.powerbi.com/view?r=eyJrIjoiZDVmMzQ1NzktODBiNy00YTRkLWE2YTMtNjM3NjY2YzY1ZjVmIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9" target="_blank">Click aquí <i class="fas fa-chevron-right"></i></a>
+                                </div>
+                                <div class="courses-link">
+                                    <a class="apply" href="#">Morbilidad <br>en Salud bucal</a>
+                                    <a class="more" href="https://app.powerbi.com/view?r=eyJrIjoiZTQzM2Y0YjgtOTgwYi00ZDA5LTg1N2EtMDg1ODQ4M2I0NWUxIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=31a692f867e9937ca81c" target="_blank">Click aquí <i class="fas fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 courses-col">
+                        <div class="single-courses mt-30">
+                            <div class="courses-image">
+                                <a><img src="assets/images/courses/salud-1.png" width="270" height="170" alt="courses"></a>
+                            </div>
+                            <div class="courses-content">
+                                <a class="category">#Discapacidad</a>
+                                <h4 class="courses-title"><a>Prevención y manejo de condiciones secundarias de salud en personas con discapacidad.</a></h4>
+
+                                <div class="courses-link">
+                                    <a class="apply" href="#">Discapacidad</a>
+                                    <a class="more" href="https://app.powerbi.com/view?r=eyJrIjoiZTQzM2Y0YjgtOTgwYi00ZDA5LTg1N2EtMDg1ODQ4M2I0NWUxIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=09544113ecac35e11000" target="_blank">Click aquí <i class="fas fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 courses-col">
+                        <div class="single-courses mt-30">
+                            <div class="courses-image">
+                                <a><img src="assets/images/courses/salud-1.png" width="270" height="170" alt="courses"></a>
+                            </div>
+                            <div class="courses-content">
+                                <a class="category">#SaludMaterno</a>
+                                <h4 class="courses-title"><a>Salud Materno Neonatal.</a></h4>
+
+                                <div class="courses-link">
+                                    <a class="apply" href="#">Materno</a>
+                                    <a class="more" href="https://app.powerbi.com/view?r=eyJrIjoiN2E0ZTRjNTgtZGMxNS00OGY3LTgxMmYtZmE0NWFlY2Y2Y2VlIiwidCI6IjhkNDVhZGIxLTMzNzYtNDljYi05MjU2LThlMDVlNmVhMDZiMCJ9" target="_blank">Click aquí <i class="fas fa-chevron-right"></i></a>
+                                </div>
+                                <div class="courses-link">
+                                    <a class="apply" href="#">Adolescente</a>
+                                    <a class="more" href="https://app.powerbi.com/view?r=eyJrIjoiODMxMzZjMDgtZDk2NC00MTVmLWE2YjItMWRjOTMzZTA3ZmRjIiwidCI6IjhkNDVhZGIxLTMzNzYtNDljYi05MjU2LThlMDVlNmVhMDZiMCJ9" target="_blank">Click aquí <i class="fas fa-chevron-right"></i></a>
+                                </div>
+                                <div class="courses-link">
+                                    <a class="apply" href="#">Monitoreo <br> Materno</a>
+                                    <a class="more" href="https://app.powerbi.com/view?r=eyJrIjoiOGUwZWZiYTUtZmQxOS00MzAxLTlkYjAtZjY3NGY3ZTI3MGYwIiwidCI6IjhkNDVhZGIxLTMzNzYtNDljYi05MjU2LThlMDVlNmVhMDZiMCJ9" target="_blank">Click aquí <i class="fas fa-chevron-right"></i></a>
+                                </div>
+                                <div class="courses-link">
+                                    <a class="apply" href="#">Monitoreo <br> Adolescente</a>
+                                    <a class="more" href="https://app.powerbi.com/view?r=eyJrIjoiNzJlM2EwNmEtNjU4Ni00M2RlLTk5ODktYTI5NjFjZjBkMzYxIiwidCI6IjhkNDVhZGIxLTMzNzYtNDljYi05MjU2LThlMDVlNmVhMDZiMCJ9" target="_blank">Click aquí <i class="fas fa-chevron-right"></i></a>
+                                </div>
+                                <div class="courses-link">
+                                    <a class="apply" href="#">SEGUIMEINTO AL ADOLESCENTES <br> CON DOSAJE Y SUPLEMENTACION </a>
+                                    <a class="more" href="https://app.powerbi.com/view?r=eyJrIjoiOGIyMGU3ZjgtMmYyZS00N2NlLWFlYWItYjZkNzdhNThlMzFlIiwidCI6IjhkNDVhZGIxLTMzNzYtNDljYi05MjU2LThlMDVlNmVhMDZiMCJ9&pageName=ReportSectionbd2849dd5063754019b8" target="_blank">Click aquí <i class="fas fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+		    <div class="col-lg-3 col-sm-6 courses-col">
+                        <div class="single-courses mt-30">
+                            <div class="courses-image">
+                                <a><img src="assets/images/courses/salud-1.png" width="270" height="170" alt="courses"></a>
+                            </div>
+                            <div class="courses-content">
+                                <a class="category">#ResportesMonitoreo</a>
+                                <h4 class="courses-title"><a>Tablero de Control</a></h4>
+
+                                <div class="courses-link">
+                                    <a class="apply" href="#">Monitoreo</a>
+                                    <a class="more" href="https://app.powerbi.com/view?r=eyJrIjoiZThhODY3MjMtMThhOC00OWE2LWI5YmEtZTk0OWRkMDc0NDcyIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ReportSectionc306eb4184a54069d893" target="_blank">Click aquí <i class="fas fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6 courses-col">
+                        <div class="single-courses mt-30">
+                            <div class="courses-image">
+                                <a><img src="assets/images/courses/salud-1.png" width="270" height="170" alt="courses"></a>
+                            </div>
+                            <div class="courses-content">
+                                <a class="category">#AdultoMayor</a>
+                                <h4 class="courses-title"><a>Etapa de vida de Adulto Mayor</a></h4>
+
+                                <div class="courses-link">
+                                    <a class="apply" href="#">Monitoreo</a>
+                                    <a class="more" href="https://app.powerbi.com/view?r=eyJrIjoiMjU1NDFhMjUtYzc4ZC00NmMyLWI5MjQtZjNkZjg1MzY3ZDNmIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=24b8f3efe6cd63d92a61" target="_blank">Click aquí <i class="fas fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+			<div class="col-lg-3 col-sm-6 courses-col">
+                        <div class="single-courses mt-30">
+                            <div class="courses-image">
+                                <a><img src="assets/images/courses/salud-1.png" width="270" height="170" alt="courses"></a>
+                            </div>
+                            <div class="courses-content">
+                                <a class="category">#ResportesFED</a>
+                                <h4 class="courses-title"><a>Fondo de Estímulo al Desempeño y Logro de Resultados Sociales</a></h4>
+
+                                <div class="courses-link">
+                                    <a class="apply" href="#">FED</a>
+                                    <a class="more" href="https://app.powerbi.com/view?r=eyJrIjoiZTM1OWU5NjQtYjgwMi00NThhLTkzMjMtYmU4MzQzMzI2ZGU3IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ReportSection561bd2efd012e146e789" target="_blank">Click aquí <i class="fas fa-chevron-right"></i></a>
+                                </div>
+                                <div class="courses-link">
+                                    <a class="apply" href="#">SI_01_01</a>
+                                    <a class="more" href="https://app.powerbi.com/view?r=eyJrIjoiOWJhNzIyZDAtODhiYy00YzQ3LTlkYTYtZDBmNWM4NWUyMTY4IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=44a6e0484b700892c7ab" target="_blank">Click aquí <i class="fas fa-chevron-right"></i></a>
+                                </div>
+                                <div class="courses-link">
+                                    <a class="apply" href="#">SI_02_01</a>
+                                    <a class="more" href="https://app.powerbi.com/view?r=eyJrIjoiOWJhNzIyZDAtODhiYy00YzQ3LTlkYTYtZDBmNWM4NWUyMTY4IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ReportSection1ff844b458540b076ed3" target="_blank">Click aquí <i class="fas fa-chevron-right"></i></a>
+                                </div>
+                                <div class="courses-link">
+                                    <a class="apply" href="#">SI_02_02</a>
+                                    <a class="more" href="https://app.powerbi.com/view?r=eyJrIjoiOWJhNzIyZDAtODhiYy00YzQ3LTlkYTYtZDBmNWM4NWUyMTY4IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=0fb0b35309224e5021e0" target="_blank">Click aquí <i class="fas fa-chevron-right"></i></a>
+                                </div>
+                                <div class="courses-link">
+                                    <a class="apply" href="#">SI_02_03</a>
+                                    <a class="more" href="https://app.powerbi.com/view?r=eyJrIjoiOWJhNzIyZDAtODhiYy00YzQ3LTlkYTYtZDBmNWM4NWUyMTY4IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=b49ff02788accdb10814" target="_blank">Click aquí <i class="fas fa-chevron-right"></i></a>
+                                </div>
+                                <div class="courses-link">
+                                    <a class="apply" href="#">SI_03_01</a>
+                                    <a class="more" href="https://app.powerbi.com/view?r=eyJrIjoiOWJhNzIyZDAtODhiYy00YzQ3LTlkYTYtZDBmNWM4NWUyMTY4IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=f2d468d6d099148b39c0" target="_blank">Click aquí <i class="fas fa-chevron-right"></i></a>
+                                </div>
+                                <div class="courses-link">
+                                    <a class="apply" href="#">SI_04_01</a>
+                                    <a class="more" href="https://app.powerbi.com/view?r=eyJrIjoiOWJhNzIyZDAtODhiYy00YzQ3LTlkYTYtZDBmNWM4NWUyMTY4IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=f3b543f9c02dcd4858ae" target="_blank">Click aquí <i class="fas fa-chevron-right"></i></a>
+                                </div>
+                                <div class="courses-link">
+                                    <a class="apply" href="#">MC_01</a>
+                                    <a class="more" href="https://app.powerbi.com/view?r=eyJrIjoiOWJhNzIyZDAtODhiYy00YzQ3LTlkYTYtZDBmNWM4NWUyMTY4IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=00d52cc970bda9eee75c" target="_blank">Click aquí <i class="fas fa-chevron-right"></i></a>
+                                </div>
+                                <div class="courses-link">
+                                    <a class="apply" href="#">MC_02</a>
+                                    <a class="more" href="https://app.powerbi.com/view?r=eyJrIjoiOWJhNzIyZDAtODhiYy00YzQ3LTlkYTYtZDBmNWM4NWUyMTY4IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=49f40ef851cde0837e7c" target="_blank">Click aquí <i class="fas fa-chevron-right"></i></a>
+                                </div>
+                                <div class="courses-link">
+                                    <a class="apply" href="#">MC_03</a>
+                                    <a class="more" href="https://app.powerbi.com/view?r=eyJrIjoiOWJhNzIyZDAtODhiYy00YzQ3LTlkYTYtZDBmNWM4NWUyMTY4IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=448d7dd010d400c03d05" target="_blank">Click aquí <i class="fas fa-chevron-right"></i></a>
+                                </div>
+                                <div class="courses-link">
+                                    <a class="apply" href="#">VI_01_01</a>
+                                    <a class="more" href="https://app.powerbi.com/view?r=eyJrIjoiOWJhNzIyZDAtODhiYy00YzQ3LTlkYTYtZDBmNWM4NWUyMTY4IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=6665333474e9ae9ca763" target="_blank">Click aquí <i class="fas fa-chevron-right"></i></a>
+                                </div>
+                                <div class="courses-link">
+                                    <a class="apply" href="#">VI_01_02</a>
+                                    <a class="more" href="https://app.powerbi.com/view?r=eyJrIjoiOWJhNzIyZDAtODhiYy00YzQ3LTlkYTYtZDBmNWM4NWUyMTY4IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ae4b0d1989aa605c1b05" target="_blank">Click aquí <i class="fas fa-chevron-right"></i></a>
+                                </div>
+                                <div class="courses-link">
+                                    <a class="apply" href="#">VII_01</a>
+                                    <a class="more" href="https://app.powerbi.com/view?r=eyJrIjoiOWJhNzIyZDAtODhiYy00YzQ3LTlkYTYtZDBmNWM4NWUyMTY4IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=760f780eb7c40e403785" target="_blank">Click aquí <i class="fas fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6 courses-col">
+                                            <div class="single-courses mt-30">
+                                                <div class="courses-image">
+                                                    <a><img src="assets/images/courses/salud-1.png" width="270" height="170" alt="courses"></a>
+                                                </div>
+                                                <div class="courses-content">
+                                                    <a class="category">#Sismore</a>
+                                                    <h4 class="courses-title"><a>Sistema de Monitoreo Regional</a></h4>
+
+                                                    <div class="courses-link">
+                                                        <a class="apply" href="#">Sismore Salud</a>
+                                                        <a class="more" href="https://sismore.regionucayali.gob.pe/sismore/login" target="_blank">Click aquí <i class="fas fa-chevron-right"></i></a>
+                                                    </div>
+                                            </div>
+                                </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 courses-col">
+                        <div class="single-courses mt-30">
+                            <div class="courses-image">
+                                <a><img src="assets/images/courses/salud-1.png" width="270" height="170" alt="courses"></a>
+                            </div>
+                            <div class="courses-content">
+                                <a class="category">#Presupuesto</a>
+                                <h4 class="courses-title"><a>Presupuesto</a></h4>
+
+                                <div class="courses-link">
+                                    <a class="apply" href="#">Ejecución <br>Presupuestal</a>
+                                    <a class="more" href="https://lookerstudio.google.com/reporting/6538b0e7-508f-46e2-9895-89fc65593e76/page/p_528me1ys3c" target="_blank">Click aquí <i class="fas fa-chevron-right"></i></a>
+                                </div>
+                        </div>
+            </div>
+</div>
+<div class="col-lg-3 col-sm-6 courses-col">
+    <div class="single-courses mt-30">
+        <div class="courses-image">
+            <a><img src="assets/images/courses/salud-1.png" width="270" height="170" alt="courses"></a>
+        </div>
+        <div class="courses-content">
+            <a class="category">#Diremid</a>
+            <h4 class="courses-title"><a>Dirección Ejecutiva de Medicamentos e Insumos y Drogas</a></h4>
+
+            <div class="courses-link">
+                <a class="apply" href="#">Web <br>Site</a>
+                <a class="more" href="https://diremid-ucayali.com" target="_blank">Click aquí <i class="fas fa-chevron-right"></i></a>
+            </div>
+    </div>
+</div>
+</div>
+
+                    <div class="col-lg-3 col-sm-6 courses-col">
+                        <div class="single-courses mt-30">
+                            <div class="courses-image">
+                                <a><img src="assets/images/courses/salud-1.png" width="270" height="170" alt="courses"></a>
+                            </div>
+                            <div class="courses-content">
+                                <a class="category">#PueblosIndígenas</a>
+                                <h4 class="courses-title"><a>Estrategia Sanitaria de salud de Pueblos Indígenas</a></h4>
+
+                                <div class="courses-link">
+                                    <a class="apply" href="#">Pueblos <br> Indígenas</a>
+                                    <a class="more" href="https://app.powerbi.com/view?r=eyJrIjoiZjAyYzRlY2UtOGEwZi00YTdmLWFkNzYtNjEzODFkYmRlMTQ2IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=bac55dfa01458d531ae3" target="_blank">Click aquí <i class="fas fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                                      
+
+
+                </div>
+            </div>
+        </div>
+        <br />
+        <br />
+    </section>
+
+    <!--====== Top Courses Ends ======-->
+    <!--====== Footer Start ======-->
+
+    <section class="footer-area footer-02 bg_cover" style="background-image: url(assets/images/counter-bg.png);">
+        <div class="footer-widget">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="footer-link mt-45">
+                            <h4 class="footer-title">Dirección</h4>
+                            <ul class="link-list">
+                                <li>
+                                    <p>Jr. Carmen Cabrejos N° 547-549 - Ucayali - Coronel Portillo - Calleria - Perú - 25000</p>
+                                </li>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d126312.65723548406!2d-74.61119872558439!3d-8.375027361487998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d-8.375238!2d-74.528865!5e0!3m2!1ses!2spe!4v1716571192595!5m2!1ses!2spe" width="270" height="170" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                                <li>
+                                    <p><a href="tel:+5161787927">+51 61 787927</a></p>
+                                    <p><a href="tel:+5161787933">+51 61 787933</a></p>
+                                    <p><a href="tel:+5161788053">+51 61 788053</a></p>
+                                </li>
+                                <li>
+                                    <p><a href="mailto://tramite@diresau.gob.pe">tramite@diresau.gob.pe</a></p>
+                                    <p></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="footer-link mt-45">
+                            <h4 class="footer-title">Horario de atención</h4>
+                            <ul class="link-list">
+                                <li>
+                                    <p>De lunes a viernes de 8:00 a. m. a 4:00 p. m.</p>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-3 col-sm-6">
+                        <div class="footer-link mt-45">
+                            <h4 class="footer-title"></h4>
+                            <ul class="link-list">
+                                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FDiresaUcayali2024%2F&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=true&appId" width="400" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-widget-wrapper">
+                    <div class="footer-social">
+                        <ul class="social">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-menu">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="copyright text-center">
+                    <p>&copy; 2024 <span> Dirección Regional de Salud de Ucayali </span>  <i class="fa fa-heart"></i> || <a href="#">Dirección de Estadística e Informatica y Telecomunicaciones</a></p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--====== Footer Ends ======-->
+    <!--====== BACK TOP TOP PART START ======-->
+
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+    <!--====== BACK TOP TOP PART ENDS ======-->
+    <!--====== Start ======-->
+    <!--
+        <section class="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    -->
+    <!--====== Ends ======-->
+
+
+
+    <!--====== Jquery js ======-->
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/modernizr-3.7.1.min.js"></script>
+    
+    <!--====== All Plugins js ======-->
+    <script src="assets/js/plugins/popper.min.js"></script>
+    <script src="assets/js/plugins/bootstrap.min.js"></script>
+    <script src="assets/js/plugins/slick.min.js"></script>
+    <script src="assets/js/plugins/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/plugins/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/plugins/isotope.pkgd.min.js"></script>
+    <script src="assets/js/plugins/wow.min.js"></script>
+    <script src="assets/js/plugins/ajax-contact.js"></script>
+    
+
+    <!--====== Main Activation  js ======-->
+    <script src="assets/js/main.js"></script>
+<!-- Ventana Modal -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <!-- Botón de cerrar con una "X" -->
+        <span class="close-btn">&times;</span>
+        <img src="pub_face_dengue_02.jpeg" alt="Imagen Modal">
+        
+    </div>
+    
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var modal = document.getElementById("modal");
+        var closeBtn = document.querySelector(".close-btn");
+
+        // Mostrar la ventana modal
+        modal.style.display = "block";
+
+        // Ocultar la ventana modal después de 20 segundos
+        setTimeout(function() {
+            modal.style.display = "none";
+        }, 20000); // 20000 ms = 20 segundos
+
+        // Cerrar la ventana modal al hacer clic en el botón de cerrar (X)
+        closeBtn.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // Cerrar la ventana modal al hacer clic fuera del contenido
+        window.onclick = function(event) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        }
+    });
+</script>
+
+</body>
+</html>
