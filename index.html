@@ -114,74 +114,19 @@
     .dropdown:hover .dropdown-menu {
       display: block;
     }
+
+    .modal {
+      z-index: 9999 !important;
+      /* display: block;
+      position: fixed;
+      top: 0;
+      left: 0; */
+      /* width: 100%;
+      height: 100%; */
+      background-color: rgba(0, 0, 0, 0.5);
+    }
   </style>
 
-  <style>
-    /* .card {
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-      }
-
-      .card-body {
-        flex-grow: 1;
-        display: flex;
-        flex-direction: column;
-      }
-
-      .btn-ver-mas {
-        margin-top: auto;
-      }
-
-      .offcanvas {
-        position: fixed;
-        top: 0;
-        right: -350px;
-        width: 350px;
-        height: 100%;
-        background-color: white;
-        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
-        overflow-y: auto;
-        transition: right 0.3s ease-in-out;
-        z-index: 1050;
-        padding: 20px;
-      }
-
-      .offcanvas.show {
-        right: 0;
-      }
-
-      .offcanvas-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border-bottom: 1px solid #ddd;
-        padding-bottom: 10px;
-      }
-
-      .offcanvas-body {
-        padding-top: 10px;
-      }
-
-      .offcanvas a {
-        display: block;
-        padding: 10px;
-        text-decoration: none;
-        color: #333;
-        border-bottom: 1px solid #eee;
-      }
-
-      .offcanvas a:hover {
-        background-color: #f8f9fa;
-      }
-
-      .close-btn {
-        background: none;
-        border: none;
-        font-size: 20px;
-        cursor: pointer;
-      } */
-  </style>
 </head>
 
 <body>
@@ -541,16 +486,17 @@
           <p class="text-success font-weight-bold text-center mt-4">Actualizado con datos INEI</p>
 
           <div class="d-flex justify-content-end mt-4">
-            <a href="https://www.dropbox.com/scl/fi/enj5lsou64pjzftrfghsy/Poblacion-Ucayali-2025-actualizado_Oficial.xlsx?rlkey=w59x7529p38azjq3nnwbi7xao&st=zkui0qhs&dl=0" class="btn btn-success" target="_blank">
-                <i class="fas fa-file-excel mr-2"></i> Descargar
+            <a href="https://www.dropbox.com/scl/fi/enj5lsou64pjzftrfghsy/Poblacion-Ucayali-2025-actualizado_Oficial.xlsx?rlkey=w59x7529p38azjq3nnwbi7xao&st=zkui0qhs&dl=0"
+              class="btn btn-success" target="_blank">
+              <i class="fas fa-file-excel mr-2"></i> Descargar
             </a>
-        </div>
+          </div>
 
         </section>
       </main>
     </div>
   </section>
- 
+
   <!--====== About Ends ======-->
   <!--====== Top Courses Start ======-->
 
@@ -1634,10 +1580,11 @@
                   <div class="dropdown">
                     <button class="dropdown-toggle">Más Opciones</button>
                     <div class="dropdown-menu">
-                      <a class="dropdown-item"
+                      <a class="dropdown-item" href="javascript:void(0)" id="soporteLink">Convenio de Gestión</a>
+                      <!-- <a class="dropdown-item"
                         href="https://app.powerbi.com/view?r=eyJrIjoiZTVjMWI5ZjEtNmY3NC00MGM5LWI2NDgtMDUxYjYyNjFlOGM2IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ReportSection561bd2efd012e146e789"
                         target="_blank">Convenio de Gestión
-                      </a>
+                      </a> -->
                     </div>
                   </div>
                 </div>
@@ -1645,372 +1592,146 @@
             </div>
           </div>
 
-          
+          <!-- <div class="col-lg-3 col-sm-6 courses-col">
+            <div class="single-courses mt-30">
+              <div class="courses-image">
+                <a><img src="assets/images/courses/salud-1.png" width="270" height="170" alt="courses" /></a>
+              </div>
+              <div class="courses-content">
+                <a class="category">#soporte</a>
+                <h4 class="courses-title">
+                  <a>Soporte X<br><br></a>
+                </h4>
+
+                <div class="text-center">
+                  <div class="dropdown">
+                    <button class="dropdown-toggle">Más Opciones</button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="javascript:void(0)" id="soporteLink">Soporte 1</a>
+                      <a class="dropdown-item"
+                        href="https://app.powerbi.com/view?r=eyJrIjoiZTVjMWI5ZjEtNmY3NC00MGM5LWI2NDgtMDUxYjYyNjFlOGM2IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ReportSection561bd2efd012e146e789"
+                        target="_blank">soporte 1
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+
         </div>
       </div>
     </div>
-
-    <div class="container mt-4 d-none">
-      <div class="row">
-        <!-- Tarjeta 1 -->
-        <div class="col-12 col-md-6 col-lg-3 mb-4">
-          <div class="card w-100">
-            <img src="assets/images/servicios/all.png" class="card-img-top" alt="Imagen 1" />
-            <div class="card-body text-center">
-              <p class="text-muted">
-                <span class="badge bg-primary">#Niño</span>
-                <!-- <span class="badge badge-secondary">#Prevención</span> -->
-              </p>
-              <h5 class="card-title">
-                Productos específicos para el desarrollo infantil temprano.
-              </h5>
-              <a href="javascript:void(0)" class="btn btn-primary btn-block btn-ver-mas" onclick="openPanel('01')">Ver
-                más</a>
-            </div>
+    <!-- Modal -->
+    <!-- <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Iniciar Sesión</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+              <span aria-hidden="true">&times;</span>
+            </button>
           </div>
-        </div>
-
-        <!-- Tarjeta 2 -->
-        <div class="col-12 col-md-6 col-lg-3 mb-4">
-          <div class="card w-100">
-            <img src="assets/images/servicios/all.png" class="card-img-top" alt="Imagen 2" />
-            <div class="card-body text-center">
-              <p class="text-muted">
-                <span class="badge bg-primary">#Nutrición</span>
-                <!-- <span class="badge badge-warning">#Neonatal</span>] -->
-              </p>
-              <h5 class="card-title">
-                Productos específicos para el desarrollo infantil temprano.
-              </h5>
-              <a href="javascript:void(0)" class="btn btn-primary btn-block btn-ver-mas" onclick="openPanel('02')">Ver
-                más</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Tarjeta 3 -->
-        <div class="col-12 col-md-6 col-lg-3 mb-4">
-          <div class="card w-100">
-            <img src="assets/images/servicios/all.png" class="card-img-top" alt="Imagen 3" />
-            <div class="card-body text-center">
-              <p class="text-muted">
-                <span class="badge bg-primary">#Inmunización</span>
-                <!-- <pan class="badge badge-danger">#Control</span> -->
-              </p>
-              <h5 class="card-title">
-                Productos específicos para el desarrollo infantil temprano.
-              </h5>
-              <a href="javascript:void(0)" class="btn btn-primary btn-block btn-ver-mas" onclick="openPanel('03')">Ver
-                más</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Tarjeta 4 -->
-        <div class="col-12 col-md-6 col-lg-3 mb-4">
-          <div class="card w-100">
-            <img src="assets/images/servicios/all.png" class="card-img-top" alt="Imagen 4" />
-            <div class="card-body text-center">
-              <p class="text-muted">
-                <span class="badge bg-primary">#SaludMental</span>
-                <!-- <span class="badge badge-light">#Salud</span> -->
-              </p>
-              <h5 class="card-title">
-                Control y prevención en salud mental.
-              </h5>
-              <br />
-              <a href="javascript:void(0)" class="btn btn-primary btn-block btn-ver-mas" onclick="openPanel('04')">Ver
-                más</a>
-            </div>
+          <div class="modal-body">
+            <form id="loginForm">
+              <div class="form-group">
+                <label for="usuario">Usuario</label>
+                <input type="text" class="form-control" id="usuario" required>
+              </div>
+              <div class="form-group">
+                <label for="clave">Clave</label>
+                <input type="password" class="form-control" id="clave" required>
+              </div>
+              <button type="submit" class="btn btn-primary">Ingresar</button>
+            </form>
+            <p id="errorMensaje" class="text-danger mt-2" style="display: none;">Usuario o clave incorrectos</p>
           </div>
         </div>
       </div>
+    </div> -->
 
-      <div class="row">
-        <!-- Tarjeta 1 -->
-        <div class="col-12 col-md-6 col-lg-3 mb-4">
-          <div class="card w-100">
-            <img src="assets/images/servicios/all.png" class="card-img-top" alt="Imagen 1" />
-            <div class="card-body text-center">
-              <p class="text-muted">
-                <span class="badge bg-primary">#TBC_VIH_SIDA</span>
-                <!-- <span class="badge badge-secondary">#Prevención</span> -->
-              </p>
-              <h5 class="card-title">
-                TBC <br />
-                VIH/SIDA
-              </h5>
-              <a href="#" class="btn btn-primary btn-block btn-ver-mas">Ver más</a>
-            </div>
+
+    <!-- <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Iniciar Sesión</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+              <span aria-hidden="true">&times;</span>
+            </button>
           </div>
-        </div>
+          <div class="modal-body text-center">
+            
+            <img src="logo_diresa.png" alt="Logo" class="img-fluid mb-3" style="max-width: 150px;">
 
-        <!-- Tarjeta 2 -->
-        <div class="col-12 col-md-6 col-lg-3 mb-4">
-          <div class="card w-100">
-            <img src="assets/images/servicios/all.png" class="card-img-top" alt="Imagen 2" />
-            <div class="card-body text-center">
-              <p class="text-muted">
-                <span class="badge bg-primary">#MetaxénicasZoonosis</span>
-                <!-- <span class="badge badge-warning">#Neonatal</span>] -->
-              </p>
-              <h5 class="card-title">Enfermedades metaxénicas y zoonosis.</h5>
-              <a href="#" class="btn btn-primary btn-block btn-ver-mas">Ver más</a>
-            </div>
-          </div>
-        </div>
+            <h4 class="mb-4">Bienvenido al Sistema</h4>
 
-        <!-- Tarjeta 3 -->
-        <div class="col-12 col-md-6 col-lg-3 mb-4">
-          <div class="card w-100">
-            <img src="assets/images/servicios/all.png" class="card-img-top" alt="Imagen 3" />
-            <div class="card-body text-center">
-              <p class="text-muted">
-                <span class="badge bg-primary">#Cancer</span>
-                <!-- <pan class="badge badge-danger">#Control</span> -->
-              </p>
-              <h5 class="card-title">Prevención y control del cancer.</h5>
-              <a href="#" class="btn btn-primary btn-block btn-ver-mas">Ver más</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Tarjeta 4 -->
-        <div class="col-12 col-md-6 col-lg-3 mb-4">
-          <div class="card w-100">
-            <img src="assets/images/servicios/all.png" class="card-img-top" alt="Imagen 4" />
-            <div class="card-body text-center">
-              <p class="text-muted">
-                <span class="badge bg-primary">#NoTransmisible</span>
-                <!-- <span class="badge badge-light">#Salud</span> -->
-              </p>
-              <h5 class="card-title">Enfermedades no transmisibles.</h5>
-              <br />
-              <a href="#" class="btn btn-primary btn-block btn-ver-mas" onclick="openPanel()">Ver más</a>
-            </div>
+            <form id="loginForm">
+              <div class="form-group">
+                <label for="usuario">Usuario</label>
+                <input type="text" class="form-control" id="usuario" required>
+              </div>
+              <div class="form-group">
+                <label for="clave">Clave</label>
+                <input type="password" class="form-control" id="clave" required>
+              </div>
+              <button type="submit" class="btn btn-primary">Ingresar</button>
+            </form>
+            <p id="errorMensaje" class="text-danger mt-2" style="display: none;">Usuario o clave incorrectos</p>
           </div>
         </div>
       </div>
+    </div> -->
 
-      <div class="row">
-        <!-- Tarjeta 1 -->
-        <div class="col-12 col-md-6 col-lg-3 mb-4">
-          <div class="card w-100">
-            <img src="assets/images/servicios/all.png" class="card-img-top" alt="Imagen 1" />
-            <div class="card-body text-center">
-              <p class="text-muted">
-                <span class="badge bg-primary">#Discapacidad</span>
-                <!-- <span class="badge badge-secondary">#Prevención</span> -->
-              </p>
-              <h5 class="card-title">
-                Prevención y manejo de condiciones secundarias de salud en
-                personas con discapacidad.
-              </h5>
-              <a href="#" class="btn btn-primary btn-block btn-ver-mas">Ver más</a>
-            </div>
-          </div>
-        </div>
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content p-4">
+          <div class="modal-body text-center">
+            <!-- Imagen centrada -->
+            <img src="assets/images/logo-diresa.png" alt="Logo" class="img-fluid mb-3" style="max-width: 150px;">
 
-        <!-- Tarjeta 2 -->
-        <div class="col-12 col-md-6 col-lg-3 mb-4">
-          <div class="card w-100">
-            <img src="assets/images/servicios/all.png" class="card-img-top" alt="Imagen 2" />
-            <div class="card-body text-center">
-              <p class="text-muted">
-                <span class="badge bg-primary">#SaludMaterno</span>
-                <!-- <span class="badge badge-warning">#Neonatal</span>] -->
-              </p>
-              <h5 class="card-title">Salud Materno Neonatal.</h5>
-              <a href="#" class="btn btn-primary btn-block btn-ver-mas">Ver más</a>
-            </div>
-          </div>
-        </div>
+            <!-- Título -->
+            <h3 class="font-weight-bold">DIRESA UCAYALI</h3>
 
-        <!-- Tarjeta 3 -->
-        <div class="col-12 col-md-6 col-lg-3 mb-4">
-          <div class="card w-100">
-            <img src="assets/images/servicios/all.png" class="card-img-top" alt="Imagen 3" />
-            <div class="card-body text-center">
-              <p class="text-muted">
-                <span class="badge bg-primary">#ResportesMonitoreo</span>
-                <!-- <pan class="badge badge-danger">#Control</span> -->
-              </p>
-              <h5 class="card-title">Tablero de Control</h5>
-              <a href="#" class="btn btn-primary btn-block btn-ver-mas">Ver más</a>
-            </div>
-          </div>
-        </div>
+            <!-- Formulario -->
+            <form id="loginForm">
+              <div class="form-group">
+                <label for="usuario" class="d-flex align-items-center">
+                  Usuario
+                </label>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fas fa-user"></i></span>
+                  </div>
+                  <input type="text" class="form-control" id="usuario" required>
+                </div>
+              </div>
 
-        <!-- Tarjeta 4 -->
-        <div class="col-12 col-md-6 col-lg-3 mb-4">
-          <div class="card w-100">
-            <img src="assets/images/servicios/all.png" class="card-img-top" alt="Imagen 4" />
-            <div class="card-body text-center">
-              <p class="text-muted">
-                <span class="badge bg-primary">#AdultoMayor</span>
-                <!-- <span class="badge badge-light">#Salud</span> -->
-              </p>
-              <h5 class="card-title">Etapa de vida de Adulto Mayor</h5>
-              <br />
-              <a href="#" class="btn btn-primary btn-block btn-ver-mas" onclick="openPanel()">Ver más</a>
-            </div>
-          </div>
-        </div>
-      </div>
+              <div class="form-group">
+                <label for="clave" class="d-flex align-items-center">
+                  Contraseña
+                </label>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                  </div>
+                  <input type="password" class="form-control" id="clave" required>
+                </div>
+              </div>
 
-      <div class="row">
-        <!-- Tarjeta 1 -->
-        <div class="col-12 col-md-6 col-lg-3 mb-4">
-          <div class="card w-100">
-            <img src="assets/images/servicios/all.png" class="card-img-top" alt="Imagen 1" />
-            <div class="card-body text-center">
-              <p class="text-muted">
-                <span class="badge bg-primary">#ReportesFED</span>
-                <!-- <span class="badge badge-secondary">#Prevención</span> -->
-              </p>
-              <h5 class="card-title">
-                Fondo de Estímulo al Desempeño y Logro de Resultados Sociales
-              </h5>
-              <a href="#" class="btn btn-primary btn-block btn-ver-mas">Ver más</a>
-            </div>
-          </div>
-        </div>
+              <button type="submit" class="btn btn-success btn-block">Ingresar</button>
+            </form>
 
-        <!-- Tarjeta 2 -->
-        <div class="col-12 col-md-6 col-lg-3 mb-4">
-          <div class="card w-100">
-            <img src="assets/images/servicios/all.png" class="card-img-top" alt="Imagen 2" />
-            <div class="card-body text-center">
-              <p class="text-muted">
-                <span class="badge bg-primary">#Sismore</span>
-                <!-- <span class="badge badge-warning">#Neonatal</span>] -->
-              </p>
-              <h5 class="card-title">Sistema de Monitoreo Regional</h5>
-              <a href="#" class="btn btn-primary btn-block btn-ver-mas">Ver más</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Tarjeta 3 -->
-        <div class="col-12 col-md-6 col-lg-3 mb-4">
-          <div class="card w-100">
-            <img src="assets/images/servicios/all.png" class="card-img-top" alt="Imagen 3" />
-            <div class="card-body text-center">
-              <p class="text-muted">
-                <span class="badge bg-primary">#Presupuesto</span>
-                <!-- <pan class="badge badge-danger">#Control</span> -->
-              </p>
-              <h5 class="card-title">Presupuesto</h5>
-              <a href="#" class="btn btn-primary btn-block btn-ver-mas">Ver más</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Tarjeta 4 -->
-        <div class="col-12 col-md-6 col-lg-3 mb-4">
-          <div class="card w-100">
-            <img src="assets/images/servicios/all.png" class="card-img-top" alt="Imagen 4" />
-            <div class="card-body text-center">
-              <p class="text-muted">
-                <span class="badge bg-primary">#DIREMID</span>
-                <!-- <span class="badge badge-light">#Salud</span> -->
-              </p>
-              <h5 class="card-title">
-                Dirección Ejecutiva de Medicamentos e Insumos y Drogas
-              </h5>
-              <br />
-              <a href="#" class="btn btn-primary btn-block btn-ver-mas" onclick="openPanel()">Ver más</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <!-- Tarjeta 1 -->
-        <div class="col-12 col-md-6 col-lg-3 mb-4">
-          <div class="card w-100">
-            <img src="assets/images/servicios/all.png" class="card-img-top" alt="Imagen 1" />
-            <div class="card-body text-center">
-              <p class="text-muted">
-                <span class="badge bg-primary">#PueblosIndígenas</span>
-                <!-- <span class="badge badge-secondary">#Prevención</span> -->
-              </p>
-              <h5 class="card-title">
-                Estrategia Sanitaria de salud de Pueblos Indígenas
-              </h5>
-              <a href="#" class="btn btn-primary btn-block btn-ver-mas">Ver más</a>
-            </div>
+            <p class="mt-3">¿No tienes una cuenta? <a href="https://diresa-ucayali.com.pe/Solicitud/Index" target="_blank" class="text-primary">Regístrate aquí</a></p>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="container mt-4 d-none">
-      <div class="row">
-        <!-- Tarjeta 1 -->
-        <div class="col-12 col-md-6 col-lg-3 mb-4">
-          <div class="card w-100">
-            <img src="assets/images/servicios/all.png" class="card-img-top" alt="Imagen 1" />
-            <div class="card-body text-center">
-              <p class="text-muted">
-                <span class="badge badge-primary">#Salud</span>
-                <span class="badge badge-secondary">#Prevención</span>
-              </p>
-              <h5 class="card-title">
-                Prevención y manejo de condiciones secundarias de salud en
-                personas con discapacidad.
-              </h5>
-              <a href="#" class="btn btn-primary btn-block btn-ver-mas">Ver más</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Tarjeta 2 -->
-        <div class="col-12 col-md-6 col-lg-3 mb-4">
-          <div class="card w-100">
-            <img src="assets/images/servicios/all.png" class="card-img-top" alt="Imagen 2" />
-            <div class="card-body text-center">
-              <p class="text-muted">
-                <span class="badge badge-success">#Materno</span>
-                <span class="badge badge-warning">#Neonatal</span>
-              </p>
-              <h5 class="card-title">Salud Materno Neonatal.</h5>
-              <a href="#" class="btn btn-primary btn-block btn-ver-mas">Ver más</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Tarjeta 3 -->
-        <div class="col-12 col-md-6 col-lg-3 mb-4">
-          <div class="card w-100">
-            <img src="assets/images/servicios/all.png" class="card-img-top" alt="Imagen 3" />
-            <div class="card-body text-center">
-              <p class="text-muted">
-                <span class="badge badge-info">#Gestión</span>
-                <span class="badge badge-danger">#Control</span>
-              </p>
-              <h5 class="card-title">Tablero de Control</h5>
-              <a href="#" class="btn btn-primary btn-block btn-ver-mas">Ver más</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Tarjeta 4 -->
-        <div class="col-12 col-md-6 col-lg-3 mb-4">
-          <div class="card w-100">
-            <img src="assets/images/servicios/all.png" class="card-img-top" alt="Imagen 4" />
-            <div class="card-body text-center">
-              <p class="text-muted">
-                <span class="badge badge-dark">#AdultoMayor</span>
-                <span class="badge badge-light">#Salud</span>
-              </p>
-              <h5 class="card-title">Etapa de vida de Adulto Mayor</h5>
-              <a href="#" class="btn btn-primary btn-block btn-ver-mas" onclick="openPanel()">Ver más</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <br />
     <br />
@@ -2268,38 +1989,63 @@
   <!--====== Main Activation  js ======-->
   <script src="assets/js/main.js"></script>
   <!-- Ventana Modal -->
-  <div id="modal" class="modal">
+  <!-- <div id="modal" class="modal">
     <div class="modal-content">
-      <!-- Botón de cerrar con una "X" -->
       <span class="close-btn">&times;</span>
       <img src="pub_face_dengue_02.jpeg" alt="Imagen Modal" />
     </div>
-  </div>
+  </div> -->
 
   <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      var modal = document.getElementById("modal");
-      var closeBtn = document.querySelector(".close-btn");
+    let usuariosJson = [];
 
-      // Mostrar la ventana modal
-      // modal.style.display = "block";
+    fetch(`acceso.json?t=${new Date().getTime()}`)
+      .then(response => response.json())
+      .then(data => {
+        usuariosJson = data;
+      })
+      .catch(error => console.error('Error al cargar el JSON:', error));
 
-      // Ocultar la ventana modal después de 20 segundos
-      // setTimeout(function () {
-      //   modal.style.display = "none";
-      // }, 20000); // 20000 ms = 20 segundos
 
-      // Cerrar la ventana modal al hacer clic en el botón de cerrar (X)
-      // closeBtn.onclick = function () {
-      //   modal.style.display = "none";
-      // };
 
-      // Cerrar la ventana modal al hacer clic fuera del contenido
-      // window.onclick = function (event) {
-      //   if (event.target === modal) {
-      //     modal.style.display = "none";
-      //   }
-      // };
+    $(document).ready(function () {
+      // $("#soporteLink").on("click", function (event) {
+      //   event.preventDefault();
+      //   $("#loginModal").modal("show"); // Muestra el modal
+      // });
+
+      $("#loginForm").on("submit", function (event) {
+        event.preventDefault();
+
+        let usuario = $("#usuario").val().trim();
+        let clave = $("#clave").val().trim();
+
+        if (usuariosJson.length === 0) {
+          alert("Error: No se han cargado los datos de usuarios.");
+          return;
+        }
+
+        let usuarioValido = usuariosJson.find(user => user.usuario === usuario && user.clave === clave);
+        if (usuarioValido) {
+          let usuarioValido2 = usuariosJson.find(user => user.usuario === usuario && user.clave === clave && user.estado === '1');
+          if (usuarioValido2) {
+            alert("Bienvenido!");
+            $("#loginModal").modal("hide");
+            window.open("https://app.powerbi.com/view?r=eyJrIjoiZTVjMWI5ZjEtNmY3NC00MGM5LWI2NDgtMDUxYjYyNjFlOGM2IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ReportSection561bd2efd012e146e789", "_blank"); // Redirección
+          } else {
+            $("#errorMensaje").show().text("No tiene acceso a la información");
+          }
+        } else {
+          $("#errorMensaje").show().text("Usuario o contraseña incorrectos");
+        }
+      });
+    });
+
+    document.getElementById("soporteLink").addEventListener("click", function (event) {
+      event.preventDefault();
+      $("#usuario").val('');
+      $("#clave").val('');
+      $('#loginModal').modal('show');
     });
 
     document.querySelectorAll("img").forEach((img) => {
@@ -2316,6 +2062,8 @@
     function closePanel(vv) {
       document.getElementById("offcanvasPanel" + vv).classList.remove("show");
     }
+
+
   </script>
 </body>
 
