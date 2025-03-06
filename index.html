@@ -1580,7 +1580,13 @@
                   <div class="dropdown">
                     <button class="dropdown-toggle">Más Opciones</button>
                     <div class="dropdown-menu">
-                      <a class="dropdown-item" href="javascript:void(0)" id="soporteLink">Convenio de Gestión</a>
+                      <a class="dropdown-item"
+                        href="https://app.powerbi.com/view?r=eyJrIjoiZTVjMWI5ZjEtNmY3NC00MGM5LWI2NDgtMDUxYjYyNjFlOGM2IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ReportSection561bd2efd012e146e789"
+                        target="_blank">Convenio de Gestión
+                      </a>
+
+                      <button type="button" class="dropdown-item" id="soporteLink">Monitoreo</button>
+                      <!-- <a class="dropdown-item" href="javascript:void(0)" id="soporteLink">Monitoreo</a> -->
                       <!-- <a class="dropdown-item"
                         href="https://app.powerbi.com/view?r=eyJrIjoiZTVjMWI5ZjEtNmY3NC00MGM5LWI2NDgtMDUxYjYyNjFlOGM2IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ReportSection561bd2efd012e146e789"
                         target="_blank">Convenio de Gestión
@@ -1725,7 +1731,7 @@
 
               <button type="submit" class="btn btn-success btn-block">Ingresar</button>
             </form>
-
+            <p id="errorMensaje" class="text-danger mt-2" style="display: none;">Usuario o clave incorrectos</p>
             <p class="mt-3">¿No tienes una cuenta? <a href="https://diresa-ucayali.com.pe/Solicitud/Index" target="_blank" class="text-primary">Regístrate aquí</a></p>
           </div>
         </div>
@@ -2031,7 +2037,7 @@
           if (usuarioValido2) {
             alert("Bienvenido!");
             $("#loginModal").modal("hide");
-            window.open("https://app.powerbi.com/view?r=eyJrIjoiZTVjMWI5ZjEtNmY3NC00MGM5LWI2NDgtMDUxYjYyNjFlOGM2IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ReportSection561bd2efd012e146e789", "_blank"); // Redirección
+            window.open("https://app.powerbi.com/view?r=eyJrIjoiYjFlNTVkMjQtODVmNS00OGVkLThjYTMtNmFmZDg5ZTk0MzZlIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ReportSection561bd2efd012e146e789", "_blank"); // Redirección
           } else {
             $("#errorMensaje").show().text("No tiene acceso a la información");
           }
