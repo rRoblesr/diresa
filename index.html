@@ -897,6 +897,10 @@
                         href="https://app.powerbi.com/view?r=eyJrIjoiZTQzM2Y0YjgtOTgwYi00ZDA5LTg1N2EtMDg1ODQ4M2I0NWUxIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=e645399d4061c869b715"
                         target="_blank">Zoonosis
                       </a>
+                      <a class="dropdown-item"
+                        
+                        id="loginFormDengue">Diagnostico Laboratorial Dengue
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -2050,6 +2054,33 @@
         }
       });
     });
+
+    $("#loginFormDengue").on("submit", function (event) {
+        event.preventDefault();
+
+        let usuario = $("#usuario").val().trim();
+        let clave = $("#clave").val().trim();
+
+        if (usuariosJson.length === 0) {
+          alert("Error: No se han cargado los datos de usuarios.");
+          return;
+        }
+
+        let usuarioValido = usuariosJson.find(user => user.usuario === usuario && user.clave === clave);
+        if (usuarioValido) {
+          let usuarioValido2 = usuariosJson.find(user => user.usuario === usuario && user.clave === clave && user.estado === '1');
+          if (usuarioValido2) {
+            alert("Bienvenido!");
+            $("#loginModal").modal("hide");
+            window.open("https://lookerstudio.google.com/reporting/eccc3b99-0c66-4565-aeff-9e2fcd8657e3", "_blank"); // Redirección
+          } else {
+            $("#errorMensaje").show().text("No tiene acceso a la información");
+          }
+        } else {
+          $("#errorMensaje").show().text("Usuario o contraseña incorrectos");
+        }
+      });
+
 
     document.getElementById("soporteLink").addEventListener("click", function (event) {
       event.preventDefault();
