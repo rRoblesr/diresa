@@ -2068,6 +2068,14 @@
       })
       .catch(error => console.error('Error al cargar el JSON:', error));
 
+      let usuariosJsonDengue = [];
+
+    fetch(`accesoDengue.json?t=${new Date().getTime()}`)
+      .then(response => response.json())
+      .then(data => {
+        usuariosJsonDengue = data;
+      })
+      .catch(error => console.error('Error al cargar el JSON:', error));
 
 
     $(document).ready(function () {
@@ -2111,14 +2119,14 @@
         let usuario = $("#usuarioDengue").val().trim();
         let clave = $("#claveDengue").val().trim();
 
-        if (usuariosJson.length === 0) {
+        if (usuariosJsonDengue.length === 0) {
           alert("Error: No se han cargado los datos de usuarios.");
           return;
         }
 
-        let usuarioValido = usuariosJson.find(user => user.usuario === usuario && user.clave === clave);
+        let usuarioValido = usuariosJsonDengue.find(user => user.usuario === usuario && user.clave === clave);
         if (usuarioValido) {
-          let usuarioValido2 = usuariosJson.find(user => user.usuario === usuario && user.clave === clave && user.estado === '1');
+          let usuarioValido2 = usuariosJsonDengue.find(user => user.usuario === usuario && user.clave === clave && user.estado === '1');
           if (usuarioValido2) {
             alert("Bienvenido!");
             $("#loginModalDengue").modal("hide");
