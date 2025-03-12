@@ -1787,7 +1787,7 @@
 
               <button type="submit" class="btn btn-success btn-block">Ingresar</button>
             </form>
-            <p id="errorMensaje" class="text-danger mt-2" style="display: none;">Usuario o clave incorrectos</p>
+            <p id="errorMensaje2" class="text-danger mt-2" style="display: none;">Usuario o clave incorrectos</p>
             <p class="mt-3">¿No tienes una cuenta? <a href="https://diresa-ucayali.com.pe/Solicitud/Index" target="_blank" class="text-primary">Regístrate aquí</a></p>
           </div>
         </div>
@@ -2132,10 +2132,10 @@
             $("#loginModalDengue").modal("hide");
             window.open("https://lookerstudio.google.com/reporting/eccc3b99-0c66-4565-aeff-9e2fcd8657e3", "_blank"); // Redirección
           } else {
-            $("#errorMensaje").show().text("No tiene acceso a la información");
+            $("#errorMensaje2").show().text("No tiene acceso a la información");
           }
         } else {
-          $("#errorMensaje").show().text("Usuario o contraseña incorrectos");
+          $("#errorMensaje2").show().text("Usuario o contraseña incorrectos");
         }
       });
 
