@@ -1838,8 +1838,8 @@
       </div>
     </div>
 
-    <div class="modal fade" id="loginModalNominalVacunados" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
-      aria-hidden="true">
+    <div class="modal fade" id="loginModalNominalVacunados" tabindex="-1" role="dialog"
+      aria-labelledby="loginModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content p-4">
           <div class="modal-body text-center">
@@ -2247,12 +2247,41 @@
     });
 
     /* acceso nominal */
+
     document.getElementById("soporteLinkNominalVacunados").addEventListener("click", function (event) {
       event.preventDefault();
       $("#usuarioNominalVacunados").val('');
       $("#claveNominalVacunados").val('');
       $('#loginModalNominalVacunados').modal('show');
     });
+
+    $("#loginFormNominalVacunados").on("submit", function (event) {
+      event.preventDefault();
+
+      let usuario = $("#usuarioNominalVacunados").val().trim();
+      let clave = $("#claveNominalVacunados").val().trim();
+
+      if (usuariosJson.length === 0) {
+        alert("Error: No se han cargado los datos de usuarios.");
+        return;
+      }
+
+      let usuarioValido = usuariosJson.find(user => user.usuario === usuario && user.clave === clave);
+      if (usuarioValido) {
+        let usuarioValido2 = usuariosJson.find(user => user.usuario === usuario && user.clave === clave && user.estado === '1');
+        if (usuarioValido2) {
+          alert("Bienvenido!");
+          $("#loginModalNominalVacunados").modal("hide");
+          window.open("https://app.powerbi.com/view?r=eyJrIjoiYjFlNTVkMjQtODVmNS00OGVkLThjYTMtNmFmZDg5ZTk0MzZlIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ReportSection561bd2efd012e146e789", "_blank"); // Redirección
+        } else {
+          $("#errorMensaje").show().text("No tiene acceso a la información");
+        }
+      } else {
+        $("#errorMensaje").show().text("Usuario o contraseña incorrectos");
+      }
+    });
+
+
 
     document.querySelectorAll("img").forEach((img) => {
       let src = img.getAttribute("src");
