@@ -735,10 +735,7 @@
                         href="https://app.powerbi.com/view?r=eyJrIjoiYTcxMmYzNWUtZjM3OS00ODQyLTk4YjctOTk4NDgxYzNlNTkyIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9"
                         target="_blank">Vacunación Cierre de Brechas 2025
                       </a>
-                      <a class="dropdown-item"
-                        href="https://app.powerbi.com/view?r=eyJrIjoiNjcyZjNjZTgtZmI1Mi00NjJjLWFiNTUtYjcyMGMzYmE0N2I1IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9"
-                        target="_blank">Vacunación SIREAIPI
-                      </a>
+                      <button type="button" class="dropdown-item" id="soporteLinkNominalVacunadosSIREAIPI">Vacunación SIREAIPI</button>
                     </div>
                   </div>
                 </div>
@@ -1889,7 +1886,52 @@
       </div>
     </div>
 
+    <div class="modal fade" id="loginModalNominalVacunadosSIREAIPI" tabindex="-1" role="dialog"
+    aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content p-4">
+        <div class="modal-body text-center">
+          <!-- Imagen centrada -->
+          <img src="assets/images/logo-diresa.png" alt="Logo" class="img-fluid mb-3" style="max-width: 150px;">
 
+          <!-- Título -->
+          <h3 class="font-weight-bold">DIRESA UCAYALI</h3>
+
+          <!-- Formulario -->
+          <form id="loginFormNominalVacunadosSIREAIPI">
+            <div class="form-group">
+              <label for="usuario" class="d-flex align-items-center">
+                Usuario
+              </label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fas fa-user"></i></span>
+                </div>
+                <input type="text" class="form-control" id="usuarioNominalVacunadosSIREAIPI" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="clave" class="d-flex align-items-center">
+                Contraseña
+              </label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                </div>
+                <input type="password" class="form-control" id="claveNominalVacunadosSIREAIPI" required>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-success btn-block">Ingresar</button>
+          </form>
+          <p id="errorMensajeSIREAIPI" class="text-danger mt-2" style="display: none;">Usuario o clave incorrectos</p>
+          <p class="mt-3">¿No tienes una cuenta? <a href="https://diresa-ucayali.com.pe/Solicitud/Index"
+              target="_blank" class="text-primary">Regístrate aquí</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
     <br />
     <br />
 
@@ -2258,12 +2300,46 @@
       $("#claveNominalVacunados").val('');
       $('#loginModalNominalVacunados').modal('show');
     });
-
     $("#loginFormNominalVacunados").on("submit", function (event) {
       event.preventDefault();
 
       let usuario = $("#usuarioNominalVacunados").val().trim();
       let clave = $("#claveNominalVacunados").val().trim();
+
+      if (usuariosJson.length === 0) {
+        alert("Error: No se han cargado los datos de usuarios.");
+        return;
+      }
+    
+      let usuarioValido = usuariosJson.find(user => user.usuario === usuario && user.clave === clave);
+      if (usuarioValido) {
+        let usuarioValido2 = usuariosJson.find(user => user.usuario === usuario && user.clave === clave && user.estado === '1');
+        if (usuarioValido2) {
+          alert("Bienvenido!");
+          $("#loginModalNominalVacunados").modal("hide");
+          window.open("https://app.powerbi.com/view?r=eyJrIjoiZDlkYWY4YWQtMGM3ZC00ZDhiLTlkMmYtZDY5MjRhYTcyZTJjIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9", "_blank"); // Redirección
+        } else {
+          $("#errorMensaje").show().text("No tiene acceso a la información");
+        }
+      } else {
+        $("#errorMensaje").show().text("Usuario o contraseña incorrectos");
+      }
+    });
+
+    /* acceso nominal INMUNIZACION SIRIAIPI */
+
+    document.getElementById("soporteLinkNominalVacunadosSIREAIPI").addEventListener("click", function (event) {
+      event.preventDefault();
+      $("#usuarioNominalVacunadosSIREAIPI").val('');
+      $("#claveNominalVacunadosSIREAIPI").val('');
+      $('#loginModalNominalVacunadosSIREAIPI').modal('show');
+    });
+
+    $("#loginFormNominalVacunadosSIREAIPI").on("submit", function (event) {
+      event.preventDefault();
+
+      let usuario = $("#usuarioNominalVacunadosSIREAIPI").val().trim();
+      let clave = $("#claveNominalVacunadosSIREAIPI").val().trim();
 
       if (usuariosJson.length === 0) {
         alert("Error: No se han cargado los datos de usuarios.");
@@ -2275,8 +2351,8 @@
         let usuarioValido2 = usuariosJson.find(user => user.usuario === usuario && user.clave === clave && user.estado === '1');
         if (usuarioValido2) {
           alert("Bienvenido!");
-          $("#loginModalNominalVacunados").modal("hide");
-          window.open("https://app.powerbi.com/view?r=eyJrIjoiZDlkYWY4YWQtMGM3ZC00ZDhiLTlkMmYtZDY5MjRhYTcyZTJjIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9", "_blank"); // Redirección
+          $("#loginModalNominalVacunadosSIREAIPI").modal("hide");
+          window.open("https://app.powerbi.com/view?r=eyJrIjoiNjcyZjNjZTgtZmI1Mi00NjJjLWFiNTUtYjcyMGMzYmE0N2I1IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9", "_blank"); // Redirección
         } else {
           $("#errorMensaje").show().text("No tiene acceso a la información");
         }
