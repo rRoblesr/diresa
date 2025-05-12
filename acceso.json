@@ -2,7 +2,7 @@
 "46326377   yurix46",
 
 "Usuario de la plataforma DIRESA",
-{"usuario": "7102", "clave": "7102", "estado": "1"},
+{"usuario": "00007102", "clave": "12345678", "estado": "1"},
 {"usuario": "59132", "clave": "ELIZABETH", "estado": "1"},
 {"usuario": "62407", "clave": "62407", "estado": "0"},
 {"usuario": "68076", "clave": "Deysi@123", "estado": "1"},
@@ -225,7 +225,7 @@
 {"usuario": "42948274", "clave": "psicologia", "estado": "1"},
 {"usuario": "42977273", "clave": "42977274", "estado": "1"},
 {"usuario": "42988530", "clave": "CRED123456*", "estado": "1"},
-{"usuario": "43080205", "clave": "Ross@123", "estado": "1"},
+{"usuario": "43080205", "clave": "Ross123@", "estado": "1"},
 {"usuario": "43087266", "clave": "brigitte05", "estado": "1"},
 {"usuario": "43093345", "clave": "katty1985", "estado": "1"},
 {"usuario": "43098499", "clave": "Mikaela.220813", "estado": "1"},
@@ -417,7 +417,7 @@
 {"usuario": "47091741", "clave": "47091741", "estado": "1"},
 {"usuario": "47104705", "clave": "Altura12", "estado": "1"},
 {"usuario": "47146868", "clave": "123456", "estado": "1"},
-{"usuario": "47173636", "clave": "1991", "estado": "1"},
+{"usuario": "47173636", "clave": "47173636", "estado": "1"},
 {"usuario": "47185983", "clave": "8578923", "estado": "1"},
 {"usuario": "47187036", "clave": "47187036", "estado": "0"},
 {"usuario": "47187547", "clave": "47187547", "estado": "1"},
@@ -432,7 +432,7 @@
 {"usuario": "47432090", "clave": "182306", "estado": "1"},
 {"usuario": "47458454", "clave": "474584", "estado": "1"},
 {"usuario": "47504791", "clave": "47504791", "estado": "1"},
-{"usuario": "47530427", "clave": "47530427", "estado": "1"},
+{"usuario": "47530427", "clave": "122814", "estado": "1"},
 {"usuario": "47530795", "clave": "47530795", "estado": "1"},
 {"usuario": "47536223", "clave": "47536223", "estado": "1"},
 {"usuario": "47637626", "clave": "47637626", "estado": "1"},
@@ -574,6 +574,7 @@
 {"usuario": "71413855", "clave": "Sofi@7138", "estado": "1"},
 {"usuario": "71485982", "clave": "147258", "estado": "1"},
 {"usuario": "71489458", "clave": "Aless123", "estado": "1"},
+{"usuario": "71526709", "clave": "kikemontes21", "estado": "1"},
 {"usuario": "71552004", "clave": "71552004", "estado": "1"},
 {"usuario": "71562868", "clave": "71562868", "estado": "0"},
 {"usuario": "71587142", "clave": "71587142", "estado": "1"},
@@ -707,6 +708,7 @@
 {"usuario": "75413872", "clave": "75413872", "estado": "1"},
 {"usuario": "75423271", "clave": "75423271", "estado": "1"},
 {"usuario": "75432221", "clave": "75432221", "estado": "1"},
+{"usuario": "75587496", "clave": "123456", "estado": "1"},
 {"usuario": "75610220", "clave": "75610220", "estado": "1"},
 {"usuario": "75706316", "clave": "Kachisarrechis", "estado": "1"},
 {"usuario": "75712137", "clave": "75712137", "estado": "0"},
@@ -778,4 +780,5 @@
 {"usuario": "geofb", "clave": "42248214", "estado": "1"},
 {"usuario": "sectorizador", "clave": "@123", "estado": "1"},
 {"usuario": "vph", "clave": "vph2024", "estado": "1"}
+
 ]
