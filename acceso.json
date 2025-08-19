@@ -568,7 +568,7 @@
 {"usuario": "70333834", "clave": "70333834", "estado": "1"},
 {"usuario": "70380662", "clave": "123", "estado": "1"},
 {"usuario": "70380663", "clave": "lucito", "estado": "1"},
-{"usuario": "70406408", "clave": "70406408", "estado": "1"},
+{"usuario": "70406408", "clave": "40491", "estado": "1"},
 {"usuario": "70410669", "clave": "6729479", "estado": "1"},
 {"usuario": "70424677", "clave": "kd170789", "estado": "1"},
 {"usuario": "70424680", "clave": "70424680", "estado": "0"},
@@ -876,5 +876,6 @@
 {"usuario": "sectorizador", "clave": "@123", "estado": "1"},
 {"usuario": "vph", "clave": "vph2024", "estado": "1"},
 {"usuario": "00766430", "clave": "Firuca12", "estado": "1"}
+
 
 ]
