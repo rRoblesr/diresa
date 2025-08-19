@@ -629,80 +629,44 @@
               El sistema de información propuesto para la población de
               Ucayali.
             </p>
-            <div class="header-busqueda">
-              <input type="text" id="buscador" placeholder="Buscar..." class="input-busqueda" />
-            </div>
           </div>
         </div>
       </div>
       <div class="courses-wrapper wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.3s">
-        <div class="row justify-content-center">
-          <!-- ========================================================
-
-                   V     Targeta Niños   V
-
-          ===========================================================-->
-
-         <div class="col-lg-3 col-sm-6 contenedor-tarjeta">
-            <div class="tarjeta-girante" id="miTarjeta">
-              <div class="cara cara-frente">
-                <div class="imagen-curso align-items-center">
-                  <a>
-                    <img src="assets/images/IconosServicios/niño_1[1].png" alt="courses" />
-                  </a>
-                </div>
-                <a class="etiqueta-categoria">#Niño</a>
-                <h4 class="titulo-curso">
-                  <a>
-                    Productos específicos para el desarrollo infantil temprano.
-                  </a>
-                </h4>
-                <div class="parte-inferior-tarjeta">
-
-                  <button class="boton-opciones" onclick="girarTarjeta('miTarjeta')">
-                    Más Opciones
-                    <span class="flecha-derecha">→</span>
-                  </button>
-                </div>
+        <div class="row">
+          <!-- elimnar tarjetas -->
+          <div class="col-lg-3 col-sm-6 courses-col">
+            <div class="single-courses mt-30">
+              <div class="courses-image">
+                <a>
+                  <img src="assets/images/courses/salud-1.png" width="270" height="170" alt="courses" />
+                </a>
               </div>
 
-              <div class="cara cara-atras">
-                <button class="boton-cerrar" onclick="volverFrente('miTarjeta')">×</button>
-                <div class="contenido-atras">
-                  <h2>Opciones</h2>
-                  <div class="contenedor-opciones">
-                    <div class="elemento-opcion">
-                      <span class="icono-opcion"></span>
-                      <a class="enlace-opcion"
+              <div class="courses-content">
+                <a class="category">#Niño</a>
+                <h4 class="courses-title">
+                  <a>
+                    Productos específicos para el desarrollo infantil
+                    temprano.
+                  </a>
+                </h4>
+                <div class="text-center">
+                  <div class="dropdown">
+                    <button class="dropdown-toggle">Más Opciones</button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item"
                         href="https://app.powerbi.com/view?r=eyJrIjoiOTgzMTdkY2QtOWZkZi00ZDZlLTg4NTgtMTcwZWVjZDA2ZTJiIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ReportSection"
-                        target="_blank">
-                        Etapa Vida Niño
-                      </a>
-                    </div>
-
-                    <div class="elemento-opcion">
-                      <span class="icono-opcion"></span>
-                      <a class="enlace-opcion"
+                        target="_blank">Etapa Vida Niño</a>
+                      <a class="dropdown-item"
                         href="https://app.powerbi.com/view?r=eyJrIjoiZmY0YjU4NzUtYmFhMy00ODc1LWI5YWYtMjk4YmNmMTkyZWJiIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ReportSectionc306eb4184a54069d893"
-                        target="_blank">
-                        Monitoreo
-                      </a>
+                        target="_blank">Monitoreo</a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-
-          <script>
-            function girarTarjeta(idTarjeta) {
-              document.getElementById(idTarjeta).classList.add('girada');
-            }
-
-            function volverFrente(idTarjeta) {
-              document.getElementById(idTarjeta).classList.remove('girada');
-            }
-          </script>
 
           <!-- <div class="col-lg-3 col-sm-6 courses-col">
               <div class="single-courses mt-30">
