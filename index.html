@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
 
   <!--====== Title ======-->
-  <title>Dirección Regional de Salud de Ucayali</title>
+  <title>Dirección Regional de Salud de Ucayali</title>   
 
   <meta name="description" content="" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -27,7 +27,7 @@
   <link rel="stylesheet" href="assets/css/plugins/magnific-popup.css" />
 
   <!--====== Main Style CSS ======-->
-  <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+   <link rel="stylesheet" href="assets/css/style.css"> 
   <link rel="stylesheet" href="assets/css/style.min.css" />
   <style>
     /* Estilos para la ventana modal */
@@ -613,55 +613,84 @@
   <!--====== About Ends ======-->
   <!--====== Top Courses Start ======-->
 
-  <section class="top-courses-area" id="servicios">
-    <div class="container my-5">
+  <section class="section_servicio" id="servicios">
+    <div class="container-servicios my-5">
       <div class="text-center">
         <h2 class="section-heading text-uppercase">Servicios</h2>
         <!-- <h3 class="section-subheading text-muted">
             Lorem ipsum dolor sit amet consectetur.
-          </h3> -->
+        </h3> -->
       </div>
       <div class="row">
-        <div class="col-lg-8">
+        <div class="col-lg-12">
           <div class="section-title mt-40">
             <h2 class="title">Estadística en <br />Salud</h2>
             <p>
               El sistema de información propuesto para la población de
               Ucayali.
             </p>
+            <div class="header-busqueda">
+              <input type="text" id="buscador" placeholder="Buscar..." class="input-busqueda" />
+            </div>
           </div>
         </div>
       </div>
-      
       <div class="courses-wrapper wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.3s">
-        <div class="row">
-          <!-- elimnar tarjetas -->
-          <div class="col-lg-3 col-sm-6 courses-col">
-            <div class="single-courses mt-30">
-              <div class="courses-image">
-                <a>
-                  <img src="assets/images/courses/salud-1.png" width="270" height="170" alt="courses" />
-                </a>
-              </div>
+        <div class="row justify-content-center">
 
-              <div class="courses-content">
-                <a class="category">#Niño</a>
-                <h4 class="courses-title">
+
+
+
+          <!-- ========================================================
+
+                   V     Targeta Niños   V
+
+          ===========================================================-->
+
+          <div class="col-lg-3 col-sm-6 contenedor-tarjeta">
+            <div class="tarjeta-girante" id="miTarjeta">
+              <div class="cara cara-frente">
+                <div class="imagen-curso align-items-center">
                   <a>
-                    Productos específicos para el desarrollo infantil
-                    temprano.
+                    <img src="assets/images/IconosServicios/niño_1[1].png" alt="courses" />
+                  </a>
+                </div>
+                <a class="etiqueta-categoria">#Niño</a>
+                <h4 class="titulo-curso">
+                  <a>
+                    Productos específicos para el desarrollo infantil temprano.
                   </a>
                 </h4>
-                <div class="text-center">
-                  <div class="dropdown">
-                    <button class="dropdown-toggle">Más Opciones</button>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item"
+                <div class="parte-inferior-tarjeta">
+
+                  <button class="boton-opciones" onclick="girarTarjeta('miTarjeta')">
+                    Más Opciones
+                    <span class="flecha-derecha">→</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="cara cara-atras">
+                <button class="boton-cerrar" onclick="volverFrente('miTarjeta')">×</button>
+                <div class="contenido-atras">
+                  <h2>Opciones</h2>
+                  <div class="contenedor-opciones">
+                    <div class="elemento-opcion">
+                      <span class="icono-opcion"></span>
+                      <a class="enlace-opcion"
                         href="https://app.powerbi.com/view?r=eyJrIjoiOTgzMTdkY2QtOWZkZi00ZDZlLTg4NTgtMTcwZWVjZDA2ZTJiIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ReportSection"
-                        target="_blank">Etapa Vida Niño</a>
-                      <a class="dropdown-item"
+                        target="_blank">
+                        Etapa Vida Niño
+                      </a>
+                    </div>
+
+                    <div class="elemento-opcion">
+                      <span class="icono-opcion"></span>
+                      <a class="enlace-opcion"
                         href="https://app.powerbi.com/view?r=eyJrIjoiZmY0YjU4NzUtYmFhMy00ODc1LWI5YWYtMjk4YmNmMTkyZWJiIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ReportSectionc306eb4184a54069d893"
-                        target="_blank">Monitoreo</a>
+                        target="_blank">
+                        Monitoreo
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -669,1041 +698,1049 @@
             </div>
           </div>
 
-          <!-- <div class="col-lg-3 col-sm-6 courses-col">
-              <div class="single-courses mt-30">
-                <div class="courses-image">
-                  <a
-                    ><img
-                      src="assets/images/courses/salud-1.png"
-                      width="270"
-                      height="170"
-                      alt="courses"
-                  /></a>
-                </div>
-                <div class="courses-content">
-                  <a class="category">#Niño</a>
-                  <h4 class="courses-title">
-                    <a
-                      >Productos específicos para el desarrollo infantil
-                      temprano.</a
-                    >
-                  </h4>
+          <script>
+            function girarTarjeta(idTarjeta) {
+              document.getElementById(idTarjeta).classList.add('girada');
+            }
 
-                  <div class="courses-link">
-                    <a class="apply">Etapa Vida Niño</a>
-                    <a
-                      class="more"
-                      href="https://app.powerbi.com/view?r=eyJrIjoiOTgzMTdkY2QtOWZkZi00ZDZlLTg4NTgtMTcwZWVjZDA2ZTJiIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ReportSection"
-                      target="_blank"
-                      >Click aquí<i class="fas fa-chevron-right"></i
-                    ></a>
-                  </div>
+            function volverFrente(idTarjeta) {
+              document.getElementById(idTarjeta).classList.remove('girada');
+            }
+          </script>
+         
 
-                  <div class="courses-link">
-                    <a class="apply">Monitoreo</a>
-                    <a
-                      class="more"
-                      href="https://app.powerbi.com/view?r=eyJrIjoiZmY0YjU4NzUtYmFhMy00ODc1LWI5YWYtMjk4YmNmMTkyZWJiIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ReportSectionc306eb4184a54069d893"
-                      target="_blank"
-                      >Click aquí<i class="fas fa-chevron-right"></i
-                    ></a>
-                  </div>
+
+
+          <!-- ========================================================
+
+                   V     Targeta Nutricion   V
+
+          ===========================================================-->
+
+          <div class="col-lg-3 col-sm-6 contenedor-tarjeta">
+            <div class="tarjeta-girante" id="miTarjeta2">
+              <div class="cara cara-frente">
+                <div class="imagen-curso">
+                  <a>
+                    <img src="assets/images/IconosServicios/nutricion.png" alt="courses" />
+                  </a>
                 </div>
-              </div>
-            </div> -->
-          <div class="col-lg-3 col-sm-6 courses-col">
-            <div class="single-courses mt-30">
-              <div class="courses-image">
-                <a><img src="assets/images/courses/salud-1.png" width="270" height="170" alt="courses" /></a>
-              </div>
-              <div class="courses-content">
-                <a class="category">#Nutrición</a>
-                <h4 class="courses-title">
-                  <a>Productos específicos para el desarrollo infantil
-                    temprano.</a>
+                <a class="etiqueta-categoria">#Nutrición</a>
+                <h4 class="titulo-curso">
+                  <a>
+                    Productos específicos para el desarrollo infantil temprano.
+                  </a>
                 </h4>
+                <div class="parte-inferior-tarjeta">
+                  <button class="boton-opciones" onclick="girarTarjeta('miTarjeta2')">
+                    Más Opciones
+                    <span class="flecha-derecha">→</span>
+                  </button>
+                </div>
+              </div>
 
-                <div class="text-center">
-                  <div class="dropdown">
-                    <button class="dropdown-toggle">Más Opciones</button>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item"
+              <div class="cara cara-atras">
+                <button class="boton-cerrar" onclick="volverFrente('miTarjeta2')">×</button>
+                <div class="contenido-atras">
+                  <h2>Opciones</h2>
+                  <div class="contenedor-opciones">
+                    <div class="elemento-opcion">
+                      <span class="icono-opcion"></span>
+                      <a class="enlace-opcion"
                         href="https://app.powerbi.com/view?r=eyJrIjoiNjE1MGQ4MmMtYWYyOC00MDE3LWI5ODQtZDBmNTkyN2ZlMTdiIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ReportSection"
-                        target="_blank">Nutrición</a>
-                      <!-- <button type="button" class="dropdown-item" id="soporteLinkAnemia">Seguimiento Anemia 2025</button>-->
-                      <!--<a class="dropdown-item"
-                        href="https://app.powerbi.com/view?r=eyJrIjoiYjEwYTE5ZDEtNmI1NS00OTZhLWEyOGEtNjgxMjY2ZjBlZTlkIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ReportSectionc306eb4184a54069d893"
-                        target="_blank">Monitoreo</a> -->
-
+                        target="_blank">
+                        Nutrición
+                      </a>
                     </div>
                   </div>
                 </div>
-
-                <!-- <div class="courses-link">
-                    <a class="apply">Nutrición</a>
-                    <a
-                      class="more"
-                      href="https://app.powerbi.com/view?r=eyJrIjoiNjE1MGQ4MmMtYWYyOC00MDE3LWI5ODQtZDBmNTkyN2ZlMTdiIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ReportSection"
-                      target="_blank"
-                      >Click aquí<i class="fas fa-chevron-right"></i
-                    ></a>
-                  </div>
-                  <div class="courses-link">
-                    <a class="apply">Monitoreo</a>
-                    <a
-                      class="more"
-                      href="https://app.powerbi.com/view?r=eyJrIjoiYjEwYTE5ZDEtNmI1NS00OTZhLWEyOGEtNjgxMjY2ZjBlZTlkIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ReportSectionc306eb4184a54069d893"
-                      target="_blank"
-                      >Click aquí<i class="fas fa-chevron-right"></i
-                    ></a>
-                  </div> -->
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-sm-6 courses-col">
-            <div class="single-courses mt-30">
-              <div class="courses-image">
-                <a><img src="assets/images/courses/salud-1.png" width="270" height="170" alt="courses" /></a>
-              </div>
-              <div class="courses-content">
-                <a class="category">#Inmunización</a>
-                <h4 class="courses-title">
-                  <a>Productos específicos para el desarrollo infantil
-                    temprano.</a>
-                </h4>
 
-                <div class="text-center">
-                  <div class="dropdown">
-                    <button class="dropdown-toggle">Más Opciones</button>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item"
+
+
+
+
+                    <!-- ========================================================
+
+                   V     Targeta Inmunizacion   V
+
+          ==========================================================-->
+
+          <div class="col-lg-3 col-sm-6 contenedor-tarjeta">
+            <div class="tarjeta-girante" id="miTarjeta3">
+              <div class="cara cara-frente">
+                <div class="imagen-curso">
+                  <a>
+                    <img src="assets/images/IconosServicios/inmunizacion.png" alt="courses" />
+                  </a>
+                </div>
+                <a class="etiqueta-categoria">#Inmunización</a>
+                <h4 class="titulo-curso">
+                  <a>
+                    Productos específicos para el desarrollo infantil temprano.
+                  </a>
+                </h4>
+                <div class="parte-inferior-tarjeta">
+                  <button class="boton-opciones" onclick="girarTarjeta('miTarjeta3')">
+                    Más Opciones
+                    <span class="flecha-derecha">→</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="cara cara-atras">
+                <button class="boton-cerrar" onclick="volverFrente('miTarjeta3')">×</button>
+                <div class="contenido-atras">
+                  <h2>Opciones</h2>
+                  <div class="contenedor-opciones">
+                    <div class="elemento-opcion">
+                      <span class="icono-opcion"></span>
+                      <a class="enlace-opcion"
                         href="https://app.powerbi.com/view?r=eyJrIjoiYWU4ZmJhZTEtNWU3Yi00ODM0LWE4M2MtM2U4OTU5ODU5MzlhIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9"
-                        target="_blank">Monitoreo Vacunas Trazadoras
+                        target="_blank">
+                        Monitoreo Vacunas Trazadoras
                       </a>
-                      <a class="dropdown-item"
+                    </div>
+
+                    <div class="elemento-opcion">
+                      <span class="icono-opcion"></span>
+                      <a class="enlace-opcion"
                         href="https://app.powerbi.com/view?r=eyJrIjoiYzFiNWUxY2QtMTM1NC00MjMyLTg0YjctZDZmNzY1YjRlOTgyIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9"
-                        target="_blank">Monitoreo Barrido SPR
+                        target="_blank">
+                        Monitoreo Barrido SPR
                       </a>
-                      <a class="dropdown-item"
+                    </div>
+
+                    <div class="elemento-opcion">
+                      <span class="icono-opcion"></span>
+                      <a class="enlace-opcion"
                         href="https://app.powerbi.com/view?r=eyJrIjoiOTRlYjViODMtZWE3Ny00ZDlmLTgyZGYtMWQzMzFlNDI1YzhhIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9"
-                        target="_blank">Historial de Vacunación
+                        target="_blank">
+                        Historial de Vacunación
                       </a>
-                      <a class="dropdown-item"
+                    </div>
+
+                    <div class="elemento-opcion">
+                      <span class="icono-opcion"></span>
+                      <a class="enlace-opcion"
                         href="https://app.powerbi.com/view?r=eyJrIjoiYTg5ODc1OGQtZTBiZi00ODdkLTljYmItNmIzMWM3ZWI2YzgyIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9"
-                        target="_blank">Producción de Fiebre Amarilla</a>
-                      <a class="dropdown-item"
-                        href="https://app.powerbi.com/view?r=eyJrIjoiNmJjZTU5OWMtYjBkYS00ZGY3LTg4MjQtODIyZjkxNjk2MzQ3IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9"
-                        target="_blank">Vacunación Dengue
+                        target="_blank">
+                        Producción de Fiebre Amarilla
                       </a>
-                      <!-- <a class="dropdown-item"
+                    </div>
+
+                    <div class="elemento-opcion">
+                      <span class="icono-opcion"></span>
+                      <a class="enlace-opcion"
                         href="https://app.powerbi.com/view?r=eyJrIjoiNmJjZTU5OWMtYjBkYS00ZGY3LTg4MjQtODIyZjkxNjk2MzQ3IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9"
-                        target="_blank">Nominal de Vacunados contra el Dengue
-                      </a> -->
-                      <button type="button" class="dropdown-item" id="soporteLinkNominalVacunados">Nominal de Vacunados
+                        target="_blank">
+                        Vacunación Dengue
+                      </a>
+                    </div>
+
+                    <div class="elemento-opcion">
+                      <span class="icono-opcion"></span>
+                     <button class="boton-formulario" type="button" class="dropdown-item" id="soporteLinkNominalVacunados">Nominal de Vacunados
                         contra el Dengue</button>
-                      <a class="dropdown-item"
+                    </div>
+
+                    <div class="elemento-opcion">
+                      <span class="icono-opcion"></span>
+                      <a class="enlace-opcion"
                         href="https://app.powerbi.com/view?r=eyJrIjoiYmZmMTQwMGEtZjlmMy00ZmRjLWFjMzMtZjMxZDM3NDliY2Y3IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9"
-                        target="_blank">Vacunación VPH 2025
+                        target="_blank">
+                        Vacunación VPH 2025
                       </a>
-                      <a class="dropdown-item"
+                    </div>
+                    <div class="elemento-opcion">
+                      <span class="icono-opcion"></span>
+                      <a class="enlace-opcion"
                         href="https://app.powerbi.com/view?r=eyJrIjoiYTcxMmYzNWUtZjM3OS00ODQyLTk4YjctOTk4NDgxYzNlNTkyIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9"
-                        target="_blank">Vacunación Cierre de Brechas 2025
+                        target="_blank">
+                        Vacunación Cierre de Brechas 2025
                       </a>
-                      <button type="button" class="dropdown-item" id="soporteLinkNominalVacunadosSIREAIPI">Vacunación
+                  </div>
+                  <div class="elemento-opcion">
+                      <span class="icono-opcion"></span>
+                      <button class="boton-formulario" type="button" class="dropdown-item" id="soporteLinkNominalVacunadosSIREAIPI">Vacunación
                         SIREAIPI</button>
-                      <a class="dropdown-item"
-                        href="https://app.powerbi.com/view?r=eyJrIjoiYzA4MDEzMjItOTBmZS00ZDAxLTlkYzEtZGRlMDI4OWE1MjMyIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9"
-                        target="_blank">Semana de Vacunación de las Américas 2025
-                      </a>
-                    </div>
+                  </div>
+                  <div class="elemento-opcion">
+                    <span class="icono-opcion"></span>
+                    <a class="enlace-opcion"
+                      href="https://app.powerbi.com/view?r=eyJrIjoiYzA4MDEzMjItOTBmZS00ZDAxLTlkYzEtZGRlMDI4OWE1MjMyIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9"
+                      target="_blank">Semana de Vacunación de las Américas 2025
+                    </a>
                   </div>
                 </div>
-                <!--   
-                                <div class="courses-link">
-                                    <a class="apply">Inmunizaciones</a>
-                                    <a class="more" href="https://app.powerbi.com/view?r=eyJrIjoiODM2NmQwZjUtYzQ5ZS00NTQ5LWFkNWEtZDk0MDQ3NjJiNzY0IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9" target="_blank">Click aquí<i class="fas fa-chevron-right"></i></a>
-                                </div>
-                            
-                                <div class="courses-link">
-                                    <a class="apply">Producción VPH</a>
-                                    <a class="more" href="https://app.powerbi.com/view?r=eyJrIjoiNWJmODNjOTgtNmExZC00YjJkLTg3ODMtNTZkODA0N2QyYzFiIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ReportSection" target="_blank">Click aquí<i class="fas fa-chevron-right"></i></a>
-                                </div>
-                                <div class="courses-link">
-                                    <a class="apply">Producción <br />Cierre de Brecha</a>
-                                    <a class="more" href="https://app.powerbi.com/view?r=eyJrIjoiODc1YjNjZWEtZjQ5Ny00ZTlmLTk3ZjItZjQ1MmE5MzA4MjEzIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ReportSection" target="_blank">Click aquí<i class="fas fa-chevron-right"></i></a>
-                                </div>
-                            -->
-                <!-- <div class="courses-link">
-                    <a class="apply">Monitoreo<br />Vacunas Trazadoras</a>
-                    <a
-                      class="more"
-                      href="https://app.powerbi.com/view?r=eyJrIjoiYWU4ZmJhZTEtNWU3Yi00ODM0LWE4M2MtM2U4OTU5ODU5MzlhIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9"
-                      target="_blank"
-                      >Click aquí<i class="fas fa-chevron-right"></i
-                    ></a>
-                  </div>
-                  <div class="courses-link">
-                    <a class="apply">Monitoreo<br />Barrido SPR</a>
-                    <a
-                      class="more"
-                      href="https://app.powerbi.com/view?r=eyJrIjoiYzFiNWUxY2QtMTM1NC00MjMyLTg0YjctZDZmNzY1YjRlOTgyIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9"
-                      target="_blank"
-                      >Click aquí<i class="fas fa-chevron-right"></i
-                    ></a>
-                  </div>
-                  <div class="courses-link">
-                    <a class="apply">Historial de<br />Vacunación</a>
-                    <a
-                      class="more"
-                      href="https://app.powerbi.com/view?r=eyJrIjoiOTRlYjViODMtZWE3Ny00ZDlmLTgyZGYtMWQzMzFlNDI1YzhhIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9"
-                      target="_blank"
-                      >Click aquí<i class="fas fa-chevron-right"></i
-                    ></a>
-                  </div>
-                  <div class="courses-link">
-                    <a class="apply">Producción de <br />Fiebre Amarilla</a>
-                    <a
-                      class="more"
-                      href="https://app.powerbi.com/view?r=eyJrIjoiYTg5ODc1OGQtZTBiZi00ODdkLTljYmItNmIzMWM3ZWI2YzgyIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9"
-                      target="_blank"
-                      >Click aquí<i class="fas fa-chevron-right"></i
-                    ></a>
-                  </div>
-                  <div class="courses-link">
-                    <a class="apply">Vacunación<br />Dengue</a>
-                    <a
-                      class="more"
-                      href="https://app.powerbi.com/view?r=eyJrIjoiNmJjZTU5OWMtYjBkYS00ZGY3LTg4MjQtODIyZjkxNjk2MzQ3IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9"
-                      target="_blank"
-                      >Click aquí<i class="fas fa-chevron-right"></i
-                    ></a>
-                  </div> -->
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-3 col-sm-6 courses-col">
-            <div class="single-courses mt-30">
-              <div class="courses-image">
-                <a><img src="assets/images/courses/salud-1.png" width="270" height="170" alt="courses" /></a>
-              </div>
-              <div class="courses-content">
-                <a class="category">#SaludMental</a>
-                <h4 class="courses-title">
-                  <a>Control y prevención en salud mental. <br /><br /></a>
+          <!-- ========================================================
+
+                   V     Targeta Salud Mental   V
+
+          ===========================================================-->
+
+          <div class="col-lg-3 col-sm-6 contenedor-tarjeta">
+            <div class="tarjeta-girante" id="miTarjetaSalud">
+
+              <!-- Cara frontal -->
+              <div class="cara cara-frente">
+                <div class="imagen-curso">
+                  <a>
+                    <img src="assets/images/IconosServicios/salud mentalo.png" alt="courses" />
+                  </a>
+                </div>
+                <a class="etiqueta-categoria">#SaludMental</a>
+                <h4 class="titulo-curso">
+                  <a>
+                    Control y prevención en salud mental.
+                  </a>
                 </h4>
-                <div class="text-center">
-                  <div class="dropdown">
-                    <button class="dropdown-toggle">Más Opciones</button>
-                    <div class="dropdown-menu">
-                      <!-- <a
-                        class="dropdown-item"
-                        href="https://app.powerbi.com/view?r=eyJrIjoiNjE1MGQ4MmMtYWYyOC00MDE3LWI5ODQtZDBmNTkyN2ZlMTdiIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ReportSection"
-                        target="_blank"
-                        >Etapa Vida Niño
-                      </a> -->
-                      <a class="dropdown-item"
+                <div class="parte-inferior-tarjeta">
+                  <button class="boton-opciones" onclick="girarTarjeta('miTarjetaSalud')">
+                    Más Opciones
+                    <span class="flecha-derecha">→</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Cara trasera -->
+              <div class="cara cara-atras">
+                <button class="boton-cerrar" onclick="volverFrente('miTarjetaSalud')">×</button>
+                <div class="contenido-atras">
+                  <h2>Opciones</h2>
+                  <div class="contenedor-opciones">
+                    <div class="elemento-opcion">
+                      <span class="icono-opcion"></span>
+                      <a class="enlace-opcion"
                         href="https://app.powerbi.com/view?r=eyJrIjoiZTQzM2Y0YjgtOTgwYi00ZDA5LTg1N2EtMDg1ODQ4M2I0NWUxIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ReportSectiond757b470baf58266725d"
-                        target="_blank">Indicadores
+                        target="_blank">
+                        Indicadores
                       </a>
-                      <a class="dropdown-item"
+                    </div>
+
+                    <div class="elemento-opcion">
+                      <span class="icono-opcion"></span>
+                      <a class="enlace-opcion"
                         href="https://app.powerbi.com/view?r=eyJrIjoiZTQzM2Y0YjgtOTgwYi00ZDA5LTg1N2EtMDg1ODQ4M2I0NWUxIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ReportSection"
-                        target="_blank">Morbilidad
+                        target="_blank">
+                        Morbilidad
                       </a>
                     </div>
                   </div>
                 </div>
-
-                <!-- <div class="courses-link">
-                    <a class="apply">Indicadores</a>
-                    <a
-                      class="more"
-                      href="https://app.powerbi.com/view?r=eyJrIjoiZTQzM2Y0YjgtOTgwYi00ZDA5LTg1N2EtMDg1ODQ4M2I0NWUxIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ReportSectiond757b470baf58266725d"
-                      target="_blank"
-                      >Click aquí<i class="fas fa-chevron-right"></i
-                    ></a>
-                  </div>
-                  <div class="courses-link">
-                    <a class="apply">Morbilidad</a>
-                    <a
-                      class="more"
-                      href="https://app.powerbi.com/view?r=eyJrIjoiZTQzM2Y0YjgtOTgwYi00ZDA5LTg1N2EtMDg1ODQ4M2I0NWUxIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ReportSection"
-                      target="_blank"
-                      >Click aquí<i class="fas fa-chevron-right"></i
-                    ></a>
-                  </div> -->
               </div>
+
             </div>
           </div>
-          <div class="col-lg-3 col-sm-6 courses-col">
-            <div class="single-courses mt-30">
-              <div class="courses-image">
-                <a><img src="assets/images/courses/salud-1.png" width="270" height="170" alt="courses" /></a>
-              </div>
-              <div class="courses-content">
-                <a class="category">#TBC_VIH_SIDA</a>
-                <h4 class="courses-title">
-                  <a>TBC <br />
-                    VIH/SIDA<br /><br /></a>
+
+
+
+
+
+
+          <!-- ========================================================
+
+                   V     Targeta TBC_VIH_SIDA   V
+
+          ===========================================================-->
+
+          <div class="col-lg-3 col-sm-6 contenedor-tarjeta">
+            <div class="tarjeta-girante" id="miTarjetaTBC">
+
+              <!-- Cara frontal -->
+              <div class="cara cara-frente">
+                <div class="imagen-curso">
+                  <a>
+                    <img src="assets/images/IconosServicios/sida.png" alt="courses" />
+                  </a>
+                </div>
+                <a class="etiqueta-categoria">#TBC_VIH_SIDA</a>
+                <h4 class="titulo-curso">
+                  <a>
+                    TBC <br>VIH/SIDA
+                  </a>
                 </h4>
-                <div class="text-center">
-                  <div class="dropdown">
-                    <button class="dropdown-toggle">Más Opciones</button>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item"
-                        href="https://app.powerbi.com/view?r=eyJrIjoiYjJlZDhiMzktNDYxYy00MTk0LThhNDAtYTQ3MzhjZjNlMjU3IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9"
-                        target="_blank">VIH-SIDA
+                <div class="parte-inferior-tarjeta">
+                  <button class="boton-opciones" onclick="girarTarjeta('miTarjetaTBC')">
+                    Más Opciones
+                    <span class="flecha-derecha">→</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Cara trasera -->
+              <div class="cara cara-atras">
+                <button class="boton-cerrar" onclick="volverFrente('miTarjetaTBC')">×</button>
+                <div class="contenido-atras">
+                  <h2>Opciones</h2>
+                  <div class="contenedor-opciones">
+                    <div class="elemento-opcion">
+                      <span class="icono-opcion"></span>
+                      <a class="enlace-opcion"
+                        href="https://app.powerbi.com/view?r=eyJrIjoiMjdhMmFiZDMtZGEzYi00MWU5LWJiZTItOGQ2YTFlOTU2ZTYxIiwidCI6IjhkNDVhZGIxLTMzNzYtNDljYi05MjU2LThlMDVlNmVhMDZiMCJ9"
+                        target="_blank">
+                        VIH-SIDA
                       </a>
-                      <a class="dropdown-item"
+                    </div>
+                    <div class="elemento-opcion">
+                      <span class="icono-opcion"></span>
+                      <a class="enlace-opcion"
                         href="https://app.powerbi.com/view?r=eyJrIjoiZjVkMmIwZGUtNTc2YS00YWE0LWJkNjYtMTc0MGU3YmI3MWQ2IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9"
-                        target="_blank">TBC - Evaluación
+                        target="_blank">
+                        TBC - Evaluación
                       </a>
                     </div>
                   </div>
                 </div>
-
-                <!-- <div class="courses-link">
-                    <a class="apply" href="#">VIH-SIDA</a>
-                    <a
-                      class="more"
-                      href="https://app.powerbi.com/view?r=eyJrIjoiMjdhMmFiZDMtZGEzYi00MWU5LWJiZTItOGQ2YTFlOTU2ZTYxIiwidCI6IjhkNDVhZGIxLTMzNzYtNDljYi05MjU2LThlMDVlNmVhMDZiMCJ9"
-                      target="_blank"
-                      >Click aquí <i class="fas fa-chevron-right"></i
-                    ></a>
-                  </div> -->
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-sm-6 courses-col">
-            <div class="single-courses mt-30">
-              <div class="courses-image">
-                <a><img src="assets/images/courses/salud-1.png" width="270" height="170" alt="courses" /></a>
-              </div>
-              <div class="courses-content">
-                <a class="category">#MetaxénicasZoonosis</a>
-                <h4 class="courses-title">
+
+
+
+
+
+          <!-- ========================================================
+
+                   V     Targeta MetaxenicasZoonisis   V
+
+          ===========================================================-->
+
+          <div class="col-lg-3 col-sm-6 contenedor-tarjeta">
+            <div class="tarjeta-girante" id="miTarjetaMetaxenicas">
+
+              <!-- Cara frontal -->
+              <div class="cara cara-frente">
+                <div class="imagen-curso">
+                  <a>
+                    <img src="assets/images/IconosServicios/MetaxénicasZoonosis.png" alt="courses" />
+                  </a>
+                </div>
+                <a class="etiqueta-categoria">#MetaxénicasZoonosis</a>
+                <h4 class="titulo-curso">
                   <a>Enfermedades metaxénicas y zoonosis.</a>
                 </h4>
+                <div class="parte-inferior-tarjeta">
+                  <button class="boton-opciones" onclick="girarTarjeta('miTarjetaMetaxenicas')">
+                    Más Opciones
+                    <span class="flecha-derecha">→</span>
+                  </button>
+                </div>
+              </div>
 
-                <div class="text-center">
-                  <div class="dropdown">
-                    <button class="dropdown-toggle">Más Opciones</button>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item"
+              <!-- Cara trasera -->
+              <div class="cara cara-atras">
+                <button class="boton-cerrar" onclick="volverFrente('miTarjetaMetaxenicas')">×</button>
+                <div class="contenido-atras">
+                  <h2>Opciones</h2>
+                  <div class="contenedor-opciones">
+
+                    <div class="elemento-opcion">
+                      <span class="icono-opcion"></span>
+                      <a class="enlace-opcion"
                         href="https://lookerstudio.google.com/reporting/bc832a58-c7c5-483a-9a03-5c996541f792/page/p_kqip6yr63c"
-                        target="_blank">Dengue
+                        target="_blank">
+                        Dengue
                       </a>
-                      <a class="dropdown-item"
+                    </div>
+
+                    <div class="elemento-opcion">
+                      <span class="icono-opcion"></span>
+                      <a class="enlace-opcion"
                         href="https://app.powerbi.com/view?r=eyJrIjoiZTQzM2Y0YjgtOTgwYi00ZDA5LTg1N2EtMDg1ODQ4M2I0NWUxIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=e645399d4061c869b715"
-                        target="_blank">Zoonosis
+                        target="_blank">
+                        Zoonosis
                       </a>
-                      <button type="button" class="dropdown-item" id="soporteLinkDengue">Diagnostico Laboratorial Dengue
+                    </div>
+                    <div class="elemento-opcion">
+                      <span class="icono-opcion"></span>
+                      
+                    <button class="boton-formulario" type="button" class="dropdown-item" id="soporteLinkDengue">Diagnostico Laboratorial Dengue
                       </button>
+
                     </div>
+
                   </div>
                 </div>
-
-                <!-- <div class="courses-link">
-                    <a class="apply" href="#">Dengue</a>
-                    <a
-                      class="more"
-                      href="https://lookerstudio.google.com/reporting/e0788e2c-65b1-4afa-8696-4778b2857189"
-                      target="_blank"
-                      >Click aquí <i class="fas fa-chevron-right"></i
-                    ></a>
-                  </div>
-                  <div class="courses-link">
-                    <a class="apply" href="#">Zoonosis</a>
-                    <a
-                      class="more"
-                      href="https://app.powerbi.com/view?r=eyJrIjoiZTQzM2Y0YjgtOTgwYi00ZDA5LTg1N2EtMDg1ODQ4M2I0NWUxIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=e645399d4061c869b715"
-                      target="_blank"
-                      >Click aquí <i class="fas fa-chevron-right"></i
-                    ></a>
-                  </div> -->
               </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6 courses-col">
-            <div class="single-courses mt-30">
-              <div class="courses-image">
-                <a><img src="assets/images/courses/salud-1.png" width="270" height="170" alt="courses" /></a>
-              </div>
-              <div class="courses-content">
-                <a class="category">#Cancer</a>
-                <h4 class="courses-title">
-                  <a>Prevención y control del cancer. <br /><br /></a>
-                </h4>
 
-                <div class="text-center">
-                  <div class="dropdown">
-                    <button class="dropdown-toggle">Más Opciones</button>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item"
-                        href="https://app.powerbi.com/view?r=eyJrIjoiN2I4Zjc5ZTYtZDFiOS00M2YzLThlZjQtOTMzM2I5OWUzZTM1IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9"
-                        target="_blank">Cancer
-                      </a>
-                      <a class="dropdown-item"
-                        href="https://app.powerbi.com/view?r=eyJrIjoiYjgxMzgyNzktYjNhZS00ZjA2LWFkNzktYTU3ZTEyY2JhZGFlIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9"
-                        target="_blank">Monitoreo Rapido
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- <div class="courses-link">
-                    <a class="apply" href="#">Cancer</a>
-                    <a
-                      class="more"
-                      href="https://app.powerbi.com/view?r=eyJrIjoiNjdjOWUwY2QtMTBhMS00YjQ3LWI4ZGEtOWY1YzdkYjk1NDgwIiwidCI6IjhkNDVhZGIxLTMzNzYtNDljYi05MjU2LThlMDVlNmVhMDZiMCJ9"
-                      target="_blank"
-                      >Click aquí <i class="fas fa-chevron-right"></i
-                    ></a>
-                  </div>
-                  <div class="courses-link">
-                    <a class="apply" href="#">Monitoreo Rapido</a>
-                    <a
-                      class="more"
-                      href="https://app.powerbi.com/view?r=eyJrIjoiMDVjMjZmNjctZjFiMy00NjU4LWE2OTYtNzY4NzI3YTM2NWJmIiwidCI6IjhkNDVhZGIxLTMzNzYtNDljYi05MjU2LThlMDVlNmVhMDZiMCJ9"
-                      target="_blank"
-                      >Click aquí <i class="fas fa-chevron-right"></i
-                    ></a>
-                  </div> -->
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6 courses-col">
-            <div class="single-courses mt-30">
-              <div class="courses-image">
-                <a><img src="assets/images/courses/salud-1.png" width="270" height="170" alt="courses" /></a>
-              </div>
-              <div class="courses-content">
-                <a class="category">#NoTransmisible</a>
-                <h4 class="courses-title">
-                  <a>Enfermedades no transmisibles. <br /><br /></a>
-                </h4>
-
-                <div class="text-center">
-                  <div class="dropdown">
-                    <button class="dropdown-toggle">Más Opciones</button>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item"
-                        href="https://app.powerbi.com/view?r=eyJrIjoiZDdjNGZiNmUtNGM4Yi00MmM4LTg2NTEtYWQyZGU1MjgwMTMxIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9"
-                        target="_blank">Metas Físicas DNT 2025
-                      </a>
-                      <a class="dropdown-item"
-                        href="https://app.powerbi.com/view?r=eyJrIjoiZDVmMzQ1NzktODBiNy00YTRkLWE2YTMtNjM3NjY2YzY1ZjVmIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9"
-                        target="_blank">Daños no transmisibles
-                      </a>
-                      <a class="dropdown-item"
-                        href="https://app.powerbi.com/view?r=eyJrIjoiZTQzM2Y0YjgtOTgwYi00ZDA5LTg1N2EtMDg1ODQ4M2I0NWUxIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=31a692f867e9937ca81c"
-                        target="_blank">Morbilidad en Salud bucal
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- <div class="courses-link">
-                    <a class="apply" href="#"
-                      >Daños <br />
-                      no transmisibles</a
-                    >
-                    <a
-                      class="more"
-                      href="https://app.powerbi.com/view?r=eyJrIjoiZDVmMzQ1NzktODBiNy00YTRkLWE2YTMtNjM3NjY2YzY1ZjVmIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9"
-                      target="_blank"
-                      >Click aquí <i class="fas fa-chevron-right"></i
-                    ></a>
-                  </div>
-                  <div class="courses-link">
-                    <a class="apply" href="#"
-                      >Morbilidad <br />en Salud bucal</a
-                    >
-                    <a
-                      class="more"
-                      href="https://app.powerbi.com/view?r=eyJrIjoiZTQzM2Y0YjgtOTgwYi00ZDA5LTg1N2EtMDg1ODQ4M2I0NWUxIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=31a692f867e9937ca81c"
-                      target="_blank"
-                      >Click aquí <i class="fas fa-chevron-right"></i
-                    ></a>
-                  </div> -->
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6 courses-col">
-            <div class="single-courses mt-30">
-              <div class="courses-image">
-                <a><img src="assets/images/courses/salud-1.png" width="270" height="170" alt="courses" /></a>
-              </div>
-              <div class="courses-content">
-                <a class="category">#Discapacidad</a>
-                <h4 class="courses-title">
-                  <a>Prevención y manejo de condiciones secundarias de salud
-                    en personas con discapacidad.</a>
-                </h4>
-
-                <div class="text-center">
-                  <div class="dropdown">
-                    <button class="dropdown-toggle">Más Opciones</button>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item"
-                        href="https://app.powerbi.com/view?r=eyJrIjoiZTQzM2Y0YjgtOTgwYi00ZDA5LTg1N2EtMDg1ODQ4M2I0NWUxIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=09544113ecac35e11000"
-                        target="_blank">Discapacidad
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- <div class="courses-link">
-                    <a class="apply" href="#">Discapacidad</a>
-                    <a
-                      class="more"
-                      href="https://app.powerbi.com/view?r=eyJrIjoiZTQzM2Y0YjgtOTgwYi00ZDA5LTg1N2EtMDg1ODQ4M2I0NWUxIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=09544113ecac35e11000"
-                      target="_blank"
-                      >Click aquí <i class="fas fa-chevron-right"></i
-                    ></a>
-                  </div> -->
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6 courses-col">
-            <div class="single-courses mt-30">
-              <div class="courses-image">
-                <a><img src="assets/images/courses/salud-1.png" width="270" height="170" alt="courses" /></a>
-              </div>
-              <div class="courses-content">
-                <a class="category">#SaludMaterno</a>
-                <h4 class="courses-title">
-                  <a>Salud Materno Neonatal. <br /><br /><br /><br /></a>
-                </h4>
-
-                <div class="text-center">
-                  <div class="dropdown">
-                    <button class="dropdown-toggle">Más Opciones</button>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item"
-                        href="https://app.powerbi.com/view?r=eyJrIjoiZGUzMzdlOWItYTY2My00ODlmLWI4ZWYtNzBlMTMwYTA5OGFiIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9"
-                        target="_blank">Materno
-                      </a>
-                      <a class="dropdown-item"
-                        href="https://app.powerbi.com/view?r=eyJrIjoiNjJjN2I5ODMtODg2NS00NmFiLTlmOTAtZDE2NGM3YTkyOTliIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9"
-                        target="_blank">Adolescente
-                      </a>
-                      <a class="dropdown-item"
-                        href="https://app.powerbi.com/view?r=eyJrIjoiZmMwOGY2N2QtZDk5ZS00OWY5LThmMTAtNGE2NGNlNWI0YTdiIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9"
-                        target="_blank">Monitoreo Materno
-                      </a>
-                      <a class="dropdown-item"
-                        href="https://app.powerbi.com/view?r=eyJrIjoiNmYwMjM0NWYtYzM0OS00MGUyLWI2NDEtZWZhOWI3NGQ0YjBjIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9"
-                        target="_blank">Monitoreo Adolescente
-                      </a>
-                      <!-- <a class="dropdown-item"
-                        href="https://app.powerbi.com/view?r=eyJrIjoiOGIyMGU3ZjgtMmYyZS00N2NlLWFlYWItYjZkNzdhNThlMzFlIiwidCI6IjhkNDVhZGIxLTMzNzYtNDljYi05MjU2LThlMDVlNmVhMDZiMCJ9&pageName=ReportSectionbd2849dd5063754019b8"
-                        target="_blank">SEGUIMEINTO AL ADOLESCENTES CON DOSAJE Y
-                        SUPLEMENTACION
-                      </a> -->
-                    </div>
-                  </div>
-                </div>
-
-                <!-- <div class="courses-link">
-                    <a class="apply" href="#">Materno</a>
-                    <a
-                      class="more"
-                      href="https://app.powerbi.com/view?r=eyJrIjoiN2E0ZTRjNTgtZGMxNS00OGY3LTgxMmYtZmE0NWFlY2Y2Y2VlIiwidCI6IjhkNDVhZGIxLTMzNzYtNDljYi05MjU2LThlMDVlNmVhMDZiMCJ9"
-                      target="_blank"
-                      >Click aquí <i class="fas fa-chevron-right"></i
-                    ></a>
-                  </div>
-                  <div class="courses-link">
-                    <a class="apply" href="#">Adolescente</a>
-                    <a
-                      class="more"
-                      href="https://app.powerbi.com/view?r=eyJrIjoiODMxMzZjMDgtZDk2NC00MTVmLWE2YjItMWRjOTMzZTA3ZmRjIiwidCI6IjhkNDVhZGIxLTMzNzYtNDljYi05MjU2LThlMDVlNmVhMDZiMCJ9"
-                      target="_blank"
-                      >Click aquí <i class="fas fa-chevron-right"></i
-                    ></a>
-                  </div>
-                  <div class="courses-link">
-                    <a class="apply" href="#"
-                      >Monitoreo <br />
-                      Materno</a
-                    >
-                    <a
-                      class="more"
-                      href="https://app.powerbi.com/view?r=eyJrIjoiOGUwZWZiYTUtZmQxOS00MzAxLTlkYjAtZjY3NGY3ZTI3MGYwIiwidCI6IjhkNDVhZGIxLTMzNzYtNDljYi05MjU2LThlMDVlNmVhMDZiMCJ9"
-                      target="_blank"
-                      >Click aquí <i class="fas fa-chevron-right"></i
-                    ></a>
-                  </div>
-                  <div class="courses-link">
-                    <a class="apply" href="#"
-                      >Monitoreo <br />
-                      Adolescente</a
-                    >
-                    <a
-                      class="more"
-                      href="https://app.powerbi.com/view?r=eyJrIjoiNzJlM2EwNmEtNjU4Ni00M2RlLTk5ODktYTI5NjFjZjBkMzYxIiwidCI6IjhkNDVhZGIxLTMzNzYtNDljYi05MjU2LThlMDVlNmVhMDZiMCJ9"
-                      target="_blank"
-                      >Click aquí <i class="fas fa-chevron-right"></i
-                    ></a>
-                  </div>
-                  <div class="courses-link">
-                    <a class="apply" href="#"
-                      >SEGUIMEINTO AL ADOLESCENTES <br />
-                      CON DOSAJE Y SUPLEMENTACION
-                    </a>
-                    <a
-                      class="more"
-                      href="https://app.powerbi.com/view?r=eyJrIjoiOGIyMGU3ZjgtMmYyZS00N2NlLWFlYWItYjZkNzdhNThlMzFlIiwidCI6IjhkNDVhZGIxLTMzNzYtNDljYi05MjU2LThlMDVlNmVhMDZiMCJ9&pageName=ReportSectionbd2849dd5063754019b8"
-                      target="_blank"
-                      >Click aquí <i class="fas fa-chevron-right"></i
-                    ></a>
-                  </div> -->
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6 courses-col">
-            <div class="single-courses mt-30">
-              <div class="courses-image">
-                <a><img src="assets/images/courses/salud-1.png" width="270" height="170" alt="courses" /></a>
-              </div>
-              <div class="courses-content">
-                <a class="category">#ReportesMonitoreo</a>
-                <h4 class="courses-title">
-                  <a>Tablero de Control <br /><br /><br /><br /><br /></a>
-                </h4>
-
-                <div class="text-center">
-                  <div class="dropdown">
-                    <button class="dropdown-toggle">Más Opciones</button>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item"
-                        href="https://app.powerbi.com/view?r=eyJrIjoiZThhODY3MjMtMThhOC00OWE2LWI5YmEtZTk0OWRkMDc0NDcyIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ReportSectionc306eb4184a54069d893"
-                        target="_blank">Monitoreo
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- <div class="courses-link">
-                    <a class="apply" href="#">Monitoreo</a>
-                    <a
-                      class="more"
-                      href="https://app.powerbi.com/view?r=eyJrIjoiZThhODY3MjMtMThhOC00OWE2LWI5YmEtZTk0OWRkMDc0NDcyIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ReportSectionc306eb4184a54069d893"
-                      target="_blank"
-                      >Click aquí <i class="fas fa-chevron-right"></i
-                    ></a>
-                  </div> -->
-              </div>
             </div>
           </div>
 
-          <div class="col-lg-3 col-sm-6 courses-col">
-            <div class="single-courses mt-30">
-              <div class="courses-image">
-                <a><img src="assets/images/courses/salud-1.png" width="270" height="170" alt="courses" /></a>
-              </div>
-              <div class="courses-content">
-                <a class="category">#AdultoMayor</a>
-                <h4 class="courses-title">
-                  <a>Etapa de vida de Adulto Mayor <br /><br /><br /><br /></a>
-                </h4>
 
-                <div class="text-center">
-                  <div class="dropdown">
-                    <button class="dropdown-toggle">Más Opciones</button>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item"
-                        href="https://app.powerbi.com/view?r=eyJrIjoiMjU1NDFhMjUtYzc4ZC00NmMyLWI5MjQtZjNkZjg1MzY3ZDNmIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=24b8f3efe6cd63d92a61"
-                        target="_blank">Monitoreo
-                      </a>
-                    </div>
-                  </div>
+
+
+
+
+
+
+          <!-- ========================================================
+
+                   V     Targeta Cancer   V
+
+          ===========================================================-->
+
+          <div class="col-lg-3 col-sm-6 contenedor-tarjeta">
+            <div class="tarjeta-girante" id="miTarjetaCancer">
+
+              <!-- Cara frontal -->
+              <div class="cara cara-frente">
+                <div class="imagen-curso">
+                  <a>
+                    <img src="assets/images/IconosServicios/cancer.png" alt="courses" />
+                  </a>
                 </div>
-
-                <!-- <div class="courses-link">
-                    <a class="apply" href="#">Monitoreo</a>
-                    <a
-                      class="more"
-                      href="https://app.powerbi.com/view?r=eyJrIjoiMjU1NDFhMjUtYzc4ZC00NmMyLWI5MjQtZjNkZjg1MzY3ZDNmIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=24b8f3efe6cd63d92a61"
-                      target="_blank"
-                      >Click aquí <i class="fas fa-chevron-right"></i
-                    ></a>
-                  </div> -->
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-sm-6 courses-col">
-            <div class="single-courses mt-30">
-              <div class="courses-image">
-                <a><img src="assets/images/courses/salud-1.png" width="270" height="170" alt="courses" /></a>
-              </div>
-              <div class="courses-content">
-                <a class="category">#ReportesFED</a>
-                <h4 class="courses-title">
-                  <a>Fondo de Estímulo al Desempeño y Logro de Resultados
-                    Sociales
+                <a class="etiqueta-categoria">#Cancer</a>
+                <h4 class="titulo-curso">
+                  <a>
+                    Prevención y control del cáncer.
                   </a>
                 </h4>
-
-                <div class="text-center">
-                  <div class="dropdown">
-                    <button class="dropdown-toggle">Más Opciones</button>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item"
-                        href="https://app.powerbi.com/view?r=eyJrIjoiOWJhNzIyZDAtODhiYy00YzQ3LTlkYTYtZDBmNWM4NWUyMTY4IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ReportSection561bd2efd012e146e789"
-                        target="_blank">FED
-                      </a>
-                      <!--    <a class="dropdown-item"
-                        href="https://app.powerbi.com/view?r=eyJrIjoiOWJhNzIyZDAtODhiYy00YzQ3LTlkYTYtZDBmNWM4NWUyMTY4IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=44a6e0484b700892c7ab"
-                        target="_blank">SI_01_01
-                      </a>
-                      <a class="dropdown-item"
-                        href="https://app.powerbi.com/view?r=eyJrIjoiOWJhNzIyZDAtODhiYy00YzQ3LTlkYTYtZDBmNWM4NWUyMTY4IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ReportSection1ff844b458540b076ed3"
-                        target="_blank">SI_02_01
-                      </a>
-                      <a class="dropdown-item"
-                        href="https://app.powerbi.com/view?r=eyJrIjoiOWJhNzIyZDAtODhiYy00YzQ3LTlkYTYtZDBmNWM4NWUyMTY4IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=0fb0b35309224e5021e0"
-                        target="_blank">SI_02_02
-                      </a>
-                      <a class="dropdown-item"
-                        href="https://app.powerbi.com/view?r=eyJrIjoiOWJhNzIyZDAtODhiYy00YzQ3LTlkYTYtZDBmNWM4NWUyMTY4IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=b49ff02788accdb10814"
-                        target="_blank">SI_02_03
-                      </a>
-                      <a class="dropdown-item"
-                        href="https://app.powerbi.com/view?r=eyJrIjoiOWJhNzIyZDAtODhiYy00YzQ3LTlkYTYtZDBmNWM4NWUyMTY4IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=f2d468d6d099148b39c0"
-                        target="_blank">SI_03_01
-                      </a>
-                      <a class="dropdown-item"
-                        href="https://app.powerbi.com/view?r=eyJrIjoiOWJhNzIyZDAtODhiYy00YzQ3LTlkYTYtZDBmNWM4NWUyMTY4IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=f3b543f9c02dcd4858ae"
-                        target="_blank">SI_04_01
-                      </a>
-                      <a class="dropdown-item"
-                        href="https://app.powerbi.com/view?r=eyJrIjoiOWJhNzIyZDAtODhiYy00YzQ3LTlkYTYtZDBmNWM4NWUyMTY4IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=00d52cc970bda9eee75c"
-                        target="_blank">MC_01
-                      </a>
-                      <a class="dropdown-item"
-                        href="https://app.powerbi.com/view?r=eyJrIjoiOWJhNzIyZDAtODhiYy00YzQ3LTlkYTYtZDBmNWM4NWUyMTY4IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=49f40ef851cde0837e7c"
-                        target="_blank">MC_02
-                      </a>
-                      <a class="dropdown-item"
-                        href="https://app.powerbi.com/view?r=eyJrIjoiOWJhNzIyZDAtODhiYy00YzQ3LTlkYTYtZDBmNWM4NWUyMTY4IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=448d7dd010d400c03d05"
-                        target="_blank">MC_03</a>
-                      <a class="dropdown-item"
-                        href="https://app.powerbi.com/view?r=eyJrIjoiOWJhNzIyZDAtODhiYy00YzQ3LTlkYTYtZDBmNWM4NWUyMTY4IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=6665333474e9ae9ca763"
-                        target="_blank">VI_01_01
-                      </a>
-                      <a class="dropdown-item"
-                        href="https://app.powerbi.com/view?r=eyJrIjoiOWJhNzIyZDAtODhiYy00YzQ3LTlkYTYtZDBmNWM4NWUyMTY4IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ae4b0d1989aa605c1b05"
-                        target="_blank">VI_01_02
-                      </a>
-                      <a class="dropdown-item"
-                        href="https://app.powerbi.com/view?r=eyJrIjoiOWJhNzIyZDAtODhiYy00YzQ3LTlkYTYtZDBmNWM4NWUyMTY4IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=760f780eb7c40e403785"
-                        target="_blank">VII_01
-                      </a>  -->
-                    </div>
-                  </div>
+                <div class="parte-inferior-tarjeta">
+                  <button class="boton-opciones" onclick="girarTarjeta('miTarjetaCancer')">
+                    Más Opciones
+                    <span class="flecha-derecha">→</span>
+                  </button>
                 </div>
-
-                <!-- 
-                  <div class="courses-link">
-                    <a class="apply" href="#">FED</a>
-                    <a
-                      class="more"
-                      href="https://app.powerbi.com/view?r=eyJrIjoiZTM1OWU5NjQtYjgwMi00NThhLTkzMjMtYmU4MzQzMzI2ZGU3IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ReportSection561bd2efd012e146e789"
-                      target="_blank"
-                      >Click aquí <i class="fas fa-chevron-right"></i
-                    ></a>
-                  </div>
-                  <div class="courses-link">
-                    <a class="apply" href="#">SI_01_01</a>
-                    <a
-                      class="more"
-                      href="https://app.powerbi.com/view?r=eyJrIjoiOWJhNzIyZDAtODhiYy00YzQ3LTlkYTYtZDBmNWM4NWUyMTY4IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=44a6e0484b700892c7ab"
-                      target="_blank"
-                      >Click aquí <i class="fas fa-chevron-right"></i
-                    ></a>
-                  </div>
-                  <div class="courses-link">
-                    <a class="apply" href="#">SI_02_01</a>
-                    <a
-                      class="more"
-                      href="https://app.powerbi.com/view?r=eyJrIjoiOWJhNzIyZDAtODhiYy00YzQ3LTlkYTYtZDBmNWM4NWUyMTY4IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ReportSection1ff844b458540b076ed3"
-                      target="_blank"
-                      >Click aquí <i class="fas fa-chevron-right"></i
-                    ></a>
-                  </div>
-                  <div class="courses-link">
-                    <a class="apply" href="#">SI_02_02</a>
-                    <a
-                      class="more"
-                      href="https://app.powerbi.com/view?r=eyJrIjoiOWJhNzIyZDAtODhiYy00YzQ3LTlkYTYtZDBmNWM4NWUyMTY4IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=0fb0b35309224e5021e0"
-                      target="_blank"
-                      >Click aquí <i class="fas fa-chevron-right"></i
-                    ></a>
-                  </div>
-                  <div class="courses-link">
-                    <a class="apply" href="#">SI_02_03</a>
-                    <a
-                      class="more"
-                      href="https://app.powerbi.com/view?r=eyJrIjoiOWJhNzIyZDAtODhiYy00YzQ3LTlkYTYtZDBmNWM4NWUyMTY4IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=b49ff02788accdb10814"
-                      target="_blank"
-                      >Click aquí <i class="fas fa-chevron-right"></i
-                    ></a>
-                  </div>
-                  <div class="courses-link">
-                    <a class="apply" href="#">SI_03_01</a>
-                    <a
-                      class="more"
-                      href="https://app.powerbi.com/view?r=eyJrIjoiOWJhNzIyZDAtODhiYy00YzQ3LTlkYTYtZDBmNWM4NWUyMTY4IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=f2d468d6d099148b39c0"
-                      target="_blank"
-                      >Click aquí <i class="fas fa-chevron-right"></i
-                    ></a>
-                  </div>
-                  <div class="courses-link">
-                    <a class="apply" href="#">SI_04_01</a>
-                    <a
-                      class="more"
-                      href="https://app.powerbi.com/view?r=eyJrIjoiOWJhNzIyZDAtODhiYy00YzQ3LTlkYTYtZDBmNWM4NWUyMTY4IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=f3b543f9c02dcd4858ae"
-                      target="_blank"
-                      >Click aquí <i class="fas fa-chevron-right"></i
-                    ></a>
-                  </div>
-                  <div class="courses-link">
-                    <a class="apply" href="#">MC_01</a>
-                    <a
-                      class="more"
-                      href="https://app.powerbi.com/view?r=eyJrIjoiOWJhNzIyZDAtODhiYy00YzQ3LTlkYTYtZDBmNWM4NWUyMTY4IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=00d52cc970bda9eee75c"
-                      target="_blank"
-                      >Click aquí <i class="fas fa-chevron-right"></i
-                    ></a>
-                  </div>
-                  <div class="courses-link">
-                    <a class="apply" href="#">MC_02</a>
-                    <a
-                      class="more"
-                      href="https://app.powerbi.com/view?r=eyJrIjoiOWJhNzIyZDAtODhiYy00YzQ3LTlkYTYtZDBmNWM4NWUyMTY4IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=49f40ef851cde0837e7c"
-                      target="_blank"
-                      >Click aquí <i class="fas fa-chevron-right"></i
-                    ></a>
-                  </div>
-                  <div class="courses-link">
-                    <a class="apply" href="#">MC_03</a>
-                    <a
-                      class="more"
-                      href="https://app.powerbi.com/view?r=eyJrIjoiOWJhNzIyZDAtODhiYy00YzQ3LTlkYTYtZDBmNWM4NWUyMTY4IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=448d7dd010d400c03d05"
-                      target="_blank"
-                      >Click aquí <i class="fas fa-chevron-right"></i
-                    ></a>
-                  </div>
-                  <div class="courses-link">
-                    <a class="apply" href="#">VI_01_01</a>
-                    <a
-                      class="more"
-                      href="https://app.powerbi.com/view?r=eyJrIjoiOWJhNzIyZDAtODhiYy00YzQ3LTlkYTYtZDBmNWM4NWUyMTY4IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=6665333474e9ae9ca763"
-                      target="_blank"
-                      >Click aquí <i class="fas fa-chevron-right"></i
-                    ></a>
-                  </div>
-                  <div class="courses-link">
-                    <a class="apply" href="#">VI_01_02</a>
-                    <a
-                      class="more"
-                      href="https://app.powerbi.com/view?r=eyJrIjoiOWJhNzIyZDAtODhiYy00YzQ3LTlkYTYtZDBmNWM4NWUyMTY4IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ae4b0d1989aa605c1b05"
-                      target="_blank"
-                      >Click aquí <i class="fas fa-chevron-right"></i
-                    ></a>
-                  </div>
-                  <div class="courses-link">
-                    <a class="apply" href="#">VII_01</a>
-                    <a
-                      class="more"
-                      href="https://app.powerbi.com/view?r=eyJrIjoiOWJhNzIyZDAtODhiYy00YzQ3LTlkYTYtZDBmNWM4NWUyMTY4IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=760f780eb7c40e403785"
-                      target="_blank"
-                      >Click aquí <i class="fas fa-chevron-right"></i
-                    ></a>
-                  </div> -->
               </div>
-            </div>
-          </div>
 
-          <div class="col-lg-3 col-sm-6 courses-col">
-            <div class="single-courses mt-30">
-              <div class="courses-image">
-                <a><img src="assets/images/courses/salud-1.png" width="270" height="170" alt="courses" /></a>
-              </div>
-              <div class="courses-content">
-                <a class="category">#SISMORE</a>
-                <h4 class="courses-title">
-                  <a>Sistema de Monitoreo Regional <br/><br/><br/></a>
-                </h4>
+              <!-- Cara trasera -->
+              <div class="cara cara-atras">
+                <button class="boton-cerrar" onclick="volverFrente('miTarjetaCancer')">×</button>
+                <div class="contenido-atras">
+                  <h2>Opciones</h2>
+                  <div class="contenedor-opciones">
 
-                <div class="text-center">
-                  <div class="dropdown">
-                    <button class="dropdown-toggle">Más Opciones</button>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item" href="https://sismore.regionucayali.gob.pe/sismore/login"
-                        target="_blank">Sismore Salud
+                    <div class="elemento-opcion">
+                      <span class="icono-opcion"></span>
+                      <a class="enlace-opcion"
+                        href="https://app.powerbi.com/view?r=eyJrIjoiN2I4Zjc5ZTYtZDFiOS00M2YzLThlZjQtOTMzM2I5OWUzZTM1IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9"                        
+                        target="_blank">
+                        Cáncer
+                      </a>
+                    </div>
+
+                    <div class="elemento-opcion">
+                      <span class="icono-opcion"></span>
+                      <a class="enlace-opcion"
+                        href="https://app.powerbi.com/view?r=eyJrIjoiYjgxMzgyNzktYjNhZS00ZjA2LWFkNzktYTU3ZTEyY2JhZGFlIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9"
+                        target="_blank">
+                        Monitoreo Rápido
                       </a>
                     </div>
                   </div>
                 </div>
-
-                <!-- <div class="courses-link">
-                    <a class="apply" href="#">Sismore Salud</a>
-                    <a
-                      class="more"
-                      href="https://sismore.regionucayali.gob.pe/sismore/login"
-                      target="_blank"
-                      >Click aquí <i class="fas fa-chevron-right"></i
-                    ></a>
-                  </div> -->
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-sm-6 courses-col">
-            <div class="single-courses mt-30">
-              <div class="courses-image">
-                <a><img src="assets/images/courses/salud-1.png" width="270" height="170" alt="courses" /></a>
-              </div>
-              <div class="courses-content">
-                <a class="category">#Presupuesto</a>
-                <h4 class="courses-title">
-                  <a>Presupuesto <br /><br /><br /><br /></a>
-                </h4>
 
-                <div class="text-center">
-                  <div class="dropdown">
-                    <button class="dropdown-toggle">Más Opciones</button>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item"
-                        href="https://lookerstudio.google.com/reporting/eee2b6eb-6727-410c-a214-6f7a2e8ac9c1"
-                        target="_blank">Ejecución Presupuestal
+
+
+
+
+
+
+
+
+
+          <!-- ========================================================
+
+                   V     Targeta NoTransmitible   V
+
+          ===========================================================-->
+
+          <div class="col-lg-3 col-sm-6 contenedor-tarjeta">
+            <div class="tarjeta-girante" id="miTarjetaNoTransmisible">
+
+              <!-- Cara frontal -->
+              <div class="cara cara-frente">
+                <div class="imagen-curso">
+                  <a>
+                    <img src="assets/images/IconosServicios/no transmitible.png" alt="courses" />
+                  </a>
+                </div>
+                <a class="etiqueta-categoria">#NoTransmisible</a>
+                <h4 class="titulo-curso">
+                  <a>
+                    Enfermedades no transmisibles.
+                  </a>
+                </h4>
+                <div class="parte-inferior-tarjeta">
+                  <button class="boton-opciones" onclick="girarTarjeta('miTarjetaNoTransmisible')">
+                    Más Opciones
+                    <span class="flecha-derecha">→</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Cara trasera -->
+              <div class="cara cara-atras">
+                <button class="boton-cerrar" onclick="volverFrente('miTarjetaNoTransmisible')">×</button>
+                <div class="contenido-atras">
+                  <h2>Opciones</h2>
+                  <div class="contenedor-opciones">
+
+                    <div class="elemento-opcion">
+                      <span class="icono-opcion"></span>
+                      <a class="enlace-opcion"
+                        href="https://app.powerbi.com/view?r=eyJrIjoiZDdjNGZiNmUtNGM4Yi00MmM4LTg2NTEtYWQyZGU1MjgwMTMxIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9"
+                        target="_blank">
+                        Metas Fisicas DNT 2025
                       </a>
-                      <!--  <a class="dropdown-item"
-                        href="https://lookerstudio.google.com/reporting/48da2730-2493-423e-8223-57314d61b0ce"
-                        target="_blank">Evaluación
-                      </a> -->
+                    </div>
+
+                    <div class="elemento-opcion">
+                      <span class="icono-opcion"></span>
+                      <a class="enlace-opcion"
+                        href="https://app.powerbi.com/view?r=eyJrIjoiZDVmMzQ1NzktODBiNy00YTRkLWE2YTMtNjM3NjY2YzY1ZjVmIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9"
+                        target="_blank">
+                        Daños no transmisibles
+                      </a>
+                    </div>
+
+                    <div class="elemento-opcion">
+                      <span class="icono-opcion"></span>
+                      <a class="enlace-opcion"
+                        href="https://app.powerbi.com/view?r=eyJrIjoiZTQzM2Y0YjgtOTgwYi00ZDA5LTg1N2EtMDg1ODQ4M2I0NWUxIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=31a692f867e9937ca81c"
+                        target="_blank">
+                        Morbilidad en Salud Bucal
+                      </a>
                     </div>
                   </div>
                 </div>
-
-                <!-- <div class="courses-link">
-                    <a class="apply" href="#">Ejecución <br />Presupuestal</a>
-                    <a
-                      class="more"
-                      href="https://lookerstudio.google.com/reporting/6538b0e7-508f-46e2-9895-89fc65593e76/page/p_528me1ys3c"
-                      target="_blank"
-                      >Click aquí <i class="fas fa-chevron-right"></i
-                    ></a>
-                  </div> -->
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-sm-6 courses-col">
-            <div class="single-courses mt-30">
-              <div class="courses-image">
-                <a><img src="assets/images/courses/salud-1.png" width="270" height="170" alt="courses" /></a>
-              </div>
-              <div class="courses-content">
-                <a class="category">#DIREMID</a>
-                <h4 class="courses-title">
-                  <a>Dirección Ejecutiva de Medicamentos e Insumos y Drogas
-                    <br /><br /></a>
-                </h4>
 
-                <div class="text-center">
-                  <div class="dropdown">
-                    <button class="dropdown-toggle">Más Opciones</button>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item" href="https://diremid-ucayali.com" target="_blank">Web Site
+
+          <!-- ========================================================
+
+                   V     Targeta Discapacidad   V
+
+          ===========================================================-->
+
+          <div class="col-lg-3 col-sm-6 contenedor-tarjeta">
+            <div class="tarjeta-girante" id="miTarjetaDiscapacidad">
+
+              <!-- Cara frontal -->
+              <div class="cara cara-frente">
+                <div class="imagen-curso">
+                  <a>
+                    <img src="assets/images/IconosServicios/discapacitados.png" alt="courses" />
+                  </a>
+                </div>
+                <a class="etiqueta-categoria">#Discapacidad</a>
+                <h4 class="titulo-curso">
+                  <a>
+                    Prevención y manejo de condiciones secundarias de salud en personas con discapacidad.
+                  </a>
+                </h4>
+                <div class="parte-inferior-tarjeta">
+                  <button class="boton-opciones" onclick="girarTarjeta('miTarjetaDiscapacidad')">
+                    Más Opciones
+                    <span class="flecha-derecha">→</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Cara trasera -->
+              <div class="cara cara-atras">
+                <button class="boton-cerrar" onclick="volverFrente('miTarjetaDiscapacidad')">×</button>
+                <div class="contenido-atras">
+                  <h2>Opciones</h2>
+                  <div class="contenedor-opciones">
+
+                    <div class="elemento-opcion">
+                      <span class="icono-opcion"></span>
+                      <a class="enlace-opcion"
+                        href="https://app.powerbi.com/view?r=eyJrIjoiZTQzM2Y0YjgtOTgwYi00ZDA5LTg1N2EtMDg1ODQ4M2I0NWUxIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=09544113ecac35e11000"
+                        target="_blank">
+                        Discapacidad
                       </a>
                     </div>
                   </div>
                 </div>
-
-                <!-- <div class="courses-link">
-                    <a class="apply" href="#">Web <br />Site</a>
-                    <a
-                      class="more"
-                      href="https://diremid-ucayali.com"
-                      target="_blank"
-                      >Click aquí <i class="fas fa-chevron-right"></i
-                    ></a>
-                  </div> -->
               </div>
             </div>
           </div>
 
-          <div class="col-lg-3 col-sm-6 courses-col">
-            <div class="single-courses mt-30">
-              <div class="courses-image">
-                <a><img src="assets/images/courses/salud-1.png" width="270" height="170" alt="courses" /></a>
-              </div>
-              <div class="courses-content">
-                <a class="category">#PueblosIndígenas</a>
-                <h4 class="courses-title">
-                  <a>Estrategia Sanitaria de salud de Pueblos Indígenas<br><br><br></a>
-                </h4>
+          <!-- ========================================================
 
-                <div class="text-center">
-                  <div class="dropdown">
-                    <button class="dropdown-toggle">Más Opciones</button>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item"
+                   V     Targeta SaludMaterno   V
+
+          ===========================================================-->
+
+          <div class="col-lg-3 col-sm-6 contenedor-tarjeta">
+            <div class="tarjeta-girante" id="miTarjetaSaludMaterno">
+
+              <!-- Cara frontal -->
+              <div class="cara cara-frente">
+                <div class="imagen-curso">
+                  <a>
+                    <img src="assets/images/IconosServicios/salud materno.png" alt="courses" />
+                  </a>
+                </div>
+                <a class="etiqueta-categoria">#SaludMaterno</a>
+                <h4 class="titulo-curso">
+                  <a>Salud Materno Neonatal.</a>
+                </h4>
+                <div class="parte-inferior-tarjeta">
+                  <button class="boton-opciones" onclick="girarTarjeta('miTarjetaSaludMaterno')">
+                    Más Opciones
+                    <span class="flecha-derecha">→</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Cara trasera -->
+              <div class="cara cara-atras">
+                <button class="boton-cerrar" onclick="volverFrente('miTarjetaSaludMaterno')">×</button>
+                <div class="contenido-atras">
+                  <h2>Opciones</h2>
+                  <div class="contenedor-opciones">
+
+                    <div class="elemento-opcion">
+                      <a class="enlace-opcion"
+                        href="https://app.powerbi.com/view?r=eyJrIjoiZGUzMzdlOWItYTY2My00ODlmLWI4ZWYtNzBlMTMwYTA5OGFiIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9"
+                        target="_blank">
+                        Materno
+                      </a>
+                    </div>
+
+                    <div class="elemento-opcion">
+                      <a class="enlace-opcion"
+                        href="https://app.powerbi.com/view?r=eyJrIjoiNjJjN2I5ODMtODg2NS00NmFiLTlmOTAtZDE2NGM3YTkyOTliIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9"                        target="_blank">
+                        Adolescente
+                      </a>
+                    </div>
+
+                    <div class="elemento-opcion">
+                      <a class="enlace-opcion"
+                        href="https://app.powerbi.com/view?r=eyJrIjoiZmMwOGY2N2QtZDk5ZS00OWY5LThmMTAtNGE2NGNlNWI0YTdiIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9"                        target="_blank">
+                        Monitoreo Materno
+                      </a>
+                    </div>
+
+                    <div class="elemento-opcion">
+                      <a class="enlace-opcion"
+                        href="https://app.powerbi.com/view?r=eyJrIjoiNmYwMjM0NWYtYzM0OS00MGUyLWI2NDEtZWZhOWI3NGQ0YjBjIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9"
+                        target="_blank">
+                        Monitoreo Adolescente
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- ========================================================
+
+                   V     Targeta ReportesMonitoreo   V
+
+          ===========================================================-->
+
+          <div class="col-lg-3 col-sm-6 contenedor-tarjeta">
+            <div class="tarjeta-girante" id="miTarjetaReportesMonitoreo">
+
+              <!-- Cara frontal -->
+              <div class="cara cara-frente">
+                <div class="imagen-curso">
+                  <a>
+                    <img src="assets/images/IconosServicios/reporte monitoreo.png" alt="courses" />
+                  </a>
+                </div>
+                <a class="etiqueta-categoria">#ReportesMonitoreo</a>
+                <h4 class="titulo-curso">
+                  <a>Tablero de Control</a>
+                </h4>
+                <div class="parte-inferior-tarjeta">
+                  <button class="boton-opciones" onclick="girarTarjeta('miTarjetaReportesMonitoreo')">
+                    Más Opciones
+                    <span class="flecha-derecha">→</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Cara trasera -->
+              <div class="cara cara-atras">
+                <button class="boton-cerrar" onclick="volverFrente('miTarjetaReportesMonitoreo')">×</button>
+                <div class="contenido-atras">
+                  <h2>Opciones</h2>
+                  <div class="contenedor-opciones">
+
+                    <div class="elemento-opcion">
+                      <a class="enlace-opcion"
+                        href="https://app.powerbi.com/view?r=eyJrIjoiZThhODY3MjMtMThhOC00OWE2LWI5YmEtZTk0OWRkMDc0NDcyIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ReportSectionc306eb4184a54069d893"                      
+                        target="_blank">
+                        Monitoreo
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+          <!-- ========================================================
+
+                   V     Targeta AdultoMayor   V
+
+          ===========================================================-->
+
+          <div class="col-lg-3 col-sm-6 contenedor-tarjeta">
+            <div class="tarjeta-girante" id="miTarjetaAdultoMayor">
+
+              <!-- Cara frontal -->
+              <div class="cara cara-frente">
+                <div class="imagen-curso">
+                  <a>
+                    <img src="assets/images/IconosServicios/adultomyor.png" alt="courses" />
+                  </a>
+                </div>
+                <a class="etiqueta-categoria">#AdultoMayor</a>
+                <h4 class="titulo-curso">
+                  <a>Etapa de vida de Adulto Mayor</a>
+                </h4>
+                <div class="parte-inferior-tarjeta">
+                  <button class="boton-opciones" onclick="girarTarjeta('miTarjetaAdultoMayor')">
+                    Más Opciones
+                    <span class="flecha-derecha">→</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Cara trasera -->
+              <div class="cara cara-atras">
+                <button class="boton-cerrar" onclick="volverFrente('miTarjetaAdultoMayor')">×</button>
+                <div class="contenido-atras">
+                  <h2>Opciones</h2>
+                  <div class="contenedor-opciones">
+
+                    <div class="elemento-opcion">
+                      <a class="enlace-opcion"
+                        href="https://app.powerbi.com/view?r=eyJrIjoiMjU1NDFhMjUtYzc4ZC00NmMyLWI5MjQtZjNkZjg1MzY3ZDNmIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=24b8f3efe6cd63d92a61"                        
+                        target="_blank">
+                        Monitoreo
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+          <!-- ========================================================
+
+                   V     Targeta ReportesFED   V
+
+          ===========================================================-->
+
+          <div class="col-lg-3 col-sm-6 contenedor-tarjeta">
+            <div class="tarjeta-girante" id="miTarjetaReportesFED">
+
+              <!-- Cara frontal -->
+              <div class="cara cara-frente">
+                <div class="imagen-curso">
+                  <a>
+                    <img src="assets/images/IconosServicios/reporte.png" alt="courses" />
+                  </a>
+                </div>
+                <a class="etiqueta-categoria">#ReportesFED</a>
+                <h4 class="titulo-curso">
+                  <a>Fondo de Estímulo al Desempeño y Logro de Resultados Sociales.</a>
+                </h4>
+                <div class="parte-inferior-tarjeta">
+                  <button class="boton-opciones" onclick="girarTarjeta('miTarjetaReportesFED')">
+                    Más Opciones
+                    <span class="flecha-derecha">→</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Cara trasera -->
+              <div class="cara cara-atras">
+                <button class="boton-cerrar" onclick="volverFrente('miTarjetaReportesFED')">×</button>
+                <div class="contenido-atras">
+                  <h2>Opciones</h2>
+                  <div class="contenedor-opciones">
+
+                    <div class="elemento-opcion"><a class="enlace-opcion"
+                        href="https://app.powerbi.com/view?r=eyJrIjoiOWJhNzIyZDAtODhiYy00YzQ3LTlkYTYtZDBmNWM4NWUyMTY4IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ReportSection561bd2efd012e146e789"                        
+                        target="_blank">FED</a></div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- ========================================================
+
+                   V     Targeta SISMORE   V
+
+          ===========================================================-->
+
+
+          <div class="col-lg-3 col-sm-6 contenedor-tarjeta">
+            <div class="tarjeta-girante" id="miTarjetaSISMORE">
+
+              <!-- Cara frontal -->
+              <div class="cara cara-frente">
+                <div class="imagen-curso">
+                  <a>
+                    <img src="assets/images/IconosServicios/sismore.png" alt="courses" />
+                  </a>
+                </div>
+                <a class="etiqueta-categoria">#SISMORE</a>
+                <h4 class="titulo-curso">
+                  <a>Sistema de Monitoreo Regional</a>
+                </h4>
+                <div class="parte-inferior-tarjeta">
+                  <button class="boton-opciones" onclick="girarTarjeta('miTarjetaSISMORE')">
+                    Más Opciones
+                    <span class="flecha-derecha">→</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Cara trasera -->
+              <div class="cara cara-atras">
+                <button class="boton-cerrar" onclick="volverFrente('miTarjetaSISMORE')">×</button>
+                <div class="contenido-atras">
+                  <h2>Opciones</h2>
+                  <div class="contenedor-opciones">
+
+                    <div class="elemento-opcion">
+                      <a class="enlace-opcion" href="https://sismore.regionucayali.gob.pe/sismore/login"
+                        target="_blank">
+                        Sismore Salud
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <!-- ========================================================
+
+                   V     Targeta Presupuesto   V
+
+          ===========================================================-->
+
+          <div class="col-lg-3 col-sm-6 contenedor-tarjeta">
+            <div class="tarjeta-girante" id="miTarjetaPresupuesto">
+
+              <!-- Cara frontal -->
+              <div class="cara cara-frente">
+                <div class="imagen-curso">
+                  <a>
+                    <img src="assets/images/IconosServicios/presupuesto.png" alt="courses" />
+                  </a>
+                </div>
+                <a class="etiqueta-categoria">#Presupuesto</a>
+                <h4 class="titulo-curso">
+                  <a>Presupuesto</a>
+                </h4>
+                <div class="parte-inferior-tarjeta">
+                  <button class="boton-opciones" onclick="girarTarjeta('miTarjetaPresupuesto')">
+                    Más Opciones
+                    <span class="flecha-derecha">→</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Cara trasera -->
+              <div class="cara cara-atras">
+                <button class="boton-cerrar" onclick="volverFrente('miTarjetaPresupuesto')">×</button>
+                <div class="contenido-atras">
+                  <h2>Opciones</h2>
+                  <div class="contenedor-opciones">
+
+                    <div class="elemento-opcion">
+                      <a class="enlace-opcion"
+                        href="https://lookerstudio.google.com/reporting/eee2b6eb-6727-410c-a214-6f7a2e8ac9c1"                        
+                        target="_blank">
+                        Ejecución Presupuestal
+                      </a>
+                    </div>                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <!-- ========================================================
+
+                   V     Targeta DIREMID   V
+
+          ===========================================================-->
+
+          <div class="col-lg-3 col-sm-6 contenedor-tarjeta">
+            <div class="tarjeta-girante" id="miTarjetaDiremid">
+
+              <!-- Cara frontal -->
+              <div class="cara cara-frente">
+                <div class="imagen-curso">
+                  <a>
+                    <img src="assets/images/IconosServicios/diremid.png" alt="courses" />
+                  </a>
+                </div>
+                <a class="etiqueta-categoria">#DIREMID</a>
+                <h4 class="titulo-curso">
+                  <a>Dirección Ejecutiva de Medicamentos e Insumos y Drogas</a>
+                </h4>
+                <div class="parte-inferior-tarjeta">
+                  <button class="boton-opciones" onclick="girarTarjeta('miTarjetaDiremid')">
+                    Más Opciones
+                    <span class="flecha-derecha">→</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Cara trasera -->
+              <div class="cara cara-atras">
+                <button class="boton-cerrar" onclick="volverFrente('miTarjetaDiremid')">×</button>
+                <div class="contenido-atras">
+                  <h2>Opciones</h2>
+                  <div class="contenedor-opciones">
+
+                    <div class="elemento-opcion">
+                      <a class="enlace-opcion" href="https://diremid-ucayali.com" target="_blank">
+                        Web Site
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- ========================================================
+
+                   V     Targeta PueblosIndigenas   V
+
+          ===========================================================-->
+
+          <div class="col-lg-3 col-sm-6 contenedor-tarjeta">
+            <div class="tarjeta-girante" id="miTarjetaPueblos">
+
+              <!-- Cara frontal -->
+              <div class="cara cara-frente">
+                <div class="imagen-curso">
+                  <a>
+                    <img src="assets/images/IconosServicios/indigena.png" alt="courses" />
+                  </a>
+                </div>
+                <a class="etiqueta-categoria">#PueblosIndígenas</a>
+                <h4 class="titulo-curso">
+                  <a>Estrategia Sanitaria de salud de Pueblos Indígenas</a>
+                </h4>
+                <div class="parte-inferior-tarjeta">
+                  <button class="boton-opciones" onclick="girarTarjeta('miTarjetaPueblos')">
+                    Más Opciones
+                    <span class="flecha-derecha">→</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Cara trasera -->
+              <div class="cara cara-atras">
+                <button class="boton-cerrar" onclick="volverFrente('miTarjetaPueblos')">×</button>
+                <div class="contenido-atras">
+                  <h2>Opciones</h2>
+                  <div class="contenedor-opciones">
+
+                    <div class="elemento-opcion">
+                      <a class="enlace-opcion"
                         href="https://app.powerbi.com/view?r=eyJrIjoiZjAyYzRlY2UtOGEwZi00YTdmLWFkNzYtNjEzODFkYmRlMTQ2IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=bac55dfa01458d531ae3"
-                        target="_blank">Pueblos Indígenas
+                        target="_blank">
+                        Pueblos Indígenas
                       </a>
                     </div>
                   </div>
                 </div>
-
-                <!-- <div class="courses-link">
-                    <a class="apply" href="#"
-                      >Pueblos <br />
-                      Indígenas</a
-                    >
-                    <a
-                      class="more"
-                      href="https://app.powerbi.com/view?r=eyJrIjoiZjAyYzRlY2UtOGEwZi00YTdmLWFkNzYtNjEzODFkYmRlMTQ2IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=bac55dfa01458d531ae3"
-                      target="_blank"
-                      >Click aquí <i class="fas fa-chevron-right"></i
-                    ></a>
-                  </div> -->
               </div>
             </div>
           </div>
 
-          <div class="col-lg-3 col-sm-6 courses-col">
-            <div class="single-courses mt-30">
-              <div class="courses-image">
-                <a><img src="assets/images/courses/salud-1.png" width="270" height="170" alt="courses" /></a>
-              </div>
-              <div class="courses-content">
-                <a class="category">#ReporteConvenioGestion</a>
-                <h4 class="courses-title">
-                  <a>Convenio de Gestión 2025<br><br><br><br></a>
-                </h4>
 
-                <div class="text-center">
-                  <div class="dropdown">
-                    <button class="dropdown-toggle">Más Opciones</button>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item"
+
+
+
+          <!-- ========================================================
+
+                   V     Targeta ReporteConvenioGestion   V
+
+          ===========================================================-->
+
+          <div class="col-lg-3 col-sm-6 contenedor-tarjeta">
+            <div class="tarjeta-girante" id="miTarjetaConvenioGestion">
+
+              <!-- Cara frontal -->
+              <div class="cara cara-frente">
+                <div class="imagen-curso">
+                  <a>
+                    <img src="assets/images/IconosServicios/convenio.png" alt="courses" />
+                  </a>
+                </div>
+                <a class="etiqueta-categoria">#ReporteConvenioGestion</a>
+                <h4 class="titulo-curso">
+                  <a>Convenio de Gestión 2025<br><br></a>
+                </h4>
+                <div class="parte-inferior-tarjeta">
+                  <button class="boton-opciones" onclick="girarTarjeta('miTarjetaConvenioGestion')">
+                    Más Opciones
+                    <span class="flecha-derecha">→</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Cara trasera -->
+              <div class="cara cara-atras">
+                <button class="boton-cerrar" onclick="volverFrente('miTarjetaConvenioGestion')">×</button>
+                <div class="contenido-atras">
+                  <h2>Opciones</h2>
+                  <div class="contenedor-opciones">
+                    <div class="elemento-opcion">
+                      <a class="enlace-opcion"
                         href="https://app.powerbi.com/view?r=eyJrIjoiZTVjMWI5ZjEtNmY3NC00MGM5LWI2NDgtMDUxYjYyNjFlOGM2IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ReportSection561bd2efd012e146e789"
                         target="_blank">Indicador de Desempeño
                       </a>
-                      <a class="dropdown-item"
+                    </div>
+                    <div class="elemento-opcion">
+                      <a class="enlace-opcion"
                         href="https://lookerstudio.google.com/reporting/10152432-1832-4886-a7ff-0be8a03e26e1"
                         target="_blank">Compromiso de Mejora
                       </a>
-                      <button type="button" class="dropdown-item" id="soporteLink">Monitoreo de Desempeño</button>
-                      <!-- <a class="dropdown-item" href="javascript:void(0)" id="soporteLink">Monitoreo</a> -->
-                      <!-- <a class="dropdown-item"
-                        href="https://app.powerbi.com/view?r=eyJrIjoiZTVjMWI5ZjEtNmY3NC00MGM5LWI2NDgtMDUxYjYyNjFlOGM2IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=ReportSection561bd2efd012e146e789"
-                        target="_blank">Convenio de Gestión
-                      </a> -->
+                    </div>
+                    <div class="elemento-opcion">
+                      <button class="boton-formulario" type="button" class="dropdown-item" id="soporteLink">Monitoreo de Desempeño</button>
                     </div>
                   </div>
                 </div>
@@ -1711,22 +1748,42 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-sm-6 courses-col">
-            <div class="single-courses mt-30">
-              <div class="courses-image">
-                <a><img src="assets/images/courses/salud-1.png" width="270" height="170" alt="courses" /></a>
-              </div>
-              <div class="courses-content">
-                <a class="category">#PactoRegional</a>
-                <h4 class="courses-title">
+          <!-- ========================================================
+
+                   V     Pacto Regional   V
+
+          ===========================================================-->
+
+          <div class="col-lg-3 col-sm-6 contenedor-tarjeta">
+            <div class="tarjeta-girante" id="miTarjetaPactoRegional">
+
+              <!-- Cara frontal -->
+              <div class="cara cara-frente">
+                <div class="imagen-curso">
+                  <a>
+                    <img src="assets/images/IconosServicios/pacto_1.png" alt="courses" />
+                  </a>
+                </div>
+                <a class="etiqueta-categoria">#PactoRegional</a>
+                <h4 class="titulo-curso">
                   <a>Indicadores de Articulacion en el marco al Pacto Regional 2025<br><br></a>
                 </h4>
+                <div class="parte-inferior-tarjeta">
+                  <button class="boton-opciones" onclick="girarTarjeta('miTarjetaPactoRegional')">
+                    Más Opciones
+                    <span class="flecha-derecha">→</span>
+                  </button>
+                </div>
+              </div>
 
-                <div class="text-center">
-                  <div class="dropdown">
-                    <button class="dropdown-toggle">Más Opciones</button>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item"
+              <!-- Cara trasera -->
+              <div class="cara cara-atras">
+                <button class="boton-cerrar" onclick="volverFrente('miTarjetaPactoRegional')">×</button>
+                <div class="contenido-atras">
+                  <h2>Opciones</h2>
+                  <div class="contenedor-opciones">
+                    <div class="elemento-opcion">
+                      <a class="enlace-opcion"
                         href="https://app.powerbi.com/view?r=eyJrIjoiMWYxZDhiNDUtYjU3Yi00YjA4LThlNDMtZTFmZDFlMjlhNTdiIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=b666855b690b1224d5b7"
                         target="_blank"> Indicadores
                       </a>
@@ -1738,26 +1795,51 @@
           </div>
 
 
-          <div class="col-lg-3 col-sm-6 courses-col">
-            <div class="single-courses mt-30">
-              <div class="courses-image">
-                <a><img src="assets/images/courses/salud-1.png" width="270" height="170" alt="courses" /></a>
-              </div>
-              <div class="courses-content">
-                <a class="category">#Epidemiología</a>
-                <h4 class="courses-title">
-                  <a>Epidemiología<br><br><br><br><br></a>
-                </h4>
 
-                <div class="text-center">
-                  <div class="dropdown">
-                    <button class="dropdown-toggle">Más Opciones</button>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item"
+
+
+          <!-- ========================================================
+
+                   V     Targeta Epidemiologia  V
+
+          ===========================================================-->
+
+          <div class="col-lg-3 col-sm-6 contenedor-tarjeta">
+            <div class="tarjeta-girante" id="miTarjetaEpidemiologia">
+
+              <!-- Cara frontal -->
+              <div class="cara cara-frente">
+                <div class="imagen-curso">
+                  <a>
+                    <img src="assets/images/IconosServicios/epidemologia.png" alt="courses" />
+                  </a>
+                </div>
+                <a class="etiqueta-categoria">#Epidemiología</a>
+                <h4 class="titulo-curso">
+                  <a>Epidemiología<br><br></a>
+                </h4>
+                <div class="parte-inferior-tarjeta">
+                  <button class="boton-opciones" onclick="girarTarjeta('miTarjetaEpidemiologia')">
+                    Más Opciones
+                    <span class="flecha-derecha">→</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Cara trasera -->
+              <div class="cara cara-atras">
+                <button class="boton-cerrar" onclick="volverFrente('miTarjetaEpidemiologia')">×</button>
+                <div class="contenido-atras">
+                  <h2>Opciones</h2>
+                  <div class="contenedor-opciones">
+                    <div class="elemento-opcion">
+                      <a class="enlace-opcion"
                         href="https://app.powerbi.com/view?r=eyJrIjoiODhhZDVkNzItZDIyZS00ZWNlLWE1NTItNDAzNDc4OTYyYzhlIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=f352aff8d13490d4d8b0"
                         target="_blank"> Boletín Epidemiológico
                       </a>
-                      <a class="dropdown-item"
+                    </div>
+                    <div class="elemento-opcion">
+                      <a class="enlace-opcion"
                         href="https://app.powerbi.com/view?r=eyJrIjoiODhhZDVkNzItZDIyZS00ZWNlLWE1NTItNDAzNDc4OTYyYzhlIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=9128f69c3685d1ffcc5f"
                         target="_blank"> Sala situacional
                       </a>
@@ -1768,27 +1850,51 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-sm-6 courses-col">
-            <div class="single-courses mt-30">
-              <div class="courses-image">
-                <a><img src="assets/images/courses/salud-1.png" width="270" height="170" alt="courses" /></a>
-              </div>
-              <div class="courses-content">
-                <a class="category">#SIS</a>
-                <h4 class="courses-title">
-                  <a>INDICADORES SIS 2025<br><br><br></a>
-                </h4>
 
-                <div class="text-center">
-                  <div class="dropdown">
-                    <button class="dropdown-toggle">Más Opciones</button>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item"
+
+
+          <!-- ========================================================
+
+                   V     Targeta SIS     V
+
+          ===========================================================-->
+
+          <div class="col-lg-3 col-sm-6 contenedor-tarjeta">
+            <div class="tarjeta-girante" id="miTarjetaSIS">
+
+              <!-- Cara frontal -->
+              <div class="cara cara-frente">
+                <div class="imagen-curso">
+                  <a>
+                    <img src="assets/images/IconosServicios/sis.png" alt="courses" />
+                  </a>
+                </div>
+                <a class="etiqueta-categoria">#SIS</a>
+                <h4 class="titulo-curso">
+                  <a>INDICADORES SIS 2025<br><br></a>
+                </h4>
+                <div class="parte-inferior-tarjeta">
+                  <button class="boton-opciones" onclick="girarTarjeta('miTarjetaSIS')">
+                    Más Opciones
+                    <span class="flecha-derecha">→</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Cara trasera -->
+              <div class="cara cara-atras">
+                <button class="boton-cerrar" onclick="volverFrente('miTarjetaSIS')">×</button>
+                <div class="contenido-atras">
+                  <h2>Opciones</h2>
+                  <div class="contenedor-opciones">
+                    <div class="elemento-opcion">
+                      <a class="enlace-opcion"
                         href="https://app.powerbi.com/view?r=eyJrIjoiY2RjMGQ5ZTQtN2VjYi00M2RkLTkzMjQtYmNiNWM0MTc1YTY0IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9"
                         target="_blank"> IP04 HIPERTENSION META TERAPEUTICA
                       </a>
-
-                      <a class="dropdown-item"
+                    </div>
+                    <div class="elemento-opcion">
+                      <a class="enlace-opcion"
                         href="https://app.powerbi.com/view?r=eyJrIjoiNmRlMGRiYzgtNzVhMC00MGYwLWE2NDUtYmRjNzAxZWU4Y2ZjIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9"
                         target="_blank"> IP01 TBC
                       </a>
@@ -1799,22 +1905,46 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-sm-6 courses-col">
-            <div class="single-courses mt-30">
-              <div class="courses-image">
-                <a><img src="assets/images/courses/salud-1.png" width="270" height="170" alt="courses" /></a>
-              </div>
-              <div class="courses-content">
-                <a class="category">#Convenio_CIGS</a>
-                <h4 class="courses-title">
-                  <a>Indicadores de Convenio CIGS<br><br><br></a>
-                </h4>
 
-                <div class="text-center">
-                  <div class="dropdown">
-                    <button class="dropdown-toggle">Más Opciones</button>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item"
+
+
+
+          <!-- ========================================================
+
+                   V     Targeta Convenio     V
+
+          ===========================================================-->
+
+          <div class="col-lg-3 col-sm-6 contenedor-tarjeta">
+            <div class="tarjeta-girante" id="miTarjetaConvenio">
+
+              <!-- Cara frontal -->
+              <div class="cara cara-frente">
+                <div class="imagen-curso">
+                  <a>
+                    <img src="assets/images/IconosServicios/convenio.png" alt="courses" />
+                  </a>
+                </div>
+                <a class="etiqueta-categoria">#Convenio_CIGS</a>
+                <h4 class="titulo-curso">
+                  <a>Indicadores de Convenio CIGS<br><br></a>
+                </h4>
+                <div class="parte-inferior-tarjeta">
+                  <button class="boton-opciones" onclick="girarTarjeta('miTarjetaConvenio')">
+                    Más Opciones
+                    <span class="flecha-derecha">→</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Cara trasera -->
+              <div class="cara cara-atras">
+                <button class="boton-cerrar" onclick="volverFrente('miTarjetaConvenio')">×</button>
+                <div class="contenido-atras">
+                  <h2>Opciones</h2>
+                  <div class="contenedor-opciones">
+                    <div class="elemento-opcion">
+                      <a class="enlace-opcion"
                         href="https://app.powerbi.com/view?r=eyJrIjoiODM2ZGUzNTAtZDA4My00MTE1LTk4NjYtMTg4ZmZiMjhkNDU1IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=b666855b690b1224d5b7"
                         target="_blank"> Reporte
                       </a>
@@ -1897,7 +2027,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title">Iniciar Sesión</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+            <button class="boton-formulario" type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
@@ -1926,7 +2056,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title">Iniciar Sesión</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+            <button class="boton-formulario" type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
@@ -2360,7 +2490,23 @@
       </div>
     </div>
   </section>
+ <script>
+  const buscador = document.getElementById('buscador');
+  const tarjetas = document.querySelectorAll('.contenedor-tarjeta');
+  buscador.addEventListener('input', () => {
+          const filtro = buscador.value.toLowerCase();
 
+          tarjetas.forEach((tarjeta) => {
+            const texto = tarjeta.textContent.toLowerCase();
+
+            if (texto.includes(filtro)) {
+               tarjeta.style.display = 'block'; // Mostramos la tarjeta completa
+            } else {
+              tarjeta.style.display = 'none';  // La ocultamos por completo
+            }
+          });
+        });
+</script>
   <!--====== Top Courses Ends aaaa======-->
   <!--====== Footer Start ======-->
 
@@ -2467,7 +2613,7 @@
         <section class="">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-">
+                    <div class="col-lg->
 
                     </div>
                 </div>
@@ -2734,6 +2880,7 @@
     }
 
 
+    
   </script>
 </body>
 
