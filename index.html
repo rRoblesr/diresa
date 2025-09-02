@@ -5,10 +5,10 @@
   <meta charset="utf-8" />
 
   <!--====== Title ======-->
-  <title>Dirección Regional de Salud de Ucayali</title>   
+  <title>Dirección Regional de Salud de Ucayali</title>
 
   <meta name="description" content="" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!--====== Favicon Icon ======-->
   <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/webp" />
@@ -27,13 +27,14 @@
   <link rel="stylesheet" href="assets/css/plugins/magnific-popup.css" />
 
   <!--====== Main Style CSS ======-->
-   <link rel="stylesheet" href="assets/css/style.css"> 
+  <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/style.min.css" />
+
   <style>
     /* Estilos para la ventana modal */
-    .modal {
+    /* .modal {
       display: none;
-      /* Ocultar por defecto */
+      Ocultar por defecto
       position: fixed;
       z-index: 1;
       left: 0;
@@ -42,22 +43,22 @@
       height: 100%;
       overflow: auto;
       background-color: rgba(0, 0, 0, 0.5);
-      /* Fondo semitransparente */
-    }
+      Fondo semitransparente
+    } */
 
-    .modal-content {
+    /* .modal-content {
       background-color: #fefefe;
       margin: 15% auto;
       padding: 20px;
       border: 1px solid #888;
       width: 80%;
       max-width: 600px;
-    }
+    } */
 
-    .modal-content img {
+    /* .modal-content img {
       width: 100%;
       height: auto;
-    }
+    } */
 
     .close-btn {
       color: #aaa;
@@ -115,16 +116,16 @@
       display: block;
     }
 
-    .modal {
+    /* .modal {
       z-index: 9999 !important;
-      /* display: block;
+      display: block;
       position: fixed;
       top: 0;
-      left: 0; */
-      /* width: 100%;
-      height: 100%; */
+      left: 0;
+       width: 100%;
+      height: 100%; 
       background-color: rgba(0, 0, 0, 0.5);
-    }
+    } */
 
     /*  .single-slider {
       background-size: cover;
@@ -149,13 +150,162 @@
       display: flex;
       align-items: center;
     }
+
+    /* ====================================
+      CSS de ventana emergente - anuncios
+      ==================================== */
+    .ventana-anuncio {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.7);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      overflow-y: auto;
+      /* para que la ventana de anuncio pueda hacer scroll si es necesario */
+      overflow-x: hidden;
+      padding: 20px;
+      /* para que el contenido no toque los bordes en pantallas pequeñas */
+      box-sizing: border-box;
+    }
+
+    .contenido-anuncio {
+      background: rgba(255, 255, 255, 0.18);
+      border-radius: 20px;
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      text-align: center;
+      position: relative;
+      padding: 20px;
+      box-sizing: border-box;
+
+      /* Responsive core */
+      width: 90vw;
+      max-width: 800px;
+      max-height: 90vh;
+      overflow-y: auto;
+    }
+
+    .contenido-anuncio h2 {
+      color: white;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      padding-bottom: 15px;
+      font-size: 25px;
+    }
+
+    .contenido-anuncio button {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: rgb(8, 8, 8);
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 25px;
+      height: 25px;
+      cursor: pointer;
+    }
+
+    /* Ocultar por defecto */
+    .oculto {
+      display: none;
+    }
+
+    .contenido-anuncio img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    @keyframes popup-entrada {
+      0% {
+        opacity: 0;
+        transform: scale(1);
+      }
+
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    /* Aplica la animación cuando el popup se muestra */
+    .contenido-anuncio.animar {
+      animation: popup-entrada 0.9s ease-out;
+    }
+
+    .contenido-anuncio::-webkit-scrollbar {
+      width: 8px;
+      /* Ancho del scroll */
+    }
+
+    .contenido-anuncio::-webkit-scrollbar-track {
+      background: rgba(255, 255, 255, 0.1);
+      /* Fondo de la pista */
+      border-radius: 10px;
+    }
+
+    .contenido-anuncio::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.4);
+      /* Color del "pulgar" del scroll */
+      border-radius: 10px;
+      backdrop-filter: blur(4px);
+    }
+
+    .contenido-anuncio::-webkit-scrollbar-thumb:hover {
+      background: rgba(255, 255, 255, 0.6);
+      /* Al pasar el mouse */
+    }
+
+    @media (max-width: 600px) {
+      .ventana-anuncio {
+        width: 100%;
+        height: 100%;
+      }
+
+      .contenido-anuncio {
+        /* Determinamos el ancho del anuncio en celulares */
+        width: 100%;
+        max-height: 100vh;
+        padding: 10px;
+        border-radius: 0;
+      }
+
+      .contenido-anuncio h2 {
+        font-size: 18px;
+      }
+
+      .contenido-anuncio button {
+        width: 22px;
+        height: 22px;
+        font-size: 14px;
+        top: 5px;
+        right: 5px;
+      }
+
+      .contenido-anuncio img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+    }
+
+    /* Se aplica para ocultar el scroll */
+    body.sin-scroll {
+      overflow: hidden;
+    }
   </style>
 
 </head>
 
-<body>
+<body style="overflow-x: hidden;">
   <!--====== Header Start ======-->
-
   <header class="header-area border">
     <!-- <div class="header-top">
       <div class="container">
@@ -229,6 +379,16 @@
       </div>
     </div>
   </header>
+  <!--====== Header Ends ======-->
+
+  <!--========== ANUNCIO ============-->
+  <div id="popup" class="ventana-anuncio oculto">
+    <div class="contenido-anuncio">
+      <button onclick="cerrarPopup()">x</button>
+     <!-- <h2>DIRESA Informa</h2>-->
+      <img src="assets/images/anuncios/Comunicado3.png" alt="Anuncio"> <!--Imagen del anuncio-->
+    </div>
+  </div>
 
   <!--====== Header Ends ======-->
   <!--====== Slider Start ======-->
@@ -2882,6 +3042,35 @@
 
     
   </script>
+<!-- SCRIPT del anuncio -->
+
+  <script>
+    const mostrarAnuncio = true;
+
+    window.addEventListener('load', function () {
+      if (mostrarAnuncio) {
+        const popup = document.getElementById('popup');
+        popup.classList.remove('oculto');
+        document.body.classList.add('sin-scroll');
+
+        // Agregar animación
+        const contenido = popup.querySelector('.contenido-anuncio');
+        contenido.classList.remove('animar');
+        void contenido.offsetWidth; // reinicia animación
+        contenido.classList.add('animar');
+      }
+    });
+
+    function cerrarPopup() {
+      const popup = document.getElementById('popup');
+      popup.classList.add('oculto');
+      document.body.classList.remove('sin-scroll');
+    }
+
+  </script>
+
+
+
 </body>
 
 </html>
