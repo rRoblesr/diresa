@@ -752,6 +752,7 @@ button, input[type=submit] {
     -o-transform: translate3d(0, 0, 0);
   }
 }
+
 /*===========================
     02. Header css 
 ===========================*/
@@ -1739,7 +1740,7 @@ button, input[type=submit] {
 }
 
 /*==========================
-  código CSS de las tarjetas
+  Código CSS de las tarjetas
 ============================*/
 /* Descripcion de Header */
 .descripcion {
@@ -2109,9 +2110,59 @@ Scrollbar personalizada para la cara trasera
 .top-courses-area {
   padding-top: 110px;
 }
+
+.pading-seccion-organigrama {
+  padding-bottom: 50px;
+}
+
+/*======================================
+padding responsive de section_servicio
+========================================*/
+
+/*  Base (para todos los dispositivos) */
+.section_servicio {
+  padding-top: 30px;   /* valor base universal */
+}
+
+/*  Teléfonos pequeños (hasta 576px) */
+@media only screen and (max-width: 576px) {
+  .section_servicio {
+    padding-top: 20px;   /* menos espacio en móviles pequeños */
+  }
+}
+
+/*  Teléfonos grandes (≥576px y ≤767px) */
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  .section_servicio {
+    padding-top: 25px;
+  }
+}
+
+/*  Tablets (≥768px y ≤991px) */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .section_servicio {
     padding-top: 35px;
+  }
+}
+
+/*  Laptops / PCs medianas (≥992px y ≤1199px) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .section_servicio {
+    padding-top: 50px;
+  }
+}
+
+/*  PCs grandes (≥1200px) */
+@media only screen and (min-width: 1200px) {
+  .section_servicio {
+    padding-top: 70px;
+  }
+}
+
+/*  Ultra grandes (≥1400px, monitores 2K/4K) */
+@media only screen and (min-width: 1400px) {
+  .section_servicio {
+    padding-top: 90px;
   }
 }
 @media (max-width: 767px) {
@@ -5381,9 +5432,9 @@ padding-top: 10px;
   padding-top: 0;
 }
 
-.footer-widget {
-  padding-top: 110px;
-  padding-bottom: 150px;
+.footer-widget-pie {
+  padding-top: 30px;
+  padding-bottom: 25px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .footer-widget {
