@@ -857,6 +857,75 @@
                     <img src="assets/images/IconosServicios/niño_1[1].png" alt="courses" />
                   </a>
                 </div>
+                <a class="etiqueta-categoria">#EmergenciaTosFerina</a>
+                <h4 class="titulo-curso">
+                  <a>
+                    Reporte de vacunación por Tos Ferina.
+                  </a>
+                </h4>
+                <div class="parte-inferior-tarjeta">
+
+                  <button class="boton-opciones" onclick="girarTarjeta('miTarjeta')">
+                    Más Opciones
+                    <span class="flecha-derecha">→</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="cara cara-atras">
+                <button class="boton-cerrar" onclick="volverFrente('miTarjeta')">×</button>
+                <div class="contenido-atras">
+                  <h2>Opciones</h2>
+                  <div class="contenedor-opciones">
+                                         
+                    <div class="elemento-opcion">
+                      <a class="enlace-opcion"
+                        href="https://app.powerbi.com/view?r=eyJrIjoiZjg1ZTM0N2MtNDE5MS00ZTQwLWExMjAtZWI0ZWIzOTJkMTQ1IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=e3a0297b320e647137b9"
+                        target="_blank">
+                        Vacunación Gestantes
+                      </a>
+                    </div>
+
+                    <div class="elemento-opcion">
+                      <span class="icono-opcion"></span>
+                      <a class="enlace-opcion"
+                        href="https://app.powerbi.com/view?r=eyJrIjoiM2YwNjYwN2MtZjQ5ZS00NDBjLTkzZGMtNmE1OWMwMmQ1M2VjIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9"
+                        target="_blank">
+                        Vacunación a Niños
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <script>
+            function girarTarjeta(idTarjeta) {
+              document.getElementById(idTarjeta).classList.add('girada');
+            }
+
+            function volverFrente(idTarjeta) {
+              document.getElementById(idTarjeta).classList.remove('girada');
+            }
+          </script>
+
+
+
+          <!-- ========================================================
+
+                   V     Targeta Niños   V
+
+          ===========================================================-->
+
+          <div class="col-lg-3 col-sm-6 contenedor-tarjeta">
+            <div class="tarjeta-girante" id="miTarjeta">
+              <div class="cara cara-frente">
+                <div class="imagen-curso align-items-center">
+                  <a>
+                    <img src="assets/images/IconosServicios/niño_1[1].png" alt="courses" />
+                  </a>
+                </div>
                 <a class="etiqueta-categoria">#Niño</a>
                 <h4 class="titulo-curso">
                   <a>
@@ -1474,7 +1543,7 @@
                 <div class="contenido-atras">
                   <h2>Opciones</h2>
                   <div class="contenedor-opciones">
-                    
+                   
                     <div class="elemento-opcion">
                       <a class="enlace-opcion"
                         href="https://app.powerbi.com/view?r=eyJrIjoiZjg1ZTM0N2MtNDE5MS00ZTQwLWExMjAtZWI0ZWIzOTJkMTQ1IiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9&pageName=e3a0297b320e647137b9"
@@ -1482,7 +1551,7 @@
                         Reporte Tos Ferina
                       </a>
                     </div>
-
+                    
                     <div class="elemento-opcion">
                       <a class="enlace-opcion"
                         href="https://app.powerbi.com/view?r=eyJrIjoiZGUzMzdlOWItYTY2My00ODlmLWI4ZWYtNzBlMTMwYTA5OGFiIiwidCI6IjU3OTIyZTZhLTIzY2EtNDFhYy04ZGYxLTI5YTZmODgxYzBiYiIsImMiOjl9"
