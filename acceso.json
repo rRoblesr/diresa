@@ -82,7 +82,6 @@
 {"usuario": "42977273", "clave": "42977274", "estado": "1"},
 {"usuario": "43043375", "clave": "unodostres", "estado": "1"},
 {"usuario": "43080205", "clave": "Ross123@", "estado": "1"},
-{"usuario": "43140850", "clave": "KOSENRUFU@2025", "estado": "1"},
 {"usuario": "43163936", "clave": "leny", "estado": "1"},
 {"usuario": "43252802", "clave": "54321", "estado": "1"},
 {"usuario": "43260487", "clave": "yerpi2025#", "estado": "1"},
@@ -91,6 +90,7 @@
 {"usuario": "43443906", "clave": "152629", "estado": "1"},
 {"usuario": "43481527", "clave": "MISAMORES1808.", "estado": "1"},
 {"usuario": "43522679", "clave": "123", "estado": "1"},
+{"usuario": "43551248", "clave": "123456789", "estado": "1"},
 {"usuario": "43612432", "clave": "123", "estado": "1"},
 {"usuario": "43698513", "clave": "Abel@123", "estado": "1"},
 {"usuario": "43702289", "clave": "Elvita2025@1405", "estado": "1"},
@@ -251,6 +251,7 @@
 {"usuario": "72389626", "clave": "29Somos+*1230+1", "estado": "1"},
 {"usuario": "72537819", "clave": "milagros@123", "estado": "1"},
 {"usuario": "72550190", "clave": "rosita11", "estado": "1"},
+{"usuario": "72581030", "clave": "21dejunio", "estado": "1"},
 {"usuario": "72609697", "clave": "Meyli3120", "estado": "1"},
 {"usuario": "72627292", "clave": "Mateo1234", "estado": "1"},
 {"usuario": "72627303", "clave": "Scout330.", "estado": "1"},
@@ -287,6 +288,7 @@
 {"usuario": "74552275", "clave": "ethan09", "estado": "1"},
 {"usuario": "74649424", "clave": "made1594", "estado": "1"},
 {"usuario": "74722847", "clave": "@Dinosaurio40xx", "estado": "1"},
+{"usuario": "75015966", "clave": "Gevilo16", "estado": "1"},
 {"usuario": "75025734", "clave": "tracey@123", "estado": "1"},
 {"usuario": "75210412", "clave": "210798", "estado": "1"},
 {"usuario": "75322081", "clave": "918898842", "estado": "1"},
@@ -309,7 +311,6 @@
 {"usuario": "76029422", "clave": "Gonzales@12345", "estado": "1"},
 {"usuario": "76051148", "clave": "31122024", "estado": "1"},
 {"usuario": "76069459", "clave": "katrina@123", "estado": "1"},
-{"usuario": "76172523", "clave": "civith@123", "estado": "1"},
 {"usuario": "76177854", "clave": "9923", "estado": "1"},
 {"usuario": "76215048", "clave": "richar@123", "estado": "1"},
 {"usuario": "76266812", "clave": "elisa@123", "estado": "1"},
@@ -333,5 +334,4 @@
 {"usuario": "77563491", "clave": "nicole@123", "estado": "1"},
 {"usuario": "78018036", "clave": "50521", "estado": "1"},
 {"usuario": "80416395", "clave": "Jovitapanduro123", "estado": "1"}
-
 ]
