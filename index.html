@@ -910,6 +910,65 @@
             }
           </script>
 
+<!-- ========================================================
+
+                   V     Targeta Niños   V
+
+          ===========================================================-->
+
+          <div class="col-lg-3 col-sm-6 contenedor-tarjeta">
+            <div class="tarjeta-girante" id="miTarjetaGuardias">
+              <div class="cara cara-frente">
+                <div class="imagen-curso align-items-center">
+                  <a>
+                    <img src="assets/images/IconosServicios/Tosferina.png" alt="courses" />
+                  </a>
+                </div>
+                <a class="etiqueta-categoria">#GuardiasComunitarias</a>
+                <h4 class="titulo-curso">
+                  <a>
+                    Producción de Vacunación en Guardias Comunitarias.
+                  </a>
+                </h4>
+                <div class="parte-inferior-tarjeta">
+
+                  <button class="boton-opciones" onclick="girarTarjeta('miTarjetaGuardias')">
+                    Más Opciones
+                    <span class="flecha-derecha">→</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="cara cara-atras">
+                <button class="boton-cerrar" onclick="volverFrente('miTarjetaGuardias')">×</button>
+                <div class="contenido-atras">
+                  <h2>Opciones</h2>
+                  <div class="contenedor-opciones">
+                                         
+                    <div class="elemento-opcion">
+                      <a class="enlace-opcion"
+                        href="https://v2.diresa-ucayali.com.pe/pages/visitas_d"
+                        target="_blank">
+                        Producción Guardias
+                      </a>
+                    </div>
+
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <script>
+            function girarTarjeta(idTarjeta) {
+              document.getElementById(idTarjeta).classList.add('girada');
+            }
+
+            function volverFrente(idTarjeta) {
+              document.getElementById(idTarjeta).classList.remove('girada');
+            }
+          </script>
 
 
           <!-- ========================================================
